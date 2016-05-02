@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Introduction"
+date:   2016-05-01 14:34:25
+categories: about
+tags: introduction
+image: /assets/article_images/2016-05-02-introduction/introduction.JPG
+image2: /assets/article_images/2016-05-02-introduction/introduction-mobile.JPG
+---
+# Introduction
+This is my introductory post. 
+
+*Wow, this is cool.*
+
+**This is bold.**
+
+Here are my old blogs:
+
+* [Reclaimed Home Interiors](http://reclaimed.house)
+* [Lean Back In](http://leanin.life)
+* [Annie's Blessed Nest](http://anniesblessednest.com)
+
+And this is me.
+
+![](/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.png)

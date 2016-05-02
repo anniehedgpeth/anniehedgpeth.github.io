@@ -4,8 +4,8 @@ title:  "Introduction"
 date:   2016-05-01 22:00:00
 categories: about
 tags: introduction
-image: /assets/article_images/2016-05-01-introduction/introduction.JPG
-image2: /assets/article_images/2016-05-01-introduction/introduction-mobile.JPG
+image: /assets/article_images/2016-05-01-introduction/introduction.jpg
+image2: /assets/article_images/2016-05-01-introduction/introduction-mobile.jpg
 ---
 # Introduction
 This is my introductory post. 

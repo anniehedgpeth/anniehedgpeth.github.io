@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Introduction"
-date:   2016-05-01 14:34:25
+date:   2016-05-01 22:00:00
 categories: about
 tags: introduction
-image: /assets/article_images/2016-05-02-introduction/introduction.JPG
-image2: /assets/article_images/2016-05-02-introduction/introduction-mobile.JPG
+image: /assets/article_images/2016-05-01-introduction/introduction.JPG
+image2: /assets/article_images/2016-05-01-introduction/introduction-mobile.JPG
 ---
 # Introduction
 This is my introductory post. 
@@ -22,4 +22,4 @@ Here are my old blogs:
 
 And this is me.
 
-![](/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.png)
+![](/assets/article_images/2016-05-01-introduction/AnnieHedgpeth.png)

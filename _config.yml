@@ -26,7 +26,7 @@ baseurl: ""
 twitter_handle: '@anniehedgie'
 
 #fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+disqus: anniehedgie
 
 # social icons and sharing options
 social:

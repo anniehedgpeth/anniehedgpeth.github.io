@@ -1,25 +1,25 @@
 ---
 layout: post
-title:  "Introduction"
+title:  "I'm Annie, and I have an art degree."
 date:   2016-05-01 22:00:00
 categories: about
 tags: introduction
 image: /assets/article_images/2016-05-01-introduction/introduction.jpg
 image2: /assets/article_images/2016-05-01-introduction/introduction-mobile.jpg
 ---
-# Introduction
-This is my introductory post. 
+<img src='/assets/article_images/2016-05-01-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-*Wow, this is cool.*
+So this is my introductory post, and I can't shake that feeling like I just walked into the men's restroom. It's not because it's mostly men in technology (well, a little), but it's because I don't know how I got here and if I should exit quickly before making eye contact with anyone. 
+<!--more-->
 
-**This is bold.**
+I have a BFA in Film, a minor in Theatre, and I worked as a Casting Director before leaving full-time employment for more flexible endeavors while I was raising babies. I did some blogging, and currently I have a home decorating business. 
 
-Here are my old blogs:
+I'm ready to go back to full-time employment now, but I also want a career change. The obvious career path for someone with my skillset is probably HR or Marketing, and I get that. But here's the catch - I don't want that. 
 
-* [Reclaimed Home Interiors](http://reclaimed.house)
-* [Lean Back In](http://leanin.life)
-* [Annie's Blessed Nest](http://anniesblessednest.com)
+I'd love to take the soft skills that I've gained through my creative pursuits and apply them to technology. I feel like I could contribute something original and learn to create at a level that I haven't yet experienced.
 
-And this is me.
+Over the course of the next few weeks and months I'll be doing a series of small projects and sharing what I learn. I'm taking baby steps to get to where I want to be, but I'm excited about the process. 
 
-![](/assets/article_images/2016-05-01-introduction/AnnieHedgpeth.png)
+When I first started learning how to speak French the biggest hurdle was just getting out there and speaking it with people withouth being embarassed. If I didn't humble myself in that way, then I would have never improved. I made a ton of mistakes (and am still not totally fluent), but I have finally learned to not be embarassed. 
+
+This website for me is like speaking horribly broken French to native Parisians. It's a little embarassing, but I'm hoping that the upside will be lots of growth and understanding.    

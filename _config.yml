@@ -54,9 +54,11 @@ social:
   - icon:	linkedin
     url:	https://www.linkedin.com/in/annie-hedgpeth-203393112
     desc:	Connect with me on linkedin
-    share_url:
-    share_title:
-    share_link:
+    share_url: https://www.linkedin.com/shareArticle
+    share_title: ?title=
+    share_link: "&amp;url="
 
 # Google services
 google_analytics: UA-77245607-1
+
+excerpt_separator: <!--more-->

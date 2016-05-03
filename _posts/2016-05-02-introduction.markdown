@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "I'm Annie, and I have an art degree."
-date:   2016-05-01 22:00:00
+date:   2016-05-02 18:00:00
 categories: about
 tags: introduction
-image: /assets/article_images/2016-05-01-introduction/introduction.jpg
-image2: /assets/article_images/2016-05-01-introduction/introduction-mobile.jpg
+image: /assets/article_images/2016-05-02-introduction/introduction.jpg
+image2: /assets/article_images/2016-05-02-introduction/introduction-mobile.jpg
 ---
-<img src='/assets/article_images/2016-05-01-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 So this is my introductory post, and I can't shake that feeling like I just walked into the men's restroom. It's not because it's mostly men in technology (well, a little), but it's because I don't know how I got here and if I should exit quickly before making eye contact with anyone. 
 <!--more-->

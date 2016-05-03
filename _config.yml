@@ -21,7 +21,7 @@ author_image: "/assets/images/author.jpg"
 paginate:	5
 
 url: "http://www.anniehedgie.com" # the base hostname & protocol for your site
-baseurl: ""
+baseurl: "www.anniehedgie.com"
 #used to display twitter cards
 twitter_handle: '@anniehedgie'
 
@@ -51,9 +51,9 @@ social:
     share_title:
     share_link:
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+  - icon:	linkedin
+    url:	https://linkedin.com
+    desc:	Connect with me on linkedin
+    share_url:
+    share_title:
+    share_link:

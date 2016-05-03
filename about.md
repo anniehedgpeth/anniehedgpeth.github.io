@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img src='/assets/article_images/2016-05-01-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 I can't shake that feeling like I just walked into the men's restroom. It's not because it's [mostly men in technology](http://martinfowler.com/articles/born-for-it.html) (well, a little), but it's because I don't know how I got here and if I should exit quickly before making eye contact with anyone. 
 

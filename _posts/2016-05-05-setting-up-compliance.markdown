@@ -20,7 +20,7 @@ I will say, however, that I did not move from one step to the next without fully
 
 ## What You Will Need
 
-* a [Microsoft Azure](portal.azure.com) account (there are free trials if needed)
+* a [Microsoft Azure](https://portal.azure.com) account (there are free trials if needed)
 * knowledge of basic Ubuntu command line (I [took a course](https://www.lynda.com/Ubuntu-tutorials/Working-command-line/159637/179585-4.html) on basic Linux command line at [lynda.com](http://www.lynda.com))
 
 ## Overview of the steps
@@ -33,7 +33,7 @@ I will say, however, that I did not move from one step to the next without fully
 ## Create an Ubuntu virtual machine on Azure
 We decided to use Azure because a) Virtual Box just didn’t work for us for whatever reason, and b) Michael is more familiar with Azure than AWS right now. Plus, they offer a free trial, so it worked out. If you have had better luck with virtual box, I'd love to hear about it!
 
-1. Go to your [portal.azure.com](portal.azure.com) account and click **NEW**.
+1. Go to your [Azure](https://portal.azure.com) account and click **NEW**.
 2. Under **Marketplace** click **Virtual Machines**
 3. Under **Featured Apps** click **Ubuntu Server 14.04 LTS**
 ![](/assets/article_images/2016-05-05-setting-up-compliance/02-ubuntu-server.png)
@@ -41,25 +41,25 @@ We decided to use Azure because a) Virtual Box just didn’t work for us for wha
 5. Under the **1 – BASICS – Configure Basic Settings** tab, fill in the following
   * **Username** – This is you. You’ll have to enter it several times, so make it simple.
   * **Password** – Choose a good one because it’s over the internet, but you will have to enter it, and I don’t know that you can copy and paste it.
-  * **Resource Group** – Create a new one and name it. Linux is case sensitive, so consider going all lowercase.
+  * **Resource Group** – Create a new one and name it. 
   * **Location** – Choose the location of your server that’s closest to your region.
 6. Under the **2 SIZE** tab – A1 is what I chose, cheap and it did the job.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/03-create-vm.png)
-7. Under the **3  SETTINGS tab** – choose all defaults for **Storage** options.
-8. Under the **4 Summary tab** – click ok and your VM will be deployed after a few minutes.
+7. Under the **3  SETTINGS** tab – choose all defaults for **Storage** options.
+8. Under the **4 Summary** tab – click ok and your VM will be deployed after a few minutes.
 
 ## Make Your Virtual Machine Accessible Over the Internet
 We're doing this so that our browser can access Chef Compliance on our server. First, we'll register a public name for the server, so that we can type that name in a browser. Then we'll need to change the security settings on the network security group. 
 
 1.	So go to **All Resources**, click on your server, then click on your **IP address** and note that there is no DNS name label for it. 
 ![](/assets/article_images/2016-05-05-setting-up-compliance/05-changing-dns.png)
-2. Add the name you choose in the box called **DNS name** label and copy it to notepad or something because you’ll need it later. Then click **SAVE** at the top of the **Configuration** tab.
+2. Add the name you choose in the box called **DNS name label** and copy it to notepad or something because you’ll need it later. Then click **SAVE** at the top of the **Configuration** tab.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/06-configuration.png)
 3. Go to the network security group (the one with the shield icon) that you just created. We need to create a rule so that our compliance website can be accessed. 
 ![](/assets/article_images/2016-05-05-setting-up-compliance/07-inbound-security-rules.png)
   * In settings, click on **Inbound Security Rules**. 
   ![](/assets/article_images/2016-05-05-setting-up-compliance/08-inbound-security-rules.png)
-  * Click **ADD**, and name it **“allow-ssl”**, and change the **Destination Port Range** to **443** so that we can talk to the server over https.
+  * Click **ADD**, and name it **“allow-ssl”**, and change the **Destination Port Range** to **443** so that you can talk to the server over https.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/09-add-rule.png)
   * Make sure your machine is on by going back to **All Resources** and clicking on your VM (with the monitor icon). If **Connect** is greyed out, then you’re connected.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/10-make-sure-vm-is-on.png)
@@ -96,7 +96,9 @@ sudo waagent -install
 ```
 sudo hostname <newname>
 ```
-When you finish this step you should be able to type the command `hostname` and something like `cheftutorialcompliance.southcentralus.cloudapp.azure.com` should come up. This is the terminal I used.
+When you finish this step you should be able to type the command `hostname` and something like `cheftutorialcompliance.southcentralus.cloudapp.azure.com` should come up. 
+
+This is the terminal I used.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/11-ssh-to-vm.png)
 
 ## Set Up Chef Compliance on Your Virtual Machine
@@ -136,17 +138,15 @@ So now that it's all installed, it's time accept the license agreement and set u
 ![](/assets/article_images/2016-05-05-setting-up-compliance/12-chef-compliance-setup.png)
 4. Accept the license agreement...again
 ![](/assets/article_images/2016-05-05-setting-up-compliance/15-pasted1.png)
-5. Set up an admin user
-  - This can be a new one, not the one you used for your vm
-  - Click Next
+5. Set up an admin user and click **Next**
 ![](/assets/article_images/2016-05-05-setting-up-compliance/16-pasted2.png)
 6. Make sure your info is correct and click **Configure**
 ![](/assets/article_images/2016-05-05-setting-up-compliance/13-failed.png)
-The first time I went through, it said that the setup failed. But then I logged in, and all was well. Who knows.
+The first time I went through, it said that the setup failed. But then I went back to the dashboard and logged in, and all was well. Who knows.
 7. Go to the dashboard, and you're ready to go!
 8. Now go have a glass of wine and a chocolate chip cookie and pat yourself on the back. 
 
 ## Concluding Thoughts
-I gotta admit, this whole process was a bit much for me. I couldn't have done it without [Michael](http://hedge-ops.com). Once I got to the end, I was super surprised to see just how simple the program was after such a complicated setup. 
+I gotta admit, this whole process was a bit much for me. I couldn't have done it without [Michael](http://hedge-ops.com). Once I got to the end, I was super surprised to see just how simple and intuitive the program was after such a complicated setup. 
 
-In another post I'll get to the fun part where we actually get to play around with Chef Compliance and see just what it can do. 
+I'm really excited to learn more about Chef Compliance, so in another post I'll get to the fun part where we actually get to play around with it and see just what it can do. 

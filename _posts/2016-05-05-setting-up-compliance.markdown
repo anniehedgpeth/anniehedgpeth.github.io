@@ -53,13 +53,13 @@ We're doing this so that our browser can access Chef Compliance on our server. F
 
 1.	So go to **All Resources**, click on your server, then click on your **IP address** and note that there is no DNS name label for it. 
 ![](/assets/article_images/2016-05-05-setting-up-compliance/05-changing-dns.png)
-2. Add the name you choose in the box called **DNS name label** and copy it to notepad or something because you’ll need it later. Then click **SAVE** at the top of the **Configuration** tab.
+2. Click on **Configuration** and add the name you choose in the box called **DNS name label** and copy it to notepad or something because you’ll need it later. Then click **SAVE** at the top of the **Configuration** tab.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/06-configuration.png)
 3. Go to the network security group (the one with the shield icon) that you just created. We need to create a rule so that our compliance website can be accessed. 
 ![](/assets/article_images/2016-05-05-setting-up-compliance/07-inbound-security-rules.png)
   * In settings, click on **Inbound Security Rules**. 
   ![](/assets/article_images/2016-05-05-setting-up-compliance/08-inbound-security-rules.png)
-  * Click **ADD**, and name it **“allow-ssl”**, and change the **Destination Port Range** to **443** so that you can talk to the server over https.
+  * Click **ADD**, and name it **“allow-ssl”**, and change the **Destination Port Range** to **443** so that you can talk to the server over https. Then click **OK**.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/09-add-rule.png)
   * Make sure your machine is on by going back to **All Resources** and clicking on your VM (with the monitor icon). If **Connect** is greyed out, then you’re connected.
 ![](/assets/article_images/2016-05-05-setting-up-compliance/10-make-sure-vm-is-on.png)

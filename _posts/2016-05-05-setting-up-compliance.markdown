@@ -70,9 +70,10 @@ After all of that, your vm still doesn't really know that its name was changed, 
 1. SSH to your vm
   * Open up your terminal. 
   ```ssh username@dnsname```
-  * Respond “yes”
+  Mine was:
+  ```ssh annie@cheftutorialcompliance.southcentralus.cloudapp.azure.com```
+  * Respond `yes`
   * Enter your password
-
 2. Install Nano on your VM 
 ```
 sudo apt-get install nano
@@ -94,7 +95,7 @@ sudo waagent -install
 ```
 9. Now change the name to the full domain name that you'll type in your browser. I used
 ```
-sudo hostname <newname>
+sudo hostname cheftutorialcompliance.southcentralus.cloudapp.azure.com
 ```
 When you finish this step you should be able to type the command `hostname` and something like `cheftutorialcompliance.southcentralus.cloudapp.azure.com` should come up. 
 

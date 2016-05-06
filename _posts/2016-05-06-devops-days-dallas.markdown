@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Devops Days Dallas"
-date:   2016-05-05 20:05:00
+date:   2016-05-06 12:05:00
 categories: devops, devops days
 tags: devops, devops days
 image: /assets/article_images/2016-05-06-devops-days-dallas/devops-days-dallas.jpg

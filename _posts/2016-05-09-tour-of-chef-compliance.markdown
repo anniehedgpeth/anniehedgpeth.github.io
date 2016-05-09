@@ -42,7 +42,7 @@ After your scan is complete, your summary of compliance failures will appear.
 ![](/assets/article_images/2016-05-09-tour-of-chef-compliance/05-scan-report.png)
 
 ## Surprise! You have failures!
-The very first one says **Set Password Expiration Days**.
+52 of them to be exact. The very first one says **Set Password Expiration Days**.
   
   - Click on that (honestly, I don't know if you *have* to click it, but it can't hurt).
   
@@ -53,7 +53,7 @@ The very first one says **Set Password Expiration Days**.
 
 ![](/assets/article_images/2016-05-09-tour-of-chef-compliance/07-compliance.png)
 
-Let's take a look at the Inspec code that wrote the rule that found this failure. It's going to tell us which folder we need to look in to find the file that needs to be edited and what it needs to be edited to.
+Let's take a look at the [Inspec](https://github.com/chef/inspec) code that wrote the rule that found this failure. It's going to tell us which folder we need to look in to find the file that needs to be edited and what it needs to be edited to.
 
 ![I had to edit this image so that you could see the text that didn't wrap.](/assets/article_images/2016-05-09-tour-of-chef-compliance/08-error-details.png)
 It's a bit small, but it says:
@@ -67,7 +67,7 @@ control "xccdf_org.cisecurity.benchmarks_rule_10.1.1_Set_Password_Expirations_Da
     its(:content) { should match /^\s*PASS_MAX_DAYS\S+90/ }
   end
 ```
-Let's go line by line and understand what this means.
+So I don't read or write Inspec, but what I find pretty cool is that we can figure out what it says pretty easily anyway. Let's go line by line and understand what this means.
 
 
 ```
@@ -101,9 +101,9 @@ This is telling us that this is the file that we need to change and that it's in
 And there's the code that's making it all happen. So now we're ready to go fix it manually!
 
 ## Let's fix it
-Now we're on to the fun part, where we actually get to clean up some messes - be still my ocd little heart. 
+Our goal is to automate these fixes, right? But for now, we're learning and experimenting, so we're going to have some fun by fixing one of these failures manually.  So let's get ready to clean up some messes - be still my ocd little heart. 
 
-Let's open our terminal and ssh to our vm. 
+So first we need to open our terminal and ssh to our vm. 
 
 ```
 ssh username@dnsname
@@ -142,3 +142,11 @@ Now when we look at our list of failures,
 
 ...the one that we worked on that said **Set Password Expiration Days** isn't there anymore! Woohoo! We remediated it! Feels good, doesn't it? Only 52 more to go... 
 
+So, true confession, after I wrote the [tutorial for setting up Chef Compliance](http://www.anniehedgie.com/setting-up-compliance), I was like, 'Uh...seriously? Is it supposed to be this hard?' But the creators of the software -totally sweet and super smart (and tall) guys- are aware and are working on that, so yay! 
+
+![(1) No amount of filters can fix a bad hair day, and 2) that's a really cool Chef apron that I should have had a guy wear so that I wasn't stereotypically wearing an apron as the only woman in the pic - dangit)](/assets/article_images/2016-05-09-tour-of-chef-compliance/dinner_at__michael_and_annie_s_home__.png)
+
+
+But then I started playing around with the actual program, and it is so incredibly easy to use and intuitive. I feel like it should be harder because it's such a valuable tool in terms of how it changes the security game, making it so much safer to get to production. 
+
+I'll be exploring [Chef Compliance](https://www.chef.io/compliance/) some more in the coming weeks, so stay tuned if you're interested!

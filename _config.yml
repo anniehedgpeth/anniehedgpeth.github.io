@@ -18,7 +18,7 @@ name: 'Annie Hedgpeth'
 author: 'Annie Hedgpeth'
 author_image: "/assets/images/author.jpg"
 permalink: /:title
-paginate:	5
+paginate:	10
 
 url: "http://www.anniehedgie.com" # the base hostname & protocol for your site
 baseurl: ""

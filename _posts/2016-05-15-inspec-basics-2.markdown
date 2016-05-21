@@ -2,8 +2,8 @@
 layout: post
 title:  "InSpec Tutorial: Day 2 - Command Resource"
 date:   2016-05-17 08:00:00
-categories: chef, chef compliance, inspec, security
-tags: chef, chef compliance, inspec, security, tutorial
+categories: chef, chef compliance, inspec, security, inspec tutorial
+tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial
 image: /assets/article_images/2016-05-17-inspec-basics-2/inspec-basics-2.jpg
 image2: /assets/article_images/2016-05-17-inspec-basics-2/inspec-basics-2-mobile.jpg
 ---
@@ -108,7 +108,7 @@ So let's take a look at the reference page and decide which to use now. In the m
 
 Alright, so when we click on *stdout* from the menu on the right, it shows us this test to use when we need to match a standard output.
 
-![](/assets/article_images/2016-05-17-inspec-basics-2/05-stdout.png)
+[![](/assets/article_images/2016-05-17-inspec-basics-2/05-stdout.png)](https://docs.chef.io/inspec_reference.html#id31)
 
 Let's copy that and enter it into our text editor after the 4 lines we added earlier. Now let's change the `describe command` to have the audit test from the CIS benchmarks. In the next step we'll change the `should match` matcher, so hold off for now.
 

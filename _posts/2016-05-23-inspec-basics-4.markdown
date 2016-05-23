@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "InSpec Tutorial: Day 4 - Custom Matchers"
-date:   2016-05-23 08:00:00
+date:   2016-05-23 05:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial
 image: /assets/article_images/2016-05-23-inspec-basics-4/inspec-basics-4.jpg

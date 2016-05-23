@@ -44,7 +44,7 @@ At first I thought I'd have to make a flowchart because the workflow would chang
 ### 1. Go to Harvey's workshop and look up our control
 So head over to [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec), and let's do the third one this time.
 
-![](/assets/article_images/2016-05-23-inspec-basics-4/01-harvey.png)
+![](/assets/article_images/2016-05-23-inspec-basics-4/01-Harvey.png)
 
 ### 2. Find and read the control in the CIS pdf
 Open the [CIS CentOS Linux 6 Benchmarks v1.1.0](https://benchmarks.cisecurity.org/downloads/show-single/?file=centos6.110) that you downloaded, then look for our command inside there: 1.5.1. And now let's fill in [those first few lines](http://www.anniehedgie.com/inspec-basics-2#find-and-read-the-control-in-the-cis-pdf) with the info we need from the CIS documentation.

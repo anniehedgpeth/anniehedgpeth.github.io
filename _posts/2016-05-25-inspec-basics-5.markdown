@@ -20,7 +20,7 @@ Let's say your company needs a whole profile of controls that are not offered by
 
 Y'all...
 
-Today's an exciting day. The very hard-working [Christoph Hartmann](https://twitter.com/chri_hartmann) was kind enough to meet with me and teach me how to build a profile out of all of my [InSpec](https://www.chef.io/inspec/) commands! 
+Today's an exciting day. The very hard-working [Christoph Hartmann](https://twitter.com/chri_hartmann) was kind enough to meet with me and teach me how to build a profile out of all of my [InSpec](https://www.chef.io/inspec/) controls! 
 
 I gotta say..it's so easy. Like so easy that he described it and I understood it without asking questions, and I wasn't bluffing, either. 
 

@@ -108,3 +108,5 @@ Okay, so you probably don't like failure any more than I do, so let's edit that 
   
 ## Concluding Thoughts
 Doing this little exercise helped me to get my mind around what Chef Compliance does at a very basic level. I really like how clear and concise the framework is. In later posts, however, I'll tell you where I've been tripped up and how I got around that. At its core, however, I think that it's within my grasp; I just need to study up on some more basics. 
+
+Go to Day 2: [Command Resource](http://www.anniehedgie.com/inspec-basics-2)

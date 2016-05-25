@@ -132,3 +132,5 @@ I watched this video by [Kathy Sierra](https://www.youtube.com/watch?v=FKTxC9pl-
 As always, if you'd like to look at my [github repository](https://github.com/anniehedgpeth/inspec-workshop.git), feel free! I'm adding a few controls little by little. 
 
 I'd love your feedback, so hit me up on [Twitter](https://twitter.com/anniehedgie)! 
+
+Go to Day 5: [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)

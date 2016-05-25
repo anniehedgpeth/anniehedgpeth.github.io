@@ -154,3 +154,5 @@ Hopefully your test passed. If not...back to the drawing board for you.
 This is still a very nebulous process for me. I'm not quite sure how I'm ever going to know enough to be able to choose the right audit resources, and that gives me a little anxiety. I'm hoping that it dissipates the more I progress through Harvey's workshop, though. 
 
 It would be great if you tracked and shared your work in a [git repository](https://github.com)! Here's [mine](https://github.com/anniehedgpeth/inspec-workshop.git). Anyone have any tricks of the trade for me?
+
+Go to Day 3: [File Resource](http://www.anniehedgie.com/inspec-basics-3)

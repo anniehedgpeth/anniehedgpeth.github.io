@@ -122,3 +122,5 @@ I've written a lot more of these controls since last time, and each time it gets
 As always, if you'd like to look at my [github repository](https://github.com/anniehedgpeth/inspec-workshop.git), feel free! I'm adding a few controls little by little. 
 
 I'd love your feedback, so hit me up on [Twitter](https://twitter.com/anniehedgie)! 
+
+Go to Day 4: [Custom Matchers](http://www.anniehedgie.com/inspec-basics-4)

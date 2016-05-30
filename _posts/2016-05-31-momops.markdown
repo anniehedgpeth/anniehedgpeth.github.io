@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "MomOps"
+date:   2016-05-29 05:00:00
+categories: women in technology, working moms, reentering the workforce
+tags: women in technology, working moms, reentering the workforce
+image: /assets/article_images/2016-05-29-momops/momops.jpg
+image2: /assets/article_images/2016-05-29-momops/momops-mobile.jpg
+---
+I'm taking a short detour from [InSpec-land](http://www.anniehedgie.com/inspec-basics-1) today, but don't fret; I'll be back soon. Whenever I hit a road block in my InSpec studies, I've realized that it's because I've covered a fair amount of ground in InSpec, but I haven't spent enough time learning Linux. So I'm going to get a better foundation with Linux basics so that I can come back to InSpec with greater flexibility and understanding.
+
+And now for a bunny trail...
+
+So the other day I was chatting with the dad of my son's friend. He's a nice enough guy, and he's in technology, so my husband [Michael](http://hedge-ops.com) was like, "Oh cool, I'm a developer, and Annie's getting into software, too." 
+
+And the guy looks at me and goes, "So are you in software or software services?" To be honest, I didn't even know what that meant, so I looked over to Michael, and he explained, "He basically means, 'do you develop software or sell it?'"
+
+I proceeded to explain what I've been doing the past month, starting from scratch, learning Linux bash shell, learning InSpec, etc. What I should have said was, *"Why didn't you ask Michael that?"* But we all know why he didn't ask Michael that, don't we? Michael *looks* like he's in technology. He's a white male. I, on the other hand, [don't fit the mold](http://www.anniehedgie.com/introduction) quite as well. 
+
+Turns out that the guy writes security software. Uh, hello? We totally could have had a fun conversation about that since I've spent the past month doing nothing but studying InSpec and [Chef Compliance](https://www.chef.io/compliance/). It was annoying, and it was also a wake up call to me that I have to bring it. I'm used to Michael who is an amazingly patient and empowering teacher. He wants to see women and minorities succeed, and he goes out of his way to support them. 
+
+I realize, however, that I'm not entering into a career full of people like Michael. I will need to bring my A-game if I expect people to take me seriously. This totally fuels my passion to learn more, though, so I'm taking the bad with the good.
+
+On the same topic, I was on an interview a while back for an account management job, and the guy interviewing me was probably in his early 30s and single. And he was saying how he has no idea how he'd be able to do his job if he had kids. I knew right then that I wasn't getting the job (nor did I want it).
+
+I realized, however, that he must hold to some myth that women become *less* productive after they have children. This, of course, assumes that every woman is the same. Following that logic, of course, you'd have to assume that every man is the same, too. That sounds like a fun belief system to hold to, doesn't it? 
+
+Do know how much time I pissed away before I had kids? It was a lot. Like a *lot*. Do you know how much I piss away now? Not much, y'all. Every minute is a gift, and I try not to waste *any* of them.
+
+So I'll do my part to bring down that stereotype, and you can [do your part](http://apresgroup.com/for-employers/) to not believe it. Cool? Cool. 

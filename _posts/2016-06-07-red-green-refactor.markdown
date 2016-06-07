@@ -74,11 +74,13 @@ It's a frustrating, jumbled mess! But knowing is half the battle, so as I'm tryi
   - Run `kitchen verify` again to see if it failed
 
 **Green** - fix the control with Chef
+
   - Remediate my failure through a resource in my cookbook in kitchen
   - Run `kitchen converge` to fix the problem
   - Run `kitchen verify` again to see if it fixed it
 
 **Refactor** - make sure I have a good solution going forward
+
   - Clean up - if something didn't work, figure out why 
   - Check In - a little at a time because when it breaks it sucks and it's hard to figure out where it broke
 

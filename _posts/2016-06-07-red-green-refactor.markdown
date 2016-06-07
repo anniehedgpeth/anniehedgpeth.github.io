@@ -60,7 +60,7 @@ So how does that translate into technology for me? Most of you devopsy, unit tes
 
 <img src='/assets/article_images/2016-06-07-red-green-refactor/coffee-shop.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-We have been without internet at the house for a *week* (thanks for nothing, Frontier FiOS), so I've had to spend many long hours at the coffee shop like a vagrant. I know you know what it's like without a workflow, too. 
+We have been without internet at the house for a *week* (thanks for nothing, Frontier FiOS), so I've had to spend many long hours at the coffee shop like a vagrant. Working without big monitors in a public place is enough of a challenge, but then when you're scattered in your mind without a proper workflow, then you just totally set yourself up for wasting a whole lotta time.
 
 *You start on something..find an issue..it reminds you of another issue so you go to it..you forget about the first thing..you can't figure out the second thing so you go back to the first thing..you don't remember it so you have to retest..someone you know walks in so you say hi..you think you know how to solve that second problem now..your favorite song comes on and your mind wanders...and so on.*
 
@@ -73,16 +73,19 @@ It's a frustrating, jumbled mess! But knowing is half the battle, so as I'm tryi
   - Write a control for the current test I'm running 
   - Run `kitchen verify` again to see if it failed
 
+
 **Green** - fix the control with Chef
 
   - Remediate my failure through a resource in my cookbook in kitchen
   - Run `kitchen converge` to fix the problem
   - Run `kitchen verify` again to see if it fixed it
 
+
 **Refactor** - make sure I have a good solution going forward
 
   - Clean up - if something didn't work, figure out why 
   - Check In - a little at a time because when it breaks it sucks and it's hard to figure out where it broke
+
 
 # Concluding Thoughts
 When things are all in a jumble and I'm confused and frustrated and mad, it's easy to tell myself some pretty self-defeating junk. But focus is so simple and so powerful. And in the past when I've really focused on things, like Airbnb, I've had great results. I know that the same will be true for my IT pursuits, and I'm excited to see what happens.

@@ -12,7 +12,7 @@ image2: /assets/article_images/2016-05-29-momops/momops-mobile.jpg
 # Red
 Two summers ago I had booked a place on Airbnb for a vacation, and in return Airbnb had asked if I wanted to rent out my place. I'll try anything once, so I did it. I figured that we could just book it once and use that money to go on a vacation. (And we did! We totally broke even on the deal, including gas, food, and entertainment.)
 
-The one hiccup in the plan was that we couldn't check the guests in personally because we had to get on the road early to go on our vacation. So we were driving the 10 hours to Taos, NM, and as with any long roadtrip, you know that you experience several drops in phone signal, sometimes for quite a long time. 
+The one hiccup in the plan was that we couldn't check the guests in personally because my husband wanted to get on the road early to go on our vacation. So we were driving the 10 hours to Taos, NM, and as with any long roadtrip, you know that you experience several drops in phone signal, sometimes for quite a long time. 
 
 I had lost my signal for probably an hour as we drove through the eastern portion New Mexico, and suddenly I get about 10 texts and voicemails all at once.
 
@@ -42,13 +42,18 @@ It was time to start making some lists. First, I made a list of everything that 
 # Green
 Now that I had the safety of my lists and processes, I was ready for our next booking. I was still a little afraid that I'd forget something, but my mindset had changed. Sure it would have been a big bummer if something else would have gone wrong, but it would just serve to give me more data that I could use to further improve upon my processes.
 
-I'm happy to say that the next booking went off without a hitch. AND, in a very short time I had the coveted title of *Superhost*.
+I'm happy to say that the next booking went off without a hitch. AND, in a very short time I had the coveted title of [*Superhost*](https://www.airbnb.com/superhost).
   
-And I even exceeded the requirements!
-<img src='/assets/article_images/2016-06-07-red-green-refactor/superhost.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+And I even exceeded the requirements! 
+<img src='/assets/article_images/2016-06-07-red-green-refactor/superhost.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+  - You must host 10 trips within the last year. *I did 25.*
+  - At least 80% of your reviews need to be 5 stars. *Mine was 100%!*
+  - Superhosts maintain a 90% response rate or higher by responding to guests quickly. *Mine was 100%!*
+  - Superhosts don't cancel confirmed reservations unless there are extenuating circumstances. *I never canceled.*
 
 # Refactor
-With each booking (I went on to do it for another year after that) I improved upon my system. There were little things that I had to add to the list here and there that only served to make the experience better for all involved. I even wrote a 25 page house manual with every detail you could ever hope to know about my house, from how to work the washer to where the nearest hospital is. 
+With each booking (I went on to do it for another year after that) I improved upon my system. There were little things that I had to add to the list here and there that only served to make the experience better for all involved. I even wrote a 40 page house manual with every detail you could ever hope to know about my house, from how to work the washer to where the nearest hospital is. 
 
 # Workflow
 So how does that translate into technology for me? Most of you devopsy, unit tester types already know all of this, but for me, it took a really frustrating two days at the coffee shop to be reminded of the importance of a good workflow.
@@ -59,16 +64,23 @@ We have been without internet at the house for a *week* (thanks for nothing, Fro
 
 *You start on something..find an issue..it reminds you of another issue so you go to it..you forget about the first thing..you can't figure out the second thing so you go back to the first thing..you don't remember it so you have to retest..someone you know walks in so you say hi..you think you know how to solve that second problem now..your favorite song comes on and your mind wanders...and so on.*
 
-So frustrating! But knowing is half the battle, so as I'm trying to write my control tests and remediate through kitchen, I have a simple plan that will keep me on the straight and narrow:
+It's a frustrating, jumbled mess! But knowing is half the battle, so as I'm trying to write my control tests and remediate through kitchen, I have a simple plan that will keep me on the straight and narrow:
 
-  - Converge
-  - Verify
-  - Fix control
-  - Verify
-  - Fix cookbook
-  - Converge
-  - Verify
-  - Check In
+**Red** - write a control and make it fail
+
+  - Run `kitchen converge` to make sure my machine is in the latest state
+  - Run `kitchen verify` to run InSpec on the latest state of said machine
+  - Write a control for the current test I'm running 
+  - Run `kitchen verify` again to see if it failed
+
+**Green** - fix the control with Chef
+  - Remediate my failure through a resource in my cookbook in kitchen
+  - Run `kitchen converge` to fix the problem
+  - Run `kitchen verify` again to see if it fixed it
+
+**Refactor** - make sure I have a good solution going forward
+  - Clean up - if something didn't work, figure out why 
+  - Check In - a little at a time because when it breaks it sucks and it's hard to figure out where it broke
 
 # Concluding Thoughts
 When things are all in a jumble and I'm confused and frustrated and mad, it's easy to tell myself some pretty self-defeating junk. But focus is so simple and so powerful. And in the past when I've really focused on things, like Airbnb, I've had great results. I know that the same will be true for my IT pursuits, and I'm excited to see what happens.

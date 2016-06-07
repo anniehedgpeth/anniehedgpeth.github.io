@@ -5,7 +5,7 @@ date:   2016-06-07 05:00:00
 categories: red green refactor, devops, unit testing, airbnb
 tags: testing
 image: /assets/article_images/2016-06-07-red-green-refactor/red-green-refactor.jpg
-image2: /assets/article_images/2016-05-29-momops/momops-mobile.jpg
+image2: /assets/article_images/2016-06-07-red-green-refactor/red-green-refactor-mobile.jpg
 ---
 <img src='/assets/article_images/2016-06-07-red-green-refactor/red-green-refactor.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 

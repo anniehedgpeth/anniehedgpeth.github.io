@@ -83,7 +83,7 @@ It's a frustrating, jumbled mess! But knowing is half the battle, so as I'm tryi
 
 **Refactor** - make sure I have a good solution going forward
 
-  - Clean up - if something didn't work, figure out why 
+  - Clean up - is there a better way 
   - Check In - a little at a time because when it breaks it sucks and it's hard to figure out where it broke
 
 

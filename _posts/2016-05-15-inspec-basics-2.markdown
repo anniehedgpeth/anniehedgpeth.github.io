@@ -81,7 +81,7 @@ control "cis-1-2-1" do
 
 Notice that I chose the `control` to be the CIS number. I could have been more specific, obviously, but I didn't for simplicity's sake. *Profile Applicability* determines the `impact` field. And the `title` and `desc` come straight out of there word for word. 
 
-*Edited to add: I started using the "Rationale" section to enter into the `desc` since it describes why you need that control more.*
+*Edited to add: Sometimes I use the "Rationale" section to enter into the `desc` instead when it describes it in a better way.*
 
 Let's open up our text editor and create a new file. I called mine `1_spec.rb`. Then enter all of that in - the control, impact, title, and desc. 
 

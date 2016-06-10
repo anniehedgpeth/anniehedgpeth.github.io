@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "InSpec Basics: Day 6 - Ways to Run It and Places to Store It"
-date:   2016-06-10 05:00:00
+date:   2016-06-10 03:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial, profile, kitchen, cookbook
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, profile, kitchen, cookbook
 image: /assets/article_images/2016-06-09-inspec-basics-6/inspec-basics-6.jpg

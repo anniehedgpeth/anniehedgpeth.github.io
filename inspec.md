@@ -5,6 +5,8 @@ permalink: /inspec/
 ---
 <img src='/assets/article_images/inspec/what-is-inspec.svg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
+  - [Setting Up Compliance](http://www.anniehedgie.com/setting-up-compliance)
+  - [Tour of Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)
   - Day 1: [Hello World](http://www.anniehedgie.com/inspec-basics-1) 
   - Day 2: [Command Resource](http://www.anniehedgie.com/inspec-basics-2)
   - Day 3: [File Resource](http://www.anniehedgie.com/inspec-basics-3)

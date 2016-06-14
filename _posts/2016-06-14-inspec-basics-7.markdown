@@ -34,7 +34,7 @@ For this tutorial, let's focus on the first one: Set Password Expiration Days.
 
 Let's say, also, that you want the password expiration to be set to 30 days instead of 90. The way we'll do that is by scanning with an inherited version of that profile that *ignores* that particular control and *adds* another control that tests for 30 days. 
 
-Let's go find it. We can see that it was the **cis-ubuntu14.04lts-level1 profile**, so let's go to the Compliance tab and find that profile. Click on it, and find the offending control.
+Let's go find it. We can see that it was the **cis-ubuntu14.04lts-level1** profile, so let's go to the Compliance tab and find that profile. Click on it, and find the offending control.
 
 ![](/assets/article_images/2016-06-14-inspec-basics-7/control.png)
 
@@ -110,4 +110,4 @@ First of all, I had a really minor error; I was missing an `end` and didn't noti
 
 The other thing that was kind of a bummer is that I couldn't run it locally first before uploading it. So that embarassingly tiny error went unnoticed and caused me a bit of a headache. 
 
-All in all, errors aside, the process was pretty simple, and it taught me a new concept since I didn't know what inheritance was before I learned this process. 
+All in all, errors aside, the process was pretty simple, and it taught me a new concept since I didn't even know what inheritance was before I learned this process. 

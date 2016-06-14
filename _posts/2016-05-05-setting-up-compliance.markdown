@@ -122,7 +122,7 @@ sudo dpkg -i /tmp/chef-compliance-<version>.deb
 Hint: Just type up to chef, then hit tab to auto-fill. 
 This will take a minute or so.
 5. Run `sudo chef-compliance-ctl reconfigure`
-6. This takes you to a license agreement. 
+6. This takes you to a license agreement. (Edited to add: They may have done away with this requirement.)
   * Hit any key. 
   * Read it as you scroll all the way down to the end. 
   * Then hit `q` to get out of the agreement. 

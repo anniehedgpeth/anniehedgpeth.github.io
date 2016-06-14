@@ -69,7 +69,7 @@ So [we've done this](http://www.anniehedgie.com/tour-of-chef-compliance), and it
 
 ![](/assets/article_images/2016-06-09-inspec-basics-6/upload.png)
 
-You can also upload it from the command line using the `inspec compliance upload` command after you authenticate/log in with the `inspec compliance login` command.
+Just zip it up and upload it. You can also upload it from the command line using the `inspec compliance upload` command after you authenticate/log in with the `inspec compliance login` command.
 
 When you're scanning on Chef Compliance, you can only use profiles that are stored on the Compliance server, not on Github or the Chef Supermarket. But I hear rumblings of the ability to store it on Chef Supermarket for use in Chef Compliance in the near future.
 

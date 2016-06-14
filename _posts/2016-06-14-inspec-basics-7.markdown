@@ -21,9 +21,9 @@ Perhaps you've been using Compliance, but the profiles in there are not exactly 
 It's pretty simple to do; the only catch is that you have to use it within the Compliance server, nowhere else. It would be pretty cool if you could inherit a profile to use with the audit cookbook or in Kitchen, but they're not quite ready with the new dependency management feature yet. I'll update this post when I hear that it's there. 
 
 # Overview
-1. Determine which controls are not needed from the Compliance server profile
-2. Change the controls in an inherited profile 
-3. Using the inherited profile on Chef Compliance
+1. [Determine which controls are not needed from the Compliance server profile](#determine-which-controls-are-not-needed-from-the-compliance-server-profile)
+2. [Change the controls in an inherited profile](#change-the-controls-in-an-inherited-profile)
+3. [Using the inherited profile on Chef Compliance](#using-the-inherited-profile-on-chef-compliance)
 
 # Determine which controls are not needed from the Compliance server profile
 You have a failing report because there are a bunch of controls in the profile that either you don't need or you need them to be different. Because of that, you'll need to know how to change what you need to change to get the job done for your company and their needs. Let's look at an example. We can go to our Compliance dashboard, find a report, and take a look at the failures:

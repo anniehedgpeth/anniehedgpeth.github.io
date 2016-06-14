@@ -110,3 +110,5 @@ How cool is that that? You're done! It is seriously that simple.
 After all of that, you'll surely want to upload it to [Chef Compliance](https://www.chef.io/compliance/) for simplicity's sake, and guess what? Next time we're doing it! I would have been able to tell you how to do it today, because it's another really simple process, but when Christoph was explaining it to me my kid kept coming in the room and asking me to spell things, so I was a bit distracted. 
 
 I hear also that building your profile and putting it on GitHub is a way that you can use it as a test kitchen verifier, but I don't even know what that means yet, so when I learn you'll surely know about it. 
+
+Go to Day 6: [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)

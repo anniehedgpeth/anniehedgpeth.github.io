@@ -86,3 +86,5 @@ This, too, is for use in all stages of the development life cycle and has the fl
 
 ## Concluding Thoughts
 After learning InSpec at a very basic level, I was pleased with how approachable and easy to grasp it was. And the more I've worked with it, I've come to find InSpec quite versatile. It's been a great study tool for me because I was able to start out so simply and build on that knowledge. I think that's the key to learning any new skill, really - start with small, manageable chunks and work your way up. Try not to get discouraged by what you don't know, and focus on what you do know. 
+
+Go to Day 7: [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)

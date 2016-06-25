@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Why and How I'm Learning Ruby"
-date:   2016-06-24 0
-8:00:00
+date:   2016-06-24 08:00:00
 categories: ruby
 tags: ruby
 image: /assets/article_images/2016-06-24-learning-ruby/learning-ruby.jpg

@@ -4,8 +4,8 @@ title:  "InSpec Basics: Day 8 - InSpec and Me"
 date:   2016-07-02 03:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial, devsecops, devsecops, devops
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops
-image: /assets/article_images/2016-07-01-inspec-basics-8/inspec-basics-8.jpg
-image2: /assets/article_images/2016-07-01-inspec-basics-8/inspec-basics-8-mobile.jpg
+image: /assets/article_images/2016-07-02-inspec-basics-8/inspec-basics-8.jpg
+image2: /assets/article_images/2016-07-02-inspec-basics-8/inspec-basics-8-mobile.jpg
 ---
 Hello my friends. If you've noticed that I've slowed down on the [InSpec](https://github.com/chef/inspec) goodness lately, it's because I've been [learning Ruby](http://www.anniehedgie.com/learning-ruby) and [experimenting](https://github.com/chef/chef/pull/5066) with [fixing bugs](https://github.com/chef/inspec/pull/810) and whatnot. It's really exciting to see what I can do with Chef and InSpec once I get a good grasp on Ruby, but I underestimated the learning curve just a little. No worries, no hurries! 
 

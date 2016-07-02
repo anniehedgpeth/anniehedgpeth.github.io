@@ -28,7 +28,7 @@ All of this [talking about InSpec](http://www.anniehedgie.com/inspec-basics-1) h
 # Bridging the divide between Security and Devops  
 For those organizations whose software security initiatives (SSI) employ security automation into the software lifecycle from inception to deployment to maintenance, then InSpec is perfect, right? Of course. (Let's not forget you can use InSpec with Puppet, too.) You want your Software Security Group (SSG) to be structured properly and everyone fully invested.
 
-<img src='/assets/article_images/2016-07-01-inspec-basics-8/ssg.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2016-07-02-inspec-basics-8/ssg.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 But let's remember one of the many reasons why [The Phoenix Project](https://www.amazon.com/dp/B00AZRBLHO/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1#navbar) hit home with so many people - the strained relationship, lack of trust, and back-biting between security and development. It's a real thing, hopefully not in your company, but probably. 
 

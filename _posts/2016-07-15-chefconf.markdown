@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "ChefConf 2016: Lessons Learned"
+date:   2016-07-15 11:00:00
+categories: chef, devsecops, devsecops, devops
+tags: chef, devsecops, devsecops, devops
+image: /assets/article_images/2016-07-15-chefconf/chefconf.jpg
+image2: /assets/article_images/2016-07-15-chefconf/chefconf-mobile.jpg
+---
+I was so thrilled this week to be able to attend [ChefConf 2016](https://chefconf.chef.io/)! There were so many cool things about the week that got me super excited about the coming year. But also, there were things that made me excited about the future of the industry and how I can be a meaninful part of it. 
+ 
+First of all, let me just say that I was a little hesitant about going. I'm new to the industry, and I do *not* know everything about everything. But something I learned while I was there is that no one does! All it takes is a willingness and drive to learn more and more each day. That's all anyone is doing.
+
+<img src='/assets/article_images/2016-07-15-chefconf/chefconf2016.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+For those that are new to technology, the feeling that everyone knows infinitely more than you can be really daunting. It's tempting for it to feel a bit insurmountable, but I remind myself, and you, that all we can do is keep [forward momentum](https://youtu.be/h_hsQyk74k4) going and we're solid. 
+
+So the reasons that I went were varied. And many of my reasons can be better informed by [my last blog post](http://www.anniehedgie.com/inspec-basics-8).
+
+ 1. [I wanted to listen for the DevOpsSec-cultural issues surrounded involving security.](#devopssec)
+ 2. [I wanted to get a feel for where security fits into devops overall.](#fitting-in)
+ 3. [I wanted to have my suspicions validated as to where security is headed.](#where-security-is-headed)
+ 4. [I wanted to get a larger perspective for the industry to validate where I'm headed with my career.](#where-im-headed)
+
+## DevOpsSec
+On the first day of ChefConf I attended the Community Summit which was a big [open space format](http://www.devopsdays.org/open-space-format/) discussion. So whoever wishes to, suggests a topic, and then everyone votes for what to discuss. I suggested that we discuss security and compliance and the issues surrounding getting that included into the pipeline. I honestly thought it was going to be a hot topic - high hopes. 
+
+Turns out no one cared - well, 7 people cared. But still. I was surprised. I thought it was a bigger deal than was communicated by the lack of votes. Still, I wasn't discouraged but rather spurred on to spread the good news of [Compliance](http://www.anniehedgie.com/tour-of-chef-compliance). 
+
+As the week progressed, however, I found that it was definitely a topic that was of concern at a higher organizational level. Large enterprises are noting security and compliance as a bottleneck and are pushing for improvement. Therefore, those in leadership see a deeper focus on security automation as a very great opportunity for improvement. 
+
+At 10:12, Barry Crist addresses this topic so well that I would have sworn he read my [last post](http://www.anniehedgie.com/inspec-basics-8). At 13:33 he specifically addresses Compliance. Turns out he's been on the same journey of discovery! How encouraging is that!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mA-gozxxrPo" frameborder="0" allowfullscreen></iframe>
+
+## Fitting In
+So I was interested to see how security and compliance were fitting into devops overall. DevOpsSec or DevSecOps or whatever you want to call it, has been a thing for a while now, but is security really as integrated as it needs to be into the ethos of devops strategies within organizations - not just up top but with your engineers, developers, sys admins, architects, etc? Short answer, I've found, is that it depends on the organization. Some have really embraced the challenge and have started doing it quite well, like [Optum](https://chefconf2016.sched.org/speaker/odie_routh.1v2stk3s) and [NCR](https://chefconf2016.sched.org/speaker/michael_hedgepeth.1v5jkgrw), and are becoming shining examples for others to emulate.
+
+For others, however, it seems like it's still the stereotypical nuissance that is getting tacked on to the end of production. That just tells me that there is still a lot of growth to happen and a lot of room for more education and change. 
+
+## Where Security is Headed
+That said, it looks like dev and ops folks will come on board soon enough because companies are asking for it, leadership is pushing for it, and security automation is becoming more obviously necessary. 
+
+Feels good, too, because it seems like I'm [on track](http://www.anniehedgie.com/inspec-basics-8).
+
+[<img src='/assets/article_images/2016-07-15-chefconf/roadahead.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://chefconf2016.sched.org/speaker/odie_routh.1v2stk3s)
+
+## Where I'm Headed
+With all of that, it made me feel pretty good about the choice that I'm making to be more focused on security automation for a career start. I still think it's an interesting problem to tackle, and even while I was there at ChefConf, I enjoyed getting people together to discuss the issues surrounding putting the Sec in DevOpsSec while I was there. It's a multifaceted issue that will take some finesse within each organization to unravel. So I hope to start unraveling soon!

@@ -111,3 +111,5 @@ First of all, I had a really minor error; I was missing an `end` and didn't noti
 The other thing that was kind of a bummer is that I couldn't run it locally first before uploading it. So that embarassingly tiny error went unnoticed and caused me a bit of a headache. 
 
 All in all, errors aside, the process was pretty simple, and it taught me a new concept since I didn't even know what inheritance was before I learned this process. 
+
+Go to Day 8: [InSpec and Me](http://www.anniehedgie.com/inspec-basics-8)

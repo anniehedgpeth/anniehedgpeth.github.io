@@ -14,3 +14,6 @@ permalink: /inspec/
   - [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)
   - [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)
   - [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
+  - [InSpec and Me](http://www.anniehedgie.com/inspec-basics-8)
+
+  <img src='/assets/article_images/inspec/anniehedgpeth.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />

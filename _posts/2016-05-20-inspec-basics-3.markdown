@@ -83,6 +83,8 @@ We want to make sure that content exists within a file right? So we're going to 
 ### 6. Construct a regex in Rubular
 The audit already gave us a regex, so we don't need to create one. On to #7.
 
+*Update: I've since changed my tune on this a bit. Please see this post on [Regular Expressions](http://www.anniehedgie.com/inspec-basics-9) so that you can take care to use the best possible regex when necessary.*
+
 ### 7. Finish the control in your text editor
 Okay, so you already had the first 4 lines, and now let's fill in the rest with the file resource:
 

@@ -67,3 +67,5 @@ And so, my story continues, and we'll see where it goes from here. I'd be very i
 P.S. Thank you to all my Twitter friends who retweeted that [I'm on the prowl](https://twitter.com/anniehedgie/status/748643963431587840) for a job in Chef/InSpec/Security! Feeling the love. 
 
 P.S.S. I'll be at [ChefConf](https://chefconf2016.eventcore.com/) next week, so give me a shoutout if you'll be there!
+
+Go to Day 9: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-9)

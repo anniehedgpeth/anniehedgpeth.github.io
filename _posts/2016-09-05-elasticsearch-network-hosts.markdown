@@ -13,15 +13,15 @@ But I definitely want to slow down and share some breakthroughs so that I can re
 
 So I was tasked with creating a cookbook to spin up three nodes using Test Kitchen and to install elasticsearch onto said nodes. Easy enough? -_- 
 
-Okay, so at first I was just hard-coding the `network_host` in my config because I just wanted to get it to work and I didn't really know how to get it from [ohai](https://docs.chef.io/ohai.html). Even understanding how attributes work took me a while to get up to speed, so then the complexity of using a complicated ohai value alongside attributes with node hashes and how it affects my kitchen.yml proved challenging for me. Let's just say there were more than one whiteboard sessions with my [favorite tutor](http://hedge-ops.com). 
+Okay, so at first I was just hard-coding the `network_host` in my config because I just wanted to get it to work and I didn't really know how to get it from [ohai](https://docs.chef.io/ohai.html). Even understanding how attributes work took me a while to get up to speed, so then the complexity of using a complicated ohai value alongside attributes with node hashes and how it affects my kitchen.yml proved challenging for me. Let's just say there was more than one whiteboard session with my [favorite tutor](http://hedge-ops.com). 
 
 But I really needed to get it from ohai so that the setup of the cookbook would be simpler. The thing that made it complicated to me was that there were so many IP addresses floating around with my multiple virtual machines in the elasticsearch cluster, and I had a hard time wrapping my mind around which was what. I had 3 nodes, one of which was a master/host, and I didn't know which IP address in ohai was going to be the one I needed to use for `network_host`.
 
-Finding the proper IP address, however, ended up being simpler than I thought it would be. All I did was ssh into my master node in Kitchen...
+Finding the proper IP address, however, ended up being simpler than I thought it would be. All I did was ssh into my master node in Kitchen:
 
 `kitchen login master` 
 
-Then, to make it simple to search my ohai data, I needed to save the output to a file. So I ran:
+Then, to make it simple to search my ohai data, I needed to save the output to a file. (Grepping it did me no good because I needed the larger context of its location.) So I ran:
 
 `ohai >> ohai.txt`
 

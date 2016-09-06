@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Elasticsearch Network Hosts"
-date:   2016-09-05 03:00:00
+date:   2016-09-04 03:00:00
 categories: elasticsearch, network hosts, cookbooks, chef
 tags: elasticsearch, network hosts, cookbooks, chef
 image: /assets/article_images/2016-09-05-elasticsearch-network-hosts/elasticsearch.jpg
@@ -38,7 +38,7 @@ But then I realized that with this information, I could map out the structure in
 In a resource that was serving as a default yml for each of my nodes, I had the following code (only showing you the pertinent info). 
 
 
-{% highlight ruby %}
+```ruby
 interfaces = node['network']['interfaces']
 interface_key = interfaces.keys.last
 addresses = interfaces[interface_key]['addresses']
@@ -53,7 +53,7 @@ elasticsearch_configure 'elasticsearch' do
   configuration(
     'network.host' => network_host,
 end
-{% highlight ruby %}
+```
 
 So if we take it chunk by chunk, you can see what we did here. 
 

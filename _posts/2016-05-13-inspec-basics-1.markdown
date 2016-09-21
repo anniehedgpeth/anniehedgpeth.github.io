@@ -19,7 +19,7 @@ By the end of this series, I suppose, I will have tested their intentions one wa
 
 
 ## Installation
-Okay, enough about me, let's open up some terminals and get started. If you're already have the updated versions of Homebrew, Ruby, and InSpec, then skip ahead!  
+Okay, enough about me, let's open up some terminals and get started. If you already have the updated versions of Homebrew, Ruby, and InSpec, then skip ahead!  
 
 ### Install Homebrew
 So apparently, before I could install InSpec, I needed to have the latest version of Ruby installed. And before I could install the latest version of Ruby, I had to install [Homebrew](http://brew.sh/), the OS X package manager. 

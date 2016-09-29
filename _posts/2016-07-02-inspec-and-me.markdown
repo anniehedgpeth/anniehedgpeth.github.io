@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "InSpec Basics: Day 8 - InSpec and Me"
+title:  "InSpec and Me"
 date:   2016-07-02 03:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial, devsecops, devsecops, devops
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops
-image: /assets/article_images/2016-07-02-inspec-basics-8/inspec-basics-8.jpg
-image2: /assets/article_images/2016-07-02-inspec-basics-8/inspec-basics-8-mobile.jpg
+image: /assets/article_images/2016-07-02-inspec-and-me/inspec-and-me.jpg
+image2: /assets/article_images/2016-07-02-inspec-and-me/inspec-and-me-mobile.jpg
 ---
 Hello my friends. If you've noticed that I've slowed down on the [InSpec](https://github.com/chef/inspec) goodness lately, it's because I've been [learning Ruby](http://www.anniehedgie.com/learning-ruby) and [experimenting](https://github.com/chef/chef/pull/5066) with [fixing bugs](https://github.com/chef/inspec/pull/810) and whatnot. It's really exciting to see what I can do with Chef and InSpec once I get a good grasp on Ruby, but I underestimated the learning curve just a little. No worries, no hurries! 
 
@@ -28,7 +28,7 @@ All of this [talking about InSpec](http://www.anniehedgie.com/inspec-basics-1) h
 # Bridging the divide between Security and Devops  
 For those organizations whose software security initiatives (SSI) employ security automation into the software lifecycle from inception to deployment to maintenance, then InSpec is perfect, right? Of course. (Let's not forget you can use InSpec with Puppet, too.) You want your Software Security Group (SSG) to be structured properly and everyone fully invested.
 
-<img src='/assets/article_images/2016-07-02-inspec-basics-8/SSG.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2016-07-02-inspec-and-me/SSG.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 But let's remember one of the many reasons why [The Phoenix Project](https://www.amazon.com/dp/B00AZRBLHO/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1#navbar) hit home with so many people - the strained relationship, lack of trust, and back-biting between security and development. It's a real thing, hopefully not in your company, but probably. 
 
@@ -68,4 +68,4 @@ P.S. Thank you to all my Twitter friends who retweeted that [I'm on the prowl](h
 
 P.S.S. I'll be at [ChefConf](https://chefconf2016.eventcore.com/) next week, so give me a shoutout if you'll be there!
 
-Go to Day 9: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-9)
+Go to Day 8: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)

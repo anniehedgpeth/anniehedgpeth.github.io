@@ -14,5 +14,4 @@ permalink: /inspec/
   - [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)
   - [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)
   - [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
-  - [InSpec and Me](http://www.anniehedgie.com/inspec-basics-8)
-  - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-9)
+  - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)

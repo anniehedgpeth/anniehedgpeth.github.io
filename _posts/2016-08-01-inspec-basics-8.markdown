@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "InSpec Basics: Day 9 - Regular Expressions"
+title:  "InSpec Basics: Day 8 - Regular Expressions"
 date:   2016-08-01 03:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial, devsecops, devsecops, devops, regex, regular expressions, rubular
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, regex, regular expressions, rubular
-image: /assets/article_images/2016-08-01-inspec-basics-9/inspec-basics-9.jpg
-image2: /assets/article_images/2016-08-01-inspec-basics-9/inspec-basics-9-mobile.jpg
+image: /assets/article_images/2016-08-01-inspec-basics-8/inspec-basics-8.jpg
+image2: /assets/article_images/2016-08-01-inspec-basics-8/inspec-basics-8-mobile.jpg
 ---
 So you know how when you're learning stuff and something comes across your radar that you don't get at all so you make a mental note to study it later? Well, I have many of those, but the one I'm going to talk about today concerns writing a test to search for regular expressions.
 
@@ -18,7 +18,6 @@ As a frame of reference and recap, here are the other InSpec posts that we've co
   - Day 5: [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)
   - Day 6: [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)
   - Day 7: [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
-  - Day 8: [InSpec and Me](http://www.anniehedgie.com/inspec-basics-8)
 
 The other day a kind githubber [pointed out to me](https://github.com/anniehedgpeth/inspec-workshop/issues/1) that way back in the post about writing a [file resource](http://www.anniehedgie.com/inspec-basics-3), perhaps I should have thought about creating a bit more of a strict search criteria when I was searching for a regex in a file. I totally agree with him; I just didn't know how back when I wrote the first one. 
 
@@ -42,7 +41,7 @@ Some of you know exactly what's wrong with that, and others of you are like I wa
 
 Well, thankfully [Mr. Lovitt](https://twitter.com/lovitt) at [Rubular](http://rubular.com/) gave us a little cheat sheet.
 
-[<img src='/assets/article_images/2016-08-01-inspec-basics-9/regex.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://rubular.com/)
+[<img src='/assets/article_images/2016-08-01-inspec-basics-8/regex.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://rubular.com/)
 
 So now, to address my questions above
 

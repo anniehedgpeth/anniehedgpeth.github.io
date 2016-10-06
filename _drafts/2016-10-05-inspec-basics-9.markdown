@@ -7,7 +7,7 @@ tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsec
 image: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9.jpg
 image2: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9-mobile.jpg
 ---
-Y'all, I've been in [InSpec](http://inspec.io/) heaven lately. I'm on a [project](https://www.10thmagnitude.com/) right now where I'm supposed to create an InSpec profile that tests the build and application configuration of set of servers within a pipeline in TeamCity. I had to translate a bunch of ServerSpec into InSpec and run the InSpec profile independently of the cookbook. Seems easy enough, but the challenge is testing all of the different environments and using different tests for each node spun up. The client also wanted it to be in one step for all the nodes, not a different step for each one.
+Y'all, I've been in [InSpec](http://inspec.io/) heaven lately. I'm on a [project](https://www.10thmagnitude.com/) right now where I'm supposed to create an InSpec profile that tests the build and application configuration of a set of servers within a pipeline in [TeamCity](https://www.jetbrains.com/teamcity/). I had to translate a bunch of ServerSpec into InSpec and run the InSpec profile independently of the cookbook. Seems easy enough, but the challenge is testing all of the different environments and using different tests for each node spun up. The client also wanted it to be in one step for all the nodes, not a different step for each one.
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -31,18 +31,15 @@ If you'd like to follow along, then you're welcome to go clone my repo and use t
 5. [Concluding Thoughts](#concluding-thoughts)
 
 # Assessing our needs
-So let's say that you have two different roles that you want to test: database and webserver. And let's say in your development environment you only spin up one machine that has both roles on it. But in your QA environement you spin up a machine for each role. 
+So let's say that you have two different roles that you want to test: database and webserver. And let's keep it simple and just test one environment where you spin up one machine for each role. 
 
-That means that we're going to need three different sets of tests:
- - 1 for dev which will be all in one 
- - 1 for client tests for QA
- - 1 for server tests for QA
+That means that we're going to need two different sets of tests:
+ - 1 for client tests
+ - 1 for server tests
 
-If you're following along in the (practice InSpec profile)[https://github.com/anniehedgpeth/practice-inspec-profile], then you'll see that there are three different sets of tests (well, really just one test in each control, but you get the picture.) We're going to set it up so that we can run one test for each role.
+If you're following along in the [practice InSpec profile](https://github.com/anniehedgpeth/practice-inspec-profile), then you'll see that there are three different sets of tests (well, really just one test in each control, but you get the picture.) We're going to set it up so that we can run one test for each role.
 
-These are obviously dummy tests that will fail, but in the output you'll see how it tried to test the nodes.
-
-Now I'm going to use my old [practice elasticsearch cookbook](https://github.com/anniehedgpeth/elasticsearch_practice) to set up a couple of nodes, but I need to retrofit it a bit. If you want to clone that, too, you're welcome to. Just don't forget to change your `verifier` in your `.kitchen.yml`.
+Now I'm going to use my old [practice elasticsearch cookbook](https://github.com/anniehedgpeth/elasticsearch_practice) to set up a couple of nodes, but I retrofitted it a bit, so if you want to follow along, you'll need to clone that, too. Just don't forget to change your `verifier` in your `.kitchen.yml`.
 
 # Declaring the Attributes
 Let's go over to our control and add the attributes hardcoded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
@@ -51,7 +48,7 @@ Let's go over to our control and add the attributes hardcoded with a default val
 role = attribute('role', default: 'base', description: 'type of node that the InSpec profile is testing')
 ```
 
-What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing.
+What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing because it's only testing `base` right now since that's the default role.
 
 # Use the attributes in an IF statement
 Now that the attributes are declared, we'll need to wrap our controls in an `if` statement. So your `client` control block is going to end up looking like this:
@@ -68,7 +65,7 @@ if ['client', 'base'].include? role
 end
 ```
 
-You're saying, 'If the node you're looking at is a client or base, then run this control block.' You'll do the same for the `server` control:
+You're saying, "If the node you're looking at is a client or base, then run this control block." You'll do the same for the `server` control:
 
 ```ruby
 if ['server', 'base'].include? role
@@ -86,7 +83,7 @@ What happens when you run `kitchen verify` now? Hopefully, you'll get a failure 
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-2.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-Remember that our `client.rb` recipe in our cookbook has a `base` user in it, so the failures make sense if there are two users per instance.
+Remember that both our client and server nodes get the `default.rb` recipe which has a `base` user in it, so the failures make sense if there are two users per instance.
 
 # Create different attributes yamls to run the different tests
 We'll need to add a few attributes files to call on to change those roles. These are going to be yaml files, and they will be in a directory that is sibling to your controls directory. Go ahead and create these now.
@@ -112,9 +109,11 @@ role : server
 
 We're not going to be able to run this as a `kitchen verify`, though, because I don't know of a way to do that and call the attributes in the `.kitchen.yml` of the cookbook.
 
-Instead, we're going to run the `inspec exec` command. Remember that our username and password for vagrant is vagrant, and we're going to use this ssh for each node.
+Instead, we're going to run the `inspec exec` command. Remember that our username and password for vagrant is vagrant, and we're going to use this to ssh into each node.
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-3.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+So on your command line from your profile's directory, run:
 
 ```
 $ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=vagrant

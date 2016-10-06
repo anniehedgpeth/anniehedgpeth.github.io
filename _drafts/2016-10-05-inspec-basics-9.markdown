@@ -82,7 +82,9 @@ end
 ```
 
 # Make sure it runs in Kitchen
-What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing.
+What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing. Like this...
+
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-2.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 Remember that our `client.rb` recipe in our cookbook has a `base` user in it, so the failures make sense if there are two users per instance.
 
@@ -110,11 +112,21 @@ role : server
 
 We're not going to be able to run this as a `kitchen verify`, though, because I don't know of a way to do that and call the attributes in the `.kitchen.yml` of the cookbook.
 
-Instead, we're going to run the `inspec exec` command. Remember that our username and password for vagrant is vagrant.
+Instead, we're going to run the `inspec exec` command. Remember that our username and password for vagrant is vagrant, and we're going to use this ssh for each node.
+
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-3.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 ```
-inspec exec . -t ssh://vagrant@client-ubuntu-1604 -i --password=vagrant --attrs attributes/attributes.yml
+$ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=vagrant
+--attrs attributes/client-attributes.yml
+
+$ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=vagrant
+--attrs attributes/server-attributes.yml
 ```
+
+And there you go! 
 
 # Concluding Thoughts
-I love this feature. It gives a lot of flexibility and control, and you can execute it pretty much wherever you want in a pipeline without affecting anything else. [Add more later]
+I love this feature. It gives a lot of flexibility and control, and you can execute it pretty much wherever you want in a pipeline without affecting anything else. Figuring it out if it's working or not can be tricky - even just in kitchen. The more I can do manually first, the better. That's why we hardcoded the attributes first. 
+
+So just a little job update - I'm loving it. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}

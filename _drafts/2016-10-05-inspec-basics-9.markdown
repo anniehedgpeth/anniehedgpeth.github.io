@@ -41,6 +41,8 @@ If you're following along in the [practice InSpec profile](https://github.com/an
 
 Now I'm going to use my old [practice elasticsearch cookbook](https://github.com/anniehedgpeth/elasticsearch_practice) to set up a couple of nodes, but I retrofitted it a bit, so if you want to follow along, you'll need to clone that, too. Just don't forget to change your `verifier` in your `.kitchen.yml`.
 
+Another note: I'm using my [Azure](https://azure.microsoft.com/) (represent) subscription instead of using Vagrant as my provisioner because I just couldn't get it to work with vagrant. If you can, then more power to ya (and please let me know how you got the `inspec exec` command to work with vagrant.)
+
 # Declaring the Attributes
 Let's go over to our control and add the attributes hardcoded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
 
@@ -109,7 +111,7 @@ role : server
 
 We're not going to be able to run this as a `kitchen verify`, though, because I don't know of a way to do that and call the attributes in the `.kitchen.yml` of the cookbook.
 
-Instead, we're going to run the `inspec exec` command. Remember that our username and password for vagrant is vagrant, and we're going to use this to ssh into each node.
+Instead, we're going to run the `inspec exec` command. Remember that you set your username and password for in your Azure portal, and we're going to use this to ssh into each node. (This is the part I could not figure out how to do with vagrant. Every attempt failed.)
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-3.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
@@ -119,7 +121,7 @@ So on your command line from your profile's directory, run:
 $ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=vagrant
 --attrs attributes/client-attributes.yml
 
-$ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=vagrant
+$ inspec exec practice-inspec.rb -t ssh://client@127.0.0.1:2222 -i ~/.ssh/id_rsa --password=In593c-R0ck5
 --attrs attributes/server-attributes.yml
 ```
 
@@ -128,4 +130,4 @@ And there you go!
 # Concluding Thoughts
 I love this feature. It gives a lot of flexibility and control, and you can execute it pretty much wherever you want in a pipeline without affecting anything else. Figuring it out if it's working or not can be tricky - even just in kitchen. The more I can do manually first, the better. That's why we hardcoded the attributes first. 
 
-So just a little job update - I'm loving it. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}
+So just a little job update - I'm loving it over here at 10th Magnitude. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}

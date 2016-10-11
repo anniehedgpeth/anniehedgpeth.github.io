@@ -7,12 +7,12 @@ permalink: /inspec/
 
   - [Setting Up Compliance](http://www.anniehedgie.com/setting-up-compliance)
   - [Tour of Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)
+  - [Hello World](http://www.anniehedgie.com/inspec-basics-1) 
   - [Command Resource](http://www.anniehedgie.com/inspec-basics-2)
   - [File Resource](http://www.anniehedgie.com/inspec-basics-3)
-  - [Hello World](http://www.anniehedgie.com/inspec-basics-1) 
   - [Custom Matchers](http://www.anniehedgie.com/inspec-basics-4)
   - [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)
   - [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)
   - [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
   - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
-  - [Attributes](http://www.anniehedgie.com/inspec-basics-9)
+  

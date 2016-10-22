@@ -80,7 +80,7 @@ end
 ```
 
 # Make sure it runs in Kitchen
-What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing. Like this...
+What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing. Like this... (Don't be confused, I took this screenshot when I ran it with kitchen-azurerm.)
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-2.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
@@ -108,18 +108,24 @@ role : client
 role : server
 ```
 
-We're not going to be able to run this as a `kitchen verify`, though, because as far as I know, there's not a way of calling the attributes in the `.kitchen.yml` of the cookbook. (But that would be cool, hint hint.)
+We're not going to be able to run this as a `kitchen verify`, though, because as for now, there's not a way of calling the attributes in the `.kitchen.yml` of the cookbook. (But that would be cool, hint hint.)
 
-Instead, we're going to run the `inspec exec` command and ssh into the machine. So for that we'll need our username and password. We know from Stuart's [guide](https://github.com/pendrica/kitchen-azurerm) that our password is "P2ssw0rd", and we can see our username and IP in our output.
+Instead, we're going to run the `inspec exec` command and just test our local machines. So we know, obviously, that these tests will fail, but I just want to show you how the attributes ran the different tests.
 
-<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-3.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+So from my profile's directory I ran `inspec exec .` to run the profile on my local machine with no attributes. And you can see that all three tests ran, searching for all three users.
 
-So on your command line from your profile's directory, run:
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-4.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+So then, let's watch it run just the tests for only base and client by running:
 
 ```
-$ inspec exec practice-inspec.rb -t ssh://azure@13.84.223.204:22 -i ~/.ssh/id_rsa --password=P2ssw0rd --attrs attributes/client-attributes.yml
+$ inspec exec . --attrs attributes/client-attributes.yml
+```
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-5.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-$ inspec exec practice-inspec.rb -t ssh://azure@104.210.147.192:22 -i ~/.ssh/id_rsa --password=P2ssw0rd --attrs attributes/server-attributes.yml
+And now let's watch it run the tests for just base and server roles:
+```
+$ inspec exec . --attrs attributes/server-attributes.yml
 ```
 
 And there you go! 

@@ -112,7 +112,7 @@ We're not going to be able to run this as a `kitchen verify`, though, because as
 
 Instead, we're going to run the `inspec exec` command and just test our local machines. So we know, obviously, that these tests will fail, but I just want to show you how the attributes ran the different tests.
 
-So from my profile's directory I ran `inspec exec .` to run the profile on my local machine with no attributes. And you can see that all three tests ran, searching for all three users.
+So from my profile's directory I ran `inspec exec .` to run the profile on my local machine with no attributes. And you can see that all three tests ran, searching for all three users. (Note: you're going to get failures, but the point is just to see which tests are running.)
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-4.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 

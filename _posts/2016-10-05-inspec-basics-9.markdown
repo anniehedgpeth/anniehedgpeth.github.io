@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "InSpec Basics: Day 9 - Attributes"
-date:   2016-10-05 12:00:00
+date:   2016-10-27 12:00:00
 categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
 image: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9.jpg

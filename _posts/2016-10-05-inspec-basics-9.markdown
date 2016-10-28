@@ -114,6 +114,9 @@ And now let's watch it run the tests for just base and server roles:
 ```
 inspec exec . --attrs attributes/server-attributes.yml
 ```
+
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-6.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 See how it didn't include the tests for client only?
 
 And there you go! That's a simple guide to attributes! 

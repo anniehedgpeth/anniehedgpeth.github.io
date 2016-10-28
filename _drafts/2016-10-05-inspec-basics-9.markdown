@@ -20,7 +20,7 @@ But first, if you've missed out on any of my tutorials, you can find them here:
   - Day 7: [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
   - Day 8: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
 
-If you'd like to follow along, then you're welcome to go clone my repo and use this [practice InSpec profile](https://github.com/anniehedgpeth/practice-inspec-profile).
+If you'd like to follow along, then you're welcome to go clone this [practice InSpec profile](https://github.com/anniehedgpeth/practice-inspec-profile).
 
 ## Here's what we'll cover:
 1. [Assessing our needs](#assessing-our-needs)
@@ -46,16 +46,6 @@ Let's go over to our control and add the attributes hardcoded with a default val
 ```ruby
 role = attribute('role', default: 'base', description: 'type of node that the InSpec profile is testing')
 ```
-
-Let's see what happens when you run this profile now. For simplicity's sake we're going to just run it on our local machine. So from our profile's directory, let's run:
-
-```
-inspec exec .
-```
-
-<img src='/assets/article_images/2016-10-05-inspec-basics-9/declaring-the-attribute.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
-
-Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing because it's only testing `base` right now since that's the default role. (And if you didn't change the username from anniehedgpeth, then all three of your tests failed.)
 
 # Use the attributes in an IF statement
 Now that the attributes are declared, we'll need to wrap our controls in an `if` statement so that it only tests that block when we want it to. So your `client` control block is going to end up looking like this:
@@ -88,7 +78,7 @@ end
 What happens when you run it now? Well, nothing different yet, so let's make that happen.
 
 # Create different attributes yamls to run the different tests
-We'll need to add a few attributes files to our profile to call on to change those roles. These are going to be yaml files, and while it may not be totally necessary, I think it's nice if they get their own directory, as well. You can make that directory a sibling to your controls directory. Go ahead and create these now.
+We'll need to add a few attributes files to our profile to call on to change those roles. These are going to be yaml files, and while you may put them anywhere you want, I think it's nice if they get their own directory inside of the profile. Go ahead and create these now.
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-1.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 

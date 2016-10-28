@@ -24,9 +24,8 @@ If you'd like to follow along, then you're welcome to go clone my repo and use t
 
 ## Here's what we'll cover:
 1. [Assessing our needs](#assessing-our-needs)
-1. [Declaring the Attributes](#declaring-the-attributes)
-2. [Use the attributes in an if statement](#use-the-attributes-in-an-if-statement)
-3. [Make sure it runs in Kitchen](#make-sure-it-runs-in-kitchen)
+2. [Declaring the Attributes](#declaring-the-attributes)
+3. [Use the attributes in an if statement](#use-the-attributes-in-an-if-statement)
 4. [Create different attributes yamls to run the different tests](#create-different-attributes-yamls-to-run-the-different-tests)
 5. [Concluding Thoughts](#concluding-thoughts)
 
@@ -39,7 +38,7 @@ That means that we're going to need two different sets of tests:
 
 If you're following along in the [practice InSpec profile](https://github.com/anniehedgpeth/practice-inspec-profile), then you'll see that there are three different sets of tests (well, really just one test in each control, but you get the picture.) We're going to set it up so that we can run one test for each role.
 
-Now I'm going to use this simple [practice cookbook](https://github.com/anniehedgpeth/inspec-workshop-cookbook/tree/2nodes) to set up a couple of nodes. And don't forget to change your `verifier` in your `.kitchen.yml`.
+Now, the big bummer of this is that attributes don't work in Test Kitchen just yet, but I think that would be great if they did! (hint hint) Maybe sometime soon we'll get that.
 
 # Declaring the Attributes
 Let's go over to our control and add the attributes hardcoded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
@@ -48,10 +47,18 @@ Let's go over to our control and add the attributes hardcoded with a default val
 role = attribute('role', default: 'base', description: 'type of node that the InSpec profile is testing')
 ```
 
-What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing because it's only testing `base` right now since that's the default role.
+Let's see what happens when you run this profile now. For simplicity's sake we're going to just run it on our local machine. So from our profile's directory, let's run:
+
+```
+inspec exec .
+```
+
+<img src='/assets/article_images/2016-10-05-inspec-basics-9/declaring-the-attribute.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing because it's only testing `base` right now since that's the default role. (And if you didn't change the username from anniehedgpeth, then all three of your tests failed.)
 
 # Use the attributes in an IF statement
-Now that the attributes are declared, we'll need to wrap our controls in an `if` statement. So your `client` control block is going to end up looking like this:
+Now that the attributes are declared, we'll need to wrap our controls in an `if` statement so that it only tests that block when we want it to. So your `client` control block is going to end up looking like this:
 
 ```ruby
 if ['client', 'base'].include? role
@@ -78,16 +85,10 @@ if ['server', 'base'].include? role
   end
 end
 ```
-
-# Make sure it runs in Kitchen
-What happens when you run `kitchen verify` now? Hopefully, you'll get a failure in your first suite for `server` user not existing and another in the second suite for the `client` user not existing. Like this... (Don't be confused, I took this screenshot when I ran it with kitchen-azurerm.)
-
-<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-2.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
-
-Remember that both our client and server nodes get the `default.rb` recipe which has a `base` user in it, so the failures make sense if there are two users per instance.
+What happens when you run it now? Well, nothing different yet, so let's make that happen.
 
 # Create different attributes yamls to run the different tests
-We'll need to add a few attributes files to our profile to call on to change those roles. These are going to be yaml files, and they will be in a directory that is sibling to your controls directory. Go ahead and create these now.
+We'll need to add a few attributes files to our profile to call on to change those roles. These are going to be yaml files, and while it may not be totally necessary, I think it's nice if they get their own directory, as well. You can make that directory a sibling to your controls directory. Go ahead and create these now.
 
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-1.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
@@ -108,29 +109,26 @@ role : client
 role : server
 ```
 
-We're not going to be able to run this as a `kitchen verify`, though, because as for now, there's not a way of calling the attributes in the `.kitchen.yml` of the cookbook. (But that would be cool, hint hint.)
-
-Instead, we're going to run the `inspec exec` command and just test our local machines. So we know, obviously, that these tests will fail, but I just want to show you how the attributes ran the different tests.
-
-So from my profile's directory I ran `inspec exec .` to run the profile on my local machine with no attributes. And you can see that all three tests ran, searching for all three users. (Note: you're going to get failures, but the point is just to see which tests are running.)
-
-<img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-4.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+We're going to run these tests on our local machine, and while we know, obviously, that these tests will fail, we're going to see how the attributes ran the different tests.
 
 So then, let's watch it run just the tests for only base and client by running:
 
 ```
-$ inspec exec . --attrs attributes/client-attributes.yml
+inspec exec . --attrs attributes/client-attributes.yml
 ```
 <img src='/assets/article_images/2016-10-05-inspec-basics-9/attributes-5.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
+See how it didn't include the server only tests?
+
 And now let's watch it run the tests for just base and server roles:
 ```
-$ inspec exec . --attrs attributes/server-attributes.yml
+inspec exec . --attrs attributes/server-attributes.yml
 ```
+See how it didn't include the tests for client only?
 
-And there you go! 
+And there you go! That's a simple guide to attributes! 
 
 # Concluding Thoughts
-I love this feature. It gives a lot of flexibility and control, and you can execute it pretty much wherever you want in a pipeline without affecting anything else. Figuring it out if it's working or not can be tricky - even just in kitchen. The more I can do manually first, the better. That's why we hardcoded the attributes first. 
+I love this feature. It gives a lot of flexibility and control, and you can use it in a lot of different ways. The trick is to hardcode the attributes first to make sure it's working. 
 
 So just a little job update - I'm loving it over here at 10th Magnitude. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}

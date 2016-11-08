@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "InSpec Basics: Day 9 - Attributes"
-date:   2016-09-30 12:00:00
+title:  "InSpec Basics: Day 10 - Attributes with Environment Variables"
+date:   2016-11-08 12:00:00
 categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
-image: /assets/article_images/2016-09-30-inspec-basics-9/inspec-basics-9.jpg
-image2: /assets/article_images/2016-09-30-inspec-basics-9/inspec-basics-9-mobile.jpg
+image: /assets/article_images/2016-09-30-inspec-basics-10/inspec-basics-10.jpg
+image2: /assets/article_images/2016-09-30-inspec-basics-10/inspec-basics-10-mobile.jpg
 ---
-Y'all, I've been in [InSpec](http://inspec.io/) heaven lately. I'm on a [project](https://www.10thmagnitude.com/) right now where I'm supposed to create an InSpec profile that tests the build configuration of a machine within a pipeline in TeamCity. Seems easy enough, but the challenge is testing all of the different environments and making sure the correct Mysql passwords are entered in for each enviroment.
+My last post about attributes was really born out of this issue I had had creating an InSpec profile that tests the build configuration of a machine within a pipeline in TeamCity and testing all of the different environments, making sure the correct Mysql passwords were entered in for each enviroment. In my last post, I had given you a crash course in how to use attributes,so now I'm going to show you how I used attributes to create the passwords that I needed using environment variables. 
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -19,6 +19,7 @@ But first, if you've missed out on any of my tutorials, you can find them here:
   - Day 6: [Ways to Run It and Places to Store It](http://www.anniehedgie.com/inspec-basics-6)
   - Day 7: [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
   - Day 8: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
+  - Day 9: [Attributes](http://www.anniehedgie.com/inspec-basics-9)
 
 Okay, so I had to create a way in which my profile could read a variable for a password within a control. In this post I'll lead you through how I did that. 
 
@@ -62,7 +63,7 @@ After some trial and error (it took a while to get to this point), it worked, an
 
 # Make the password in the control into an attribute
 
-So you see up there how the password calls an [attribute](http://inspec.io/docs/reference/profiles/)? Well, eventually you will have to make an attributes yaml, but don't worry, for now we're still just going to hardcode the value. So make a directory in your profile called `attributes` or whatever you want. Then create a file in there called `attributes.yml`. Your yaml is going to look very simple, like this:
+So you see up there how the password calls an [attribute](http://www.anniehedgie.com/inspec-basics-9)? Well, eventually you will have to make an attributes yaml, but don't worry, for now we're still just going to hardcode the value. So make a directory in your profile called `attributes` or whatever you want. Then create a file in there called `attributes.yml`. Your yaml is going to look very simple, like this:
 
 ```
 password: HARDCODEDpasswordHERE

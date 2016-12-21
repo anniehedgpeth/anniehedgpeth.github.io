@@ -64,3 +64,5 @@ In this case, it's possible that using the `parse_config` resource could be a be
 
 ## Concluding Thoughts
 There's usually a better way to do everything, but that shouldn't stop us from doing what we can to get started. I think that sometimes people get overwhelmed because they think they have to be at the [*refactored*](http://www.anniehedgie.com/red-green-refactor) state from the beginning, but that's not the ideal way to grow - whether you're learning InSpec or starting a business. We start small, manageable, and simple, and we grow and perfect from there, accepting our mistakes as learning tools. Also, refactoring, which takes time, effort, and discipline, can't be done without laying the simple groundwork first. And in the end, hopefully, you come up with something that is meaningful and lasting.
+
+Go to Day 9: [Attributes](http://www.anniehedgie.com/inspec-basics-9)

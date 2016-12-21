@@ -16,3 +16,4 @@ permalink: /inspec/
   - [How to Inherit a Profile from Chef Compliance Server](http://www.anniehedgie.com/inspec-basics-7)
   - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
   - [Attributes](http://www.anniehedgie.com/inspec-basics-9)
+  - [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)

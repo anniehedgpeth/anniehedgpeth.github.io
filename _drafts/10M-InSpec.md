@@ -1,4 +1,4 @@
-<img src='/assets/article_images/inspec/what-is-inspec.svg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/InSpecLogo.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 

@@ -7,7 +7,20 @@ Full disclosure: All of these thoughts are my own, and I was not paid by Chef to
 #1. Anyone can use it.
 When I heard that InSpec was written with non-developers in mind, I set about on a mission to prove whether that was true. At the time I had no development experience at all, so learning InSpec myself made for a great experiment. I started to learn how to write InSpec audit controls, and I wrote a [series of tutorials](http://www.anniehedgie.com/inspec) along the way so that others could learn how to use it, too.
 
+<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/blogscreenshot.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 One very important thing that I proved throughout this blog series was that InSpec is completely accessible. I began the series with a very simple ['Hello World'](http://www.anniehedgie.com/inspec-basics-1) tutorial in which I first laid out at a very basic level how to install InSpec on a Mac and then how to write your very first audit control test with InSpec. I wrote it from a perspective that the reader was not a technically-minded person, so really anybody can follow this tutorial.
+
+```ruby
+control "world-1.0" do                                # A unique ID for this control
+  impact 1.0                                          # Just how critical is
+  title "Hello World"                                 # Readable by a human
+  desc "Text should include the words 'hello world'." # Optional description
+  describe file('hello.txt') do                       # The actual test / Resources 
+   its('content') { should match 'Hello World' }      # Custom matchers
+  end
+end
+```
 
 Another aspect of its accessibility is that, while InSpec is owned by [Chef](https://www.chef.io/), it's completely platform agnostic, and you don't even need configuration automation to use it! When you scan your infrastructure, nothing gets installed, changed, or configured on the node that you're testing. As long as port 22 is open, you're golden!
 
@@ -49,6 +62,8 @@ inspec exec https://github.com/dev-sec/windows-patch-baseline -t winrm://Adminis
 Now imagine putting those commands in a CI/CD pipeline and using them across all of your environments. So many possibilities!
 
 #3. You begin to see how much you need it.
+If your company requires strict adherance to regulatory requirements, then you definitely know that you can benefit from an auditing tool. Then you begin to see how easy it is to turn something like this:
+
 
 
 

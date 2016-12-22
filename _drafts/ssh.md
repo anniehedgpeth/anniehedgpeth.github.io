@@ -58,3 +58,6 @@ This just means that your local computer does not recognize the remote host. Typ
 If you did not supply a passphrase for your private key, you will be logged in immediately. If you supplied a passphrase for the private key when you created the key, you will be required to enter it now. Afterwards, a new shell session should be spawned for you with the account on the remote system.
 
 If successful, continue on to find out how to lock down the server.
+
+# run test on remote host using SSH agent private key authentication. Requires InSpec 1.7.1
+inspec exec test.rb -t ssh://user@hostname

@@ -1,3 +1,5 @@
+<img src='/assets/article_images/inspec/what-is-inspec.svg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 
 Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!
@@ -12,7 +14,7 @@ Another aspect of its accessibility is that, while InSpec is owned by [Chef](htt
 #2. It's strength is in its simplicity.
 InSpec has a number of [different resources](http://inspec.io/docs/reference/resources/) to use in your audit controls, but at the heart of all of them is either searching a file or directory or running a command. In [Day 2](http://www.anniehedgie.com/inspec-basics-2) and [Day 3](http://www.anniehedgie.com/inspec-basics-3) of the tutorial series, I taught how to use both the file resource and the command resource - the meat and potatoes of InSpec. When someone is equipped with just these two resources, they can get pretty far with creating their own auditing controls! 
 
-After you've experimented with that sufficiently, you can start learning how to use all of the other resources at your disposal at [InSpec](http://inspec.io/)'s website as well as custom matchers, which I teach you how to choose in [Day 4]((http://www.anniehedgie.com/inspec-basics-4).
+After you've experimented with that sufficiently, you can start learning how to use all of the other resources at your disposal at [InSpec](http://inspec.io/)'s website as well as custom matchers, which I teach you how to choose in [Day 4](http://www.anniehedgie.com/inspec-basics-4).
 
 The other aspect of its simplicity that I really love is that you can run the profiles (a grouping of audit controls) from anywhere! You can learn how to create a profile on [Day 5](http://www.anniehedgie.com/inspec-basics-5). In [Day 6](http://www.anniehedgie.com/inspec-basics-6), you learn that you can store them locally, in version control, in the [Chef Supermarket](https://supermarket.chef.io/tools?type=compliance_profile), or on the [Chef Compliance](https://docs.chef.io/compliance.html#) server (if you have a Chef enterprise license, then you'll want to read [Day 7](http://www.anniehedgie.com/inspec-basics-7) about inheriting profiles from the Compliance server).
 

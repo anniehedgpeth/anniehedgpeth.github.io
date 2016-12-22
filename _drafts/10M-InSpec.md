@@ -1,17 +1,15 @@
 [<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/InSpecLogo.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)
 
-One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
+One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an open-source, automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 
 1. [Anyone can use it.](#1-anyone-can-use-it)
 2. [Its strength is in its simplicity.](#2-its-strength-is-in-its-simplicity)
 3. [You begin to see how much you need it.](#3-you-begin-to-see-how-much-you-need-it)
 
-Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!
-
 #1. Anyone can use it.
 When I heard that InSpec was written with non-developers in mind, I set about on a mission to prove whether that was true. At the time I had no development experience at all, so learning InSpec myself made for a great experiment. I started to learn how to write InSpec audit controls, and I wrote a [series of tutorials](http://www.anniehedgie.com/inspec) along the way so that others could learn how to use it, too.
 
-<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/blogscreenshot.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+[<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/blogscreenshot.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://www.anniehedgie.com)
 
 One very important thing that I proved throughout this blog series was that InSpec is completely accessible. I began the series with a very simple ['Hello World'](http://www.anniehedgie.com/inspec-basics-1) tutorial in which I first laid out at a very basic level how to install InSpec on a Mac and then how to write your very first audit control test with InSpec. I wrote it from a perspective that the reader was not a technically-minded person, so really anybody can follow this tutorial.
 
@@ -84,11 +82,17 @@ If your company requires strict adherance to regulatory requirements, then you d
 
 Also imagine that you have run all your configuration scripts, and instead of hoping for the best, you actually created an InSpec profile that validates all of your configuration. InSpec will be your safety net before deploying! 
 
+[<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/shouldbeinspec.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://www.anniehedgie.com/inspec)
 
+# Is your interest piqued yet?
+Here are some things you can do to start leveraging InSpec.
+- Start writing smoketests with InSpec as a way of validating your configuration!
+-	Show your smoketests to your security and compliance team and see what they think about them using it!
+-	Let's talk about how we can make your security and compliance team an equal partner in your cloud initiative!
 
+I'd like to encourage you to think of different ways in which to leverage InSpec in your own cloud initiative, and we'd love to work with you on all of those implementations.
 
-
-
+Try it out!
   - [Hello World](http://www.anniehedgie.com/inspec-basics-1) 
   - [Command Resource](http://www.anniehedgie.com/inspec-basics-2)
   - [File Resource](http://www.anniehedgie.com/inspec-basics-3)
@@ -99,3 +103,5 @@ Also imagine that you have run all your configuration scripts, and instead of ho
   - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
   - [Attributes](http://www.anniehedgie.com/inspec-basics-9)
   - [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)
+
+*Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!*

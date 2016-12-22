@@ -3,8 +3,8 @@
 One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 
 1. [Anyone can use it.](#1-anyone-can-use-it)
-2. [Its strength is in its simplicity.](#its-strength-is-in-its-simplicity)
-3. [You begin to see how much you need it.](#you-begin-to-see-how-much-you-need-it)
+2. [Its strength is in its simplicity.](#2-its-strength-is-in-its-simplicity)
+3. [You begin to see how much you need it.](#3-you-begin-to-see-how-much-you-need-it)
 
 Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!
 

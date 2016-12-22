@@ -2,6 +2,10 @@
 
 One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 
+1. [Anyone can use it.](#1-anyone-can-use-it)
+2. [Its strength is in its simplicity.](#its-strength-is-in-its-simplicity)
+3. [You begin to see how much you need it.](#you-begin-to-see-how-much-you-need-it)
+
 Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!
 
 #1. Anyone can use it.
@@ -24,7 +28,7 @@ end
 
 Another aspect of its accessibility is that, while InSpec is owned by [Chef](https://www.chef.io/), it's completely platform agnostic, and you don't even need configuration automation to use it! When you scan your infrastructure, nothing gets installed, changed, or configured on the node that you're testing.
 
-#2. It's strength is in its simplicity.
+#2. Its strength is in its simplicity.
 InSpec has a number of [different resources](http://inspec.io/docs/reference/resources/) to use in your audit controls, but at the heart of all of them is either searching a file or directory or running a command. In [Day 2](http://www.anniehedgie.com/inspec-basics-2) and [Day 3](http://www.anniehedgie.com/inspec-basics-3) of the tutorial series, I taught how to use both the file resource and the command resource - the meat and potatoes of InSpec. When someone is equipped with just these two resources, they can get pretty far with creating their own auditing controls! 
 
 ```ruby
@@ -74,7 +78,13 @@ inspec exec https://github.com/dev-sec/windows-patch-baseline -t winrm://Adminis
 Now imagine putting those commands in a CI/CD pipeline and using them across all of your environments. So many possibilities!
 
 #3. You begin to see how much you need it.
-If your company requires strict adherance to regulatory requirements, then you definitely know that you can benefit from an auditing tool. Then you begin to see how easy it is to turn something like this:
+Imagine a world in which security and compliance is not an afterthought, but it's brought in from the very beginning and compliance issues and bugs are found with InSpec in development instead of waiting all the way until the end with a slow manual check, delaying release to production.
+
+If your company requires strict adherance to regulatory requirements, then you definitely know that you can benefit from an automated auditing tool. Imagine being able to create a profile that tests for CIS compliance, and instead of auditing it manually once at year, you run that profile every single time someone changes something at any stage in the pipeline! 
+
+Also imagine that you have run all your configuration scripts, and instead of hoping for the best, you actually created an InSpec profile that validates all of your configuration. InSpec will be your safety net before deploying! 
+
+
 
 
 

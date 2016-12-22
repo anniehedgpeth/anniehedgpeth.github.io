@@ -1,6 +1,6 @@
 [<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/InSpecLogo.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)
 
-One of my main goals at 10th Magnitude is to bring more security to all of our engagements. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an open-source, automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
+One of my main goals at 10th Magnitude is to to make every cloud migration or implementation safer and more secure than it used to be on premises. A way in which we can get a greater assurance of security is to not only to see the infrastructure as code but to see the compliance as code, also. A great framework in which to acheive this is an open-source, automated security and compliance auditing framework called [InSpec](http://inspec.io/). I'm going to share with you some very compelling reasons that you, too, might want to consider using it.
 
 1. [Anyone can use it.](#1-anyone-can-use-it)
 2. [Its strength is in its simplicity.](#2-its-strength-is-in-its-simplicity)
@@ -103,5 +103,7 @@ Try it out!
   - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
   - [Attributes](http://www.anniehedgie.com/inspec-basics-9)
   - [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)
+
+Feel free to reach out to me on Twitter if you have any questions about InSpec! I'm [@anniehedgie](https://twitter.com/anniehedgie).
 
 *Full disclosure: All of these thoughts are my own, and I was not paid by Chef to write about InSpec. I just really like it!*

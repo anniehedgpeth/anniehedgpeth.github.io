@@ -22,14 +22,26 @@ control "world-1.0" do                                # A unique ID for this con
 end
 ```
 
-Another aspect of its accessibility is that, while InSpec is owned by [Chef](https://www.chef.io/), it's completely platform agnostic, and you don't even need configuration automation to use it! When you scan your infrastructure, nothing gets installed, changed, or configured on the node that you're testing. As long as port 22 is open, you're golden!
+Another aspect of its accessibility is that, while InSpec is owned by [Chef](https://www.chef.io/), it's completely platform agnostic, and you don't even need configuration automation to use it! When you scan your infrastructure, nothing gets installed, changed, or configured on the node that you're testing.
 
 #2. It's strength is in its simplicity.
 InSpec has a number of [different resources](http://inspec.io/docs/reference/resources/) to use in your audit controls, but at the heart of all of them is either searching a file or directory or running a command. In [Day 2](http://www.anniehedgie.com/inspec-basics-2) and [Day 3](http://www.anniehedgie.com/inspec-basics-3) of the tutorial series, I taught how to use both the file resource and the command resource - the meat and potatoes of InSpec. When someone is equipped with just these two resources, they can get pretty far with creating their own auditing controls! 
 
+```ruby
+describe file('/etc/yum.conf') do                    # Searching a file
+  its('content') { should match /gpgcheck=1/ }       # Using the "Content" matcher
+end
+
+describe command('rpm -q --queryformat "%{SUMMARY}\n" gpg-pubkey') do  # Running a command 
+   its('stdout') { should match (/[0-9]/) }                            # Matching its standard output
+end
+```
+
 After you've experimented with that sufficiently, you can start learning how to use all of the other resources at your disposal at [InSpec](http://inspec.io/)'s website as well as custom matchers, which I teach you how to choose in [Day 4](http://www.anniehedgie.com/inspec-basics-4).
 
 The other aspect of its simplicity that I really love is that you can run the profiles (a grouping of audit controls) from anywhere! You can learn how to create a profile on [Day 5](http://www.anniehedgie.com/inspec-basics-5). In [Day 6](http://www.anniehedgie.com/inspec-basics-6), you learn that you can store them locally, in version control, in the [Chef Supermarket](https://supermarket.chef.io/tools?type=compliance_profile), or on the [Chef Compliance](https://docs.chef.io/compliance.html#) server (if you have a Chef enterprise license, then you'll want to read [Day 7](http://www.anniehedgie.com/inspec-basics-7) about inheriting profiles from the Compliance server).
+
+<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/article_images/2016-06-09-inspec-basics-6/whereandhow.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 And because you can store them anywhere, that gives you many options about how and where to use InSpec. Take a look at these commands that you can run in order to run a profile on a node:
 

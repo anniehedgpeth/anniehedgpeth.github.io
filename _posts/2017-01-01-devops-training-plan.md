@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "My Devops Training Plan"
-date:   2017-01-01 05:00:00
+date:   2017-01-01 12:00:00
 categories: devops training
 tags: devops training
 image: /assets/article_images/2017-01-01-devops-training-plan/plan.jpg
-image2: /assets/article_images/2017-01-01-devops-training-plan/plan-mobile.jpg
+image2: /assets/article_images/2017-01-01-devops-training-plan/plan-mobile.png
 ---
 Happy New Year, my friends! 
 
@@ -19,14 +19,15 @@ So here's the low-down of what I'll be spending every spare training moment for 
 
 ## DEVELOPMENT
 During my training these would be the everyday tools in my tool chest. Honestly, they have since I started, but I've been on projects lately where I have gotten out of daily practice, so I'm happy to get back into using them daily.
- - *Git* - Will I ever stop getting nervous about branching?
- - *Visual Studio Code* - I tried Atom, but I still like VSC better, maybe because it's what I'm used to.
+
+ - *[Git](https://github.com/anniehedgpeth)* - Will I ever stop getting nervous about branching?
+ - *[Visual Studio Code](https://code.visualstudio.com/)* - I tried Atom, but I still like VSC better, maybe because it's what I'm used to.
  - *CLI* - I'd especially like to be more proficient at the Azure CLI.
- - *Vagrant* - 
- - *Test Kitchen* - I love using 
+ - *[Test Kitchen](http://kitchen.ci/)* - The other day I learned that not everyone uses Kitchen, and I felt sorry for those people.
 
 ## CONFIGURATION MANAGEMENT
 While Chef is what I desire to focus on, I think it would be a great exercise to learn the basics of Ansible and DSC to be able to know the reasons I would choose one over the others. 
+
  - *[Chef](https://www.chef.io/)* - It's amazing how quickly one can forget things while not using them regularly! I'm hoping it's like riding a bike.
  - *[Ansible](https://www.ansible.com/)* - I've never used Ansible, so that will be fun to see what it has to offer.
  - *[DSC / Powershell](https://msdn.microsoft.com/en-us/powershell/dsc/overview)* - There's a consultant at my work that is a huge DSC fan, and he just learned Chef, so I'm planning on picking his brain when I get to this point.
@@ -36,8 +37,9 @@ While Chef is what I desire to focus on, I think it would be a great exercise to
  - *[Hashicorp Vault](https://www.vaultproject.io/)* - I'm hoping to unlock the mystery of Vault. Right now it's a total enigma to me. 
 
 ## PIPELINE / CI/CD
-I think learning all three of these would give me a good basis for comparison. And since I’ve already worked with TC, I’m starting with Jenkins.
+I think learning all three of these would give me a good basis for comparison. And since I’ve already worked with TeamCity, I’m starting with Jenkins.
 <img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
  - *[Jenkins](https://jenkins.io/)* - In the short time I've been learning Jenkins, it's way easier than TC, but that's possibly because my project is simpler. I'll be interested in the side-by-side comparison. 
  - *[Team City](https://jenkins.io/)* - I've only worked on one TC project in the past, so I'll be glad to get more experience with it.
  - *[Chef Workflow](https://docs.chef.io/workflow.html)* - This will be totally new to me, but I don't know of a ton of people that would choose it over Jenkins, so I want to know why.
@@ -49,12 +51,14 @@ I think learning all three of these would give me a good basis for comparison. A
 
 ## AZURE
 This is a given since I'm working at an Azure shop, but I'm working on honing my Azure skills more as I use all of the above technologies to provision Azure. My focus, however, will be the following.
+
  - *[AD](https://www.microsoft.com/en-us/cloud-platform/azure-active-directory)* - I'm looking forward to the day that I this isn't such a pain in the ass for me to set up.
  - *[PaaS](https://azure.microsoft.com/en-us/overview/what-is-paas/)* - I see the industry going toward containers and/or PaaS, so I need to keep my head in the game with PaaS.
  - *Networking* - [Michael](hedge-ops.com) and I were trying to set up a network at home for our lab here, but we hit a few dead ends. I'm surely planning on a tutorial for how we set that up because that will be a feat once we finish. Lots of trial and error.
 
 ## CONTAINERS
 Containers are all be new to me! But this is obviously the direction in which we can see the industry moving, so I’d love to keep up with it. I originally thought that it would be after more mastery of the other topics, but I'm working on Docker right now, and it's more accessible than I thought it would be.
+
  - *[Docker](https://www.docker.com/)* - This is super fun to learn and not as complicated as I thought.
  - *[Mesosphere](https://mesosphere.com/)* - This is a little scary for me, but I'm excited about it.
  - *[Kubernetes](http://kubernetes.io/)* - This is new to me, too, so the more the merrier.

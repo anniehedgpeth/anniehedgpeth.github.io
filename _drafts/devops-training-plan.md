@@ -27,39 +27,38 @@ During my training these would be the everyday tools in my tool chest. Honestly,
 
 ## CONFIGURATION MANAGEMENT
 While Chef is what I desire to focus on, I think it would be a great exercise to learn the basics of Ansible and DSC to be able to know the reasons I would choose one over the others. 
- - *Chef* - It's amazing how quickly one can forget things while not using them regularly! I'm hoping it's like riding a bike.
- - *Ansible* - I've never used Ansible, so that will be fun to see what it has to offer.
- - *DSC / Powershell* - There's a consultant at my work that is a huge DSC fan, and he just learned Chef, so I'm planning on picking his brain when I get to this point.
+ - *[Chef](https://www.chef.io/)* - It's amazing how quickly one can forget things while not using them regularly! I'm hoping it's like riding a bike.
+ - *[Ansible](https://www.ansible.com/)* - I've never used Ansible, so that will be fun to see what it has to offer.
+ - *[DSC / Powershell](https://msdn.microsoft.com/en-us/powershell/dsc/overview)* - There's a consultant at my work that is a huge DSC fan, and he just learned Chef, so I'm planning on picking his brain when I get to this point.
 
 ## SECURITY
- - *InSpec* - I'm excited about seeing it in other contexts than just Chef or standalone.
- - *Hashicorp Vault* - I'm hoping to unlock the mystery of Vault. Right now it's a total enigma to me. 
-
-<img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+ - *[InSpec](https://www.inspec.io)* - I'm excited about seeing it in other contexts and gaining way more comfort and familiarity with it.
+ - *[Hashicorp Vault](https://www.vaultproject.io/)* - I'm hoping to unlock the mystery of Vault. Right now it's a total enigma to me. 
 
 ## PIPELINE / CI/CD
 I think learning all three of these would give me a good basis for comparison. And since I’ve already worked with TC, I’m starting with Jenkins.
- - *Jenkins* - In the short time I've been learning Jenkins, it's way easier than TC, but that's possibly because my project is simpler. I'll be interested in the side-by-side comparison. 
- - *Team City* - I've only worked on one TC project in the past, so I'll be glad to get more experience with it.
- - *Chef Workflow* - This will be totally new to me.
+<img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+ - *[Jenkins](https://jenkins.io/)* - In the short time I've been learning Jenkins, it's way easier than TC, but that's possibly because my project is simpler. I'll be interested in the side-by-side comparison. 
+ - *[Team City](https://jenkins.io/)* - I've only worked on one TC project in the past, so I'll be glad to get more experience with it.
+ - *[Chef Workflow](https://docs.chef.io/workflow.html)* - This will be totally new to me, but I don't know of a ton of people that would choose it over Jenkins, so I want to know why.
 
 ## PROVISIONING
- - *Terraform* - It'll be interesting to see if my bias remains with Terraform after learning to provision with all three methods.
- - *ARM* - 
- - *Packer* - I haven't worked with Packer at all, so this will be new, too.
+ - *[Terraform](https://www.terraform.io/)* - A lot of people I look up to use Terraform religiously, so it'll be interesting to see if my bias remains with Terraform after learning to provision with all three methods. 
+ - *[ARM Templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates)* - I'm interested in learning when I would use this over Terraform.
+ - *[Packer](https://www.packer.io/)* - I haven't worked with Packer at all, so this will be new, too.
 
 ## AZURE
 This is a given since I'm working at an Azure shop, but I'm working on honing my Azure skills more as I use all of the above technologies to provision Azure. My focus, however, will be the following.
- - *AD* - I'm looking forward to the day that I this isn't such a pain in the ass for me to set up.
- - *PaaS* - I see the industry going toward containers and/or PaaS, so I need to keep my head in the game with PaaS.
+ - *[AD](https://www.microsoft.com/en-us/cloud-platform/azure-active-directory)* - I'm looking forward to the day that I this isn't such a pain in the ass for me to set up.
+ - *[PaaS](https://azure.microsoft.com/en-us/overview/what-is-paas/)* - I see the industry going toward containers and/or PaaS, so I need to keep my head in the game with PaaS.
  - *Networking* - [Michael](hedge-ops.com) and I were trying to set up a network at home for our lab here, but we hit a few dead ends. I'm surely planning on a tutorial for how we set that up because that will be a feat once we finish. Lots of trial and error.
 
 ## CONTAINERS
 Containers are all be new to me! But this is obviously the direction in which we can see the industry moving, so I’d love to keep up with it. I originally thought that it would be after more mastery of the other topics, but I'm working on Docker right now, and it's more accessible than I thought it would be.
- - *Docker* - This is super fun to learn and not as complicated as I thought.
- - *Mesosphere* - This is a little scary for me, but I'm excited about it.
- - *Kubernetes* 
- - *Serverless*
+ - *[Docker](https://www.docker.com/)* - This is super fun to learn and not as complicated as I thought.
+ - *[Mesosphere](https://mesosphere.com/)* - This is a little scary for me, but I'm excited about it.
+ - *[Kubernetes](http://kubernetes.io/)* - This is new to me, too, so the more the merrier.
+ - *[Serverless](https://azure.microsoft.com/en-us/services/functions/)* - I don't even know, seriously.
 
 This past week, I've been working on the first steps needed to take in moving forward with this training plan. I'm loving it! I'm working on Jenkins/Chef/Terraform/Docker in the next two weeks. Currently, I just created my first Jenkinsfile and am taking a Pluralsight course on Docker to extend the pipeline. It's so fun!
 

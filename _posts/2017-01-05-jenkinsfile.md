@@ -27,11 +27,11 @@ In super-simple terms, let me share with you my understanding of a Pipeline in J
 So when we use a Jenkinsfile which is written in [Groovy](https://en.wikipedia.org/wiki/Groovy_(programming_language)) for Jenkins's Pipeline plugin, we're able to do a lot a lot of things that you can't do if you're just creating a bunch of builds in the UI. I'll show you a sample, and then I'll tell you what I mean by that.
 
 #Sample
-Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/). The Jenkinsfile code below is going to do this:
+Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/). The [Jenkinsfile code](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) below is going to do this:
 
 <img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-This is what the [whole file](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) looks like, but right now let's just take a look at the *compile* stage.
+Let's take a look at the [code](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) stage by stage.
 
 ##compile
 
@@ -81,7 +81,7 @@ Now here in the *test* stage we're going to run parallel stages. That means that
 
 You'll see there that I decided to define a method instead of writing out the whole thing since the only thing that changes from stage to stage is the test type. So it's helpful for me to look and see what the method is defining first, and then go up and look at how it's called.
 
-As you can see in the method, first we're going to `unstash 'everything'` that we stashed in the *compile* stage. The reason that we're doing that is because we could possibly be running this stage on a different node than the one from which we checked out our source, so the info may not be cached there. But the master knows where you stashed it to begin with in that Pipeline job. 
+As you can see in the method, first we're going to `unstash 'everything'` that we stashed in the *compile* stage. The reason that we're doing that is because we could possibly be running this stage on a different node than the one from which we checked out our source, so the files from the repo may not be there. But the master knows where you stashed it to begin with in that Pipeline job. 
 
 Then we're going to `restore` it (get all the dependencies loaded that we need) and then run the `test`. And that'll happen for each test type that we called simultaneously. 
 

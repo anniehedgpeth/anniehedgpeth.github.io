@@ -17,7 +17,7 @@ image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.png
 #DevOps, Version Control, and Jenkinsfile
 For real, though, one of the things I like most about DevOps principles is version control. Well, honestly, I have a love-hate relationship with it because Git still makes me sweat every time I do a pull request. 
 
-Nonetheless, all DevOps starts with version control! It's what [Chef](https://www.chef.io/) calls ["the coded business"](https://twitter.com/chef/status/783317258227548160) or "infrastructure as code" - same thing. Therefore, if you're trying out a product and can't make it do what you want it to do with code, then you should stop using it and find something else.
+Nonetheless, all DevOps starts with version control! It envelopes what [Chef](https://www.chef.io/) calls ["the coded business"](https://twitter.com/chef/status/783317258227548160), which includes the concepts of infrastructure as code, pipeline as code, testing, etc. The end result being total automation. Therefore, if you're trying out a product and can't make it do what you want it to do with code, then you should stop using it and find something else.
 
 So when you're creating a CI/CD Pipeline in [Jenkins](https://jenkins.io/), I'm going to try to convince you to create the build using [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) instead of the UI so that it is subject to your change control mechanisms already in place (source control) and so that one very well-intentioned person doesn't ruin your build.
 

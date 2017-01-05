@@ -5,7 +5,7 @@ date:   2017-01-05 12:00:00
 categories: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
 tags: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
 image: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile.jpg
-image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.png
+image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.jpg
 ---
 #TLDR:
 *Use Jenkinsfile instead of the UI so that one ~ahem~ well-intentioned person can't ruin your build.*

@@ -7,33 +7,39 @@ tags: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
 image: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile.jpg
 image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.jpg
 ---
-#TLDR:
+
+# TLDR:
+
 *Use Jenkinsfile instead of the UI so that one ~ahem~ well-intentioned person can't ruin your build.*
 
-> * #Resources
+* #Resources
+
 > * [Jenkinsfile documentation](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
 > * [Pluralsight: Getting Started with Jenkins 2](https://app.pluralsight.com/library/courses/jenkins-2-getting-started/table-of-contents) by [Wes Higbee](https://twitter.com/g0t4) - *serious shoutout to this guy. His classes are perfect - very thorough and clear.*
 
-#DevOps, Version Control, and Jenkinsfile
+# DevOps, Version Control, and Jenkinsfile
+
 For real, though, one of the things I like most about DevOps principles is version control. Well, honestly, I have a love-hate relationship with it because Git still makes me sweat every time I do a pull request. 
 
 Nonetheless, all DevOps starts with version control! It envelopes what [Chef](https://www.chef.io/) calls ["the coded business"](https://twitter.com/chef/status/783317258227548160), which includes the concepts of infrastructure as code, pipeline as code, testing, etc. The end result being total automation. Therefore, if you're trying out a product and can't make it do what you want it to do with code, then you should stop using it and find something else.
 
 So when you're creating a CI/CD Pipeline in [Jenkins](https://jenkins.io/), I'm going to try to convince you to create the build using [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) instead of the UI so that it is subject to your change control mechanisms already in place (source control) and so that one very well-intentioned person doesn't ruin your build.
 
-#Pipelines
+# Pipelines
+
 In super-simple terms, let me share with you my understanding of a Pipeline in Jenkins. While a *JOB* is a defined process, and a *BUILD* is the result of that *JOB* being carried out, a *PIPELINE* is a defined series of *JOBS* that can be interrupted in between processes by different events such as failed tests, approval, et. al.
 
 So when we use a Jenkinsfile which is written in [Groovy](https://en.wikipedia.org/wiki/Groovy_(programming_language)) for Jenkins's Pipeline plugin, we're able to do a lot a lot of things that you can't do if you're just creating a bunch of builds in the UI. I'll show you a sample, and then I'll tell you what I mean by that.
 
-#Sample
+# Sample
+
 Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/). The [Jenkinsfile code](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) below is going to do this:
 
 <img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 Let's take a look at the [code](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) stage by stage.
 
-##compile
+## compile
 
 ```groovy
 #!/usr/bin/env groovy
@@ -54,7 +60,7 @@ In the *compile* stage, we're building the dotnet core application. First, we ne
 
 The executor will then check our code out from source code and stash all the info that we need for later stages. Then we're going to go to run `dotnet restore` from the `src/cafe` directory to get all of the dependent packages to get ready to build. After that, it's going to run`dotnet build`, and then we have a compiled application!
 
-##test
+## test
 
 ```groovy
 stage('test') {
@@ -85,7 +91,7 @@ As you can see in the method, first we're going to `unstash 'everything'` that w
 
 Then we're going to `restore` it (get all the dependencies loaded that we need) and then run the `test`. And that'll happen for each test type that we called simultaneously. 
 
-##publish
+## publish
 
 ```groovy
 stage('publish') {
@@ -111,7 +117,8 @@ def publish(target) {
 
 And finally we come to the *publish* stage. Here we're running three parallel stages using another method definition, so we'll actually need three executors. If we only have two to begin with, that's okay because the third one will just get in line and run after. If you'll look down at the `publish(target)` method, you can see that we're `unstashing` in each stage again. And from the same directory as before we'll `publish` the application to a specified platform. After that, `archiveArtifacts` makes that application available on the Jenkins server for you to do what you want with it.
 
-#What you can't do in the UI
+# What you can't do in the UI
+
 The UI is a tyical UI, right. It's there to help make some of the decisions for you. It wants to make your life easier, but everything in life is a tradeoff, so you have to sacrifice some functionality. 
 
  - You can't run parallel commands in the UI, just sequential.
@@ -123,6 +130,6 @@ The beauty of creating your Jenkinsfile for the Pipeline plugin is that you can 
  - Audit trail for the Pipeline
  - Single source of truth for the Pipeline, which can be viewed and edited by multiple members of the project.
 
-#Concluding Thoughts
+# Concluding Thoughts
 
 I told you in my last post that I've set a training plan for myself this coming year, and Jenkins was at the top of the list. And it's another one of those technologies that creates an inverted learning environment for me, as I touched on in my [last post](http://www.anniehedgie.com/devops-training-plan). The more I discover these technologies, the more encouraging it is to me that I don't have to know everything about everything to be able to add value. I can take something like Jenkins and learn a little about every aspect of deployment by creating builds. There are many learning opportunities wrapped up in technologies like this. More to come about inverted learning. My interest is piqued! 

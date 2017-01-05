@@ -33,7 +33,7 @@ Right now I'm working on a build for [Michael's dotnet core application](https:/
 
 This is what the [whole file](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) looks like, but right now let's just take a look at the *compile* stage.
 
-```groovy <linenumbers="normal">
+```linenumbers
 #!/usr/bin/env groovy
 
 stage('compile') {

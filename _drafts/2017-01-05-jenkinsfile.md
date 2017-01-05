@@ -101,11 +101,14 @@ stage('publish') {
 #What you can't do in the UI
 The UI is a tyical UI, right. It's there to help make some of the decisions for you. It wants to make your life easier, but everything in life is a tradeoff, so you have to sacrifice some functionality. 
 
-1) You can't run parallel commands in the UI, just sequential.
-2) You can't commit it to version control and have an approval and promotion process in the UI. 
-3) You can't know what changes were made in the Pipeline.
+ - You can't run parallel commands in the UI, just sequential.
+ - You can't commit it to version control and have an approval and promotion process in the UI. 
+ - You can't know what changes were made in the Pipeline.
 
 The beauty of creating your Jenkinsfile for the Pipeline plugin is that you can manipulate it exactly the way that you want it. You have way more control and options than in the UI alone. The benefits that they make note of on [their website](https://jenkins.io/doc/book/pipeline/jenkinsfile/) are:
  - Code review/iteration on the Pipeline
  - Audit trail for the Pipeline
  - Single source of truth for the Pipeline, which can be viewed and edited by multiple members of the project.
+
+#Concluding Thoughts
+I told you in my last post that I've set a training plan for myself this coming year, and Jenkins was at the top of the list. And it's another one of those technologies that creates an inverted learning environment for me, as I touched on in my [last post](http://www.anniehedgie.com/devops-training-plan). The more I discover these technologies, the more encouraging it is to me that I don't have to know everything about everything to be able to add value. I can take something like Jenkins and learn a little about every aspect of deployment by creating builds. There are many learning opportunities wrapped up in technologies like this. More to come about inverted learning. My interest is piqued! 

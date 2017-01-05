@@ -1,0 +1,104 @@
+---
+layout: post
+title:  "Jenkinsfile"
+date:   2017-01-05 12:00:00
+categories: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
+tags: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
+image: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile.jpg
+image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.png
+---
+#TLDR:
+*Use Jenkinsfile instead of the UI so that one ~ahem~ well-intentioned person can't ruin your build.*
+
+> * #Resources
+> * [Jenkinsfile documentation](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
+> * [Pluralsight: Getting Started with Jenkins 2](https://app.pluralsight.com/library/courses/jenkins-2-getting-started/table-of-contents) by [Wes Higbee](https://twitter.com/g0t4) - *serious shoutout to this guy. His classes are perfect - very thorough and clear.*
+
+#DevOps, Version Control, and Jenkinsfile
+For real, though, one of the things I like most about DevOps principles is version control. Well, honestly, I have a love-hate relationship with it because Git still makes me sweat every time I do a pull request. 
+
+Nonetheless, all DevOps starts with version control! It's what [Chef](https://www.chef.io/) calls ["the coded business"](https://twitter.com/chef/status/783317258227548160) or "infrastructure as code" - same thing. Therefore, if you're trying out a product and can't make it do what you want it to do with code, then you should stop using it and find something else.
+
+So when you're creating a CI/CD pipeline in [Jenkins](https://jenkins.io/), I'm going to try to convince you to create the build using [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) instead of the UI so that it is subject to your change control mechanisms already in place (source control) and so that one very well-intentioned person doesn't ruin your build.
+
+#Pipelines
+In super-simple terms, let me share with you my understanding of a pipeline in Jenkins. While a *JOB* is a defined process, and a *BUILD* is the result of that *JOB* being carried out, a *PIPELINE* is a defined series of *JOBS* that can be interrupted in between processes by different events such as failed tests, approval, et. al.
+
+So when we use a Jenkinsfile which is written in [Groovy](https://en.wikipedia.org/wiki/Groovy_(programming_language)) for Jenkins's Pipeline plugin, we're able to do a lot a lot of things that you can't do if you're just creating a bunch of builds in the UI. I'll show you a sample, and then I'll tell you what I mean by that.
+
+#Sample
+Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile). The Jenkinsfile code below is going to do this:
+
+<img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+
+```groovy
+
+#!/usr/bin/env groovy
+
+node {
+  stage('compile') {
+    checkout scm
+    stash 'everything'
+    dir('src/cafe') {
+      bat 'dotnet restore'
+      bat "dotnet build --version-suffix ${env.BUILD_NUMBER}"
+    }
+  }
+}
+
+stage('test') {
+    parallel unitTests: {
+      node {
+        unstash 'everything'
+        dir('test/cafe.Test') {
+            bat 'dotnet restore'
+            bat 'dotnet test'
+          }
+      }
+    }, integrationTests: {
+        node {
+          unstash 'everything'
+          dir('test/cafe.IntegrationTest'){
+              bat 'dotnet restore'
+              bat 'dotnet test'
+          }
+        }
+    },
+    failFast: false
+}
+
+stage('publish') {
+  parallel windows: {
+    node {
+      unstash 'everything'
+      dir('src/cafe') {
+        bat 'dotnet publish -r win10-x64'
+        archiveArtifacts 'bin/Debug/netcoreapp1.1/win10-x64/publish/*.*'
+      }
+    }
+  }, centos: {
+    node {
+      unstash 'everything'
+      dir('src/cafe') {
+        bat 'dotnet publish -r centos.7-x64'
+        archiveArtifacts 'bin/Debug/netcoreapp1.1/centos.7-x64/publish/*.*'
+      }
+    }
+  }, ubuntu: {
+    node {
+      unstash 'everything'
+      dir('src/cafe') {
+        bat 'dotnet publish -r ubuntu.16.04-x64'
+        archiveArtifacts 'bin/Debug/netcoreapp1.1/ubuntu.16.04-x64/publish/*.*'
+      }
+    }
+  }
+}
+
+```
+
+#What you can't do in the UI
+1) can't run parallel commands
+2) can't commit it to version control
+3) 

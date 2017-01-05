@@ -31,13 +31,13 @@ Right now I'm working on a build for [Michael's dotnet core application](https:/
 
 <img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
+This is what the [whole file](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile) looks like, but right now let's just take a look at the *compile* stage.
 
 ```groovy
-
 #!/usr/bin/env groovy
 
-node {
-  stage('compile') {
+stage('compile') {
+  node {
     checkout scm
     stash 'everything'
     dir('src/cafe') {
@@ -46,7 +46,11 @@ node {
     }
   }
 }
+```
 
+
+
+```
 stage('test') {
     parallel unitTests: {
       node {
@@ -67,7 +71,9 @@ stage('test') {
     },
     failFast: false
 }
+```
 
+```
 stage('publish') {
   parallel windows: {
     node {
@@ -111,4 +117,5 @@ The beauty of creating your Jenkinsfile for the Pipeline plugin is that you can 
  - Single source of truth for the Pipeline, which can be viewed and edited by multiple members of the project.
 
 #Concluding Thoughts
+
 I told you in my last post that I've set a training plan for myself this coming year, and Jenkins was at the top of the list. And it's another one of those technologies that creates an inverted learning environment for me, as I touched on in my [last post](http://www.anniehedgie.com/devops-training-plan). The more I discover these technologies, the more encouraging it is to me that I don't have to know everything about everything to be able to add value. I can take something like Jenkins and learn a little about every aspect of deployment by creating builds. There are many learning opportunities wrapped up in technologies like this. More to come about inverted learning. My interest is piqued! 

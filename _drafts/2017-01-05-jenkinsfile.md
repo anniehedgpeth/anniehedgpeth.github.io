@@ -19,15 +19,15 @@ For real, though, one of the things I like most about DevOps principles is versi
 
 Nonetheless, all DevOps starts with version control! It's what [Chef](https://www.chef.io/) calls ["the coded business"](https://twitter.com/chef/status/783317258227548160) or "infrastructure as code" - same thing. Therefore, if you're trying out a product and can't make it do what you want it to do with code, then you should stop using it and find something else.
 
-So when you're creating a CI/CD pipeline in [Jenkins](https://jenkins.io/), I'm going to try to convince you to create the build using [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) instead of the UI so that it is subject to your change control mechanisms already in place (source control) and so that one very well-intentioned person doesn't ruin your build.
+So when you're creating a CI/CD Pipeline in [Jenkins](https://jenkins.io/), I'm going to try to convince you to create the build using [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) instead of the UI so that it is subject to your change control mechanisms already in place (source control) and so that one very well-intentioned person doesn't ruin your build.
 
 #Pipelines
-In super-simple terms, let me share with you my understanding of a pipeline in Jenkins. While a *JOB* is a defined process, and a *BUILD* is the result of that *JOB* being carried out, a *PIPELINE* is a defined series of *JOBS* that can be interrupted in between processes by different events such as failed tests, approval, et. al.
+In super-simple terms, let me share with you my understanding of a Pipeline in Jenkins. While a *JOB* is a defined process, and a *BUILD* is the result of that *JOB* being carried out, a *PIPELINE* is a defined series of *JOBS* that can be interrupted in between processes by different events such as failed tests, approval, et. al.
 
 So when we use a Jenkinsfile which is written in [Groovy](https://en.wikipedia.org/wiki/Groovy_(programming_language)) for Jenkins's Pipeline plugin, we're able to do a lot a lot of things that you can't do if you're just creating a bunch of builds in the UI. I'll show you a sample, and then I'll tell you what I mean by that.
 
 #Sample
-Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/blob/master/Jenkinsfile). The Jenkinsfile code below is going to do this:
+Right now I'm working on a build for [Michael's dotnet core application](https://github.com/mhedgpeth/cafe/). The Jenkinsfile code below is going to do this:
 
 <img src='/assets/article_images/2017-01-01-devops-training-plan/jenkinspipeline.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
@@ -99,6 +99,13 @@ stage('publish') {
 ```
 
 #What you can't do in the UI
-1) can't run parallel commands
-2) can't commit it to version control
-3) 
+The UI is a tyical UI, right. It's there to help make some of the decisions for you. It wants to make your life easier, but everything in life is a tradeoff, so you have to sacrifice some functionality. 
+
+1) You can't run parallel commands in the UI, just sequential.
+2) You can't commit it to version control and have an approval and promotion process in the UI. 
+3) You can't know what changes were made in the Pipeline.
+
+The beauty of creating your Jenkinsfile for the Pipeline plugin is that you can manipulate it exactly the way that you want it. You have way more control and options than in the UI alone. The benefits that they make note of on [their website](https://jenkins.io/doc/book/pipeline/jenkinsfile/) are:
+ - Code review/iteration on the Pipeline
+ - Audit trail for the Pipeline
+ - Single source of truth for the Pipeline, which can be viewed and edited by multiple members of the project.

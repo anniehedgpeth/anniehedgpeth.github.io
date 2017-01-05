@@ -50,7 +50,7 @@ stage('compile') {
 
 
 
-```
+```groovy?line_numbers=true
 stage('test') {
     parallel unitTests: {
       node {
@@ -73,7 +73,7 @@ stage('test') {
 }
 ```
 
-```
+```groovy?line_numbers=true
 stage('publish') {
   parallel windows: {
     node {

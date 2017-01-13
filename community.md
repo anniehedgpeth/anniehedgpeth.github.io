@@ -19,3 +19,4 @@ permalink: /community/
 [Women Who Code](https://twitter.com/WWCodeDFW/status/807033959188086785)
 
 [“InSpec in the Cloud” at the DevOps Live!](https://www.youtube.com/watch?v=Y9kqolVaMOA)
+

@@ -15,7 +15,7 @@ image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.jpg
 # Resources
 
 > * [Jenkinsfile documentation](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
-> * [Pluralsight: Getting Started with Jenkins 2](https://app.pluralsight.com/library/courses/jenkins-2-getting-started/table-of-contents) by [Wes Higbee](https://twitter.com/g0t4) - *serious shoutout to this guy. His classes are perfect - very thorough and clear.*
+> * [Pluralsight: Getting Started with Jenkins 2](https://app.pluralsight.com/library/courses/jenkins-2-getting-started/table-of-contents) by [Wes Higbee](https://twitter.com/g0t4) - *serious shout-out to this guy. His classes are perfect - very thorough and clear.*
 
 # DevOps, Version Control, and Jenkinsfile
 

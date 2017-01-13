@@ -61,7 +61,7 @@ It's a bit small, but it says:
 ``` ruby
 control "xccdf_org.cisecurity.benchmarks_rule_10.1.1_Set_Password_Expirations_Days" do
   title "Set Password Expiration Days"
-  desc "The PASS_MAX_DAYS parameter in /etc/login.defs allows an administrator to force passwords to expire once they reach a defined age. It is recommended taht the PASS_MAX_DAYS parameter be set to less than or equal to 90 days."
+  desc "The PASS_MAX_DAYS parameter in /etc/login.defs allows an administrator to force passwords to expire once they reach a defined age. It is recommended that the PASS_MAX_DAYS parameter be set to less than or equal to 90 days."
   impact 1.0
   describe file("/etc/login.defs")do
     its(:content) { should match /^\s*PASS_MAX_DAYS\S+90/ }

@@ -12,7 +12,7 @@ image2: /assets/article_images/2016-06-07-red-green-refactor/red-green-refactor-
 # Red
 Two summers ago I had booked a place on Airbnb for a vacation, and in return Airbnb had asked if I wanted to rent out my place. I'll try anything once, so I did it. I figured that we could just book it once and use that money to go on a vacation. (And we did! We totally broke even on the deal, including gas, food, and entertainment.)
 
-The one hiccup in the plan was that we couldn't check the guests in personally because my husband wanted to get on the road early to go on our vacation. So we were driving the 10 hours to Taos, NM, and as with any long roadtrip, you know that you experience several drops in phone signal, sometimes for quite a long time. 
+The one hiccup in the plan was that we couldn't check the guests in personally because my husband wanted to get on the road early to go on our vacation. So we were driving the 10 hours to Taos, NM, and as with any long road-trip, you know that you experience several drops in phone signal, sometimes for quite a long time. 
 
 I had lost my signal for probably an hour as we drove through the eastern portion New Mexico, and suddenly I get about 10 texts and voicemails all at once.
 

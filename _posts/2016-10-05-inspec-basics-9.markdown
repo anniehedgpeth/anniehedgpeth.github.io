@@ -7,7 +7,7 @@ tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsec
 image: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9.jpg
 image2: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9-mobile.jpg
 ---
-Y'all, I was in [InSpec](http://inspec.io/) heaven a couple of weeks ago. I was on a [project](https://www.10thmagnitude.com/) where I was supposed to create an InSpec profile that tests the build and application configuration of a set of servers within a pipeline in [TeamCity](https://www.jetbrains.com/teamcity/) - smoketests. I had to translate a bunch of ServerSpec into InSpec and run the InSpec profile independently of the cookbook. Seems easy enough, but the challenge is testing all of the different environments and using different tests for each node spun up. The client also wanted it to be in one step for all the nodes, not a different step for each one.
+Y'all, I was in [InSpec](http://inspec.io/) heaven a couple of weeks ago. I was on a [project](https://www.10thmagnitude.com/) where I was supposed to create an InSpec profile that tests the build and application configuration of a set of servers within a pipeline in [TeamCity](https://www.jetbrains.com/teamcity/) - smoke-tests. I had to translate a bunch of ServerSpec into InSpec and run the InSpec profile independently of the cookbook. Seems easy enough, but the challenge is testing all of the different environments and using different tests for each node spun up. The client also wanted it to be in one step for all the nodes, not a different step for each one.
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -41,7 +41,7 @@ If you're following along in the [practice InSpec profile](https://github.com/an
 Now, the big bummer of this is that attributes don't work in Test Kitchen just yet, but I think that would be great if they did! (hint hint) Maybe sometime soon we'll get that.
 
 # Declaring the Attributes
-Let's go over to our control and add the attributes hardcoded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
+Let's go over to our control and add the attributes hard-coded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
 
 ```ruby
 role = attribute('role', default: 'base', description: 'type of node that the InSpec profile is testing')
@@ -122,7 +122,7 @@ See how it didn't include the tests for client only?
 And there you go! That's a simple guide to attributes! 
 
 # Concluding Thoughts
-I love this feature. It gives a lot of flexibility and control, and you can use it in a lot of different ways. The trick is to hardcode the attributes first to make sure it's working. 
+I love this feature. It gives a lot of flexibility and control, and you can use it in a lot of different ways. The trick is to hard-code the attributes first to make sure it's working. 
 
 So just a little job update - I'm loving it over here at 10th Magnitude. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}
 

@@ -7,7 +7,7 @@ tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsec
 image: /assets/article_images/2016-11-08-inspec-basics-10/inspec-basics-10.jpg
 image2: /assets/article_images/2016-11-08-inspec-basics-10/inspec-basics-10-mobile.jpg
 ---
-My last post about attributes was really born out of this issue I had had creating an InSpec profile that tests the build configuration of a machine within a pipeline in TeamCity and testing all of the different environments, making sure the correct Mysql passwords were entered in for each enviroment. In my last post, I had given you a crash course in how to use attributes,so now I'm going to show you how I used attributes to create the passwords that I needed using environment variables. 
+My last post about attributes was really born out of this issue I had had creating an InSpec profile that tests the build configuration of a machine within a pipeline in TeamCity and testing all of the different environments, making sure the correct Mysql passwords were entered in for each environment. In my last post, I had given you a crash course in how to use attributes,so now I'm going to show you how I used attributes to create the passwords that I needed using environment variables. 
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -37,12 +37,12 @@ Before I could shoot off a bunch of code, I needed to make sure I could do it ma
 mysql -uUSER -pPASSWORD -e "SELECT User, Host FROM mysql.user;"
 ```
 
-That stdout was exactly what I needed to write the proper control that I needed to test that I had the right users set up in my database. So now I could go back to my control and hardcode the password to see if it would test properly.
+That stdout was exactly what I needed to write the proper control that I needed to test that I had the right users set up in my database. So now I could go back to my control and hard-code the password to see if it would test properly.
 
-The control would end up looking something like this, but I added my hardcoded password as the default:
+The control would end up looking something like this, but I added my hard-coded password as the default:
 
 ```ruby
-password = attribute('password', default: 'HARDCODEDpasswordHERE', description: 'password for admin user in mysql datatbase')
+password = attribute('password', default: 'HARDCODEDpasswordHERE', description: 'password for admin user in mysql database')
 db = mysql_session('admin', password)
 
 describe db.query("SHOW DATABASES LIKE 'mydatabase'") do
@@ -63,7 +63,7 @@ After some trial and error (it took a while to get to this point), it worked, an
 
 # Make the password in the control into an attribute
 
-So you see up there how the password calls an [attribute](http://www.anniehedgie.com/inspec-basics-9)? Well, eventually I would have to make an attributes yaml, but don't worry, before that I just hardcoded the value. So I made a directory in my profile called `attributes`. Then I created a file in there called `attributes.yml`. The yaml was very simple, like this:
+So you see up there how the password calls an [attribute](http://www.anniehedgie.com/inspec-basics-9)? Well, eventually I would have to make an attributes yaml, but don't worry, before that I just hard-coded the value. So I made a directory in my profile called `attributes`. Then I created a file in there called `attributes.yml`. The yaml was very simple, like this:
 
 ```
 password: HARDCODEDpasswordHERE
@@ -79,7 +79,7 @@ It worked; great! Let's keep moving!
 
 # Make mysql password attribute configurable
 
-So I still needed a different password for each environment that I ran this on, right? So this hardcoded yaml wasn't gonna cut it. I needed a different yaml for each environment. Enter the erb and rakefile. I created a template that builds this yaml each time for me. 
+So I still needed a different password for each environment that I ran this on, right? So this hard-coded yaml wasn't gonna cut it. I needed a different yaml for each environment. Enter the erb and rakefile. I created a template that builds this yaml each time for me. 
 
 If you haven't used an `erb` before, it's basically a template that creates files for you. You have to run a `rake` command before you run your InSpec profile so that your desired file, in this case, our `attributes.yml`, is generated from the `erb`. 
 
@@ -87,7 +87,7 @@ First thing I did was to create another file in my `attributes` directory called
 
 Now to figure out which environment variable to use for the database password. It was something like `<%= ENV['Password'] %>`. 
 
-So I copied what was in my `attributes.yml` and pasted it into my `attributes.yml.erb`. Then I changed the hardcoded password to be the environment variable password.
+So I copied what was in my `attributes.yml` and pasted it into my `attributes.yml.erb`. Then I changed the hard-coded password to be the environment variable password.
 
 ```
 password : <%= ENV['Password'] %>
@@ -119,7 +119,7 @@ As you can see, this file is going to generate another file out of all of the `.
 Then, from my command line inside my profile's directory, I ran `rake`. And guess what; it created my `attributes.yml`!
 
 # Test it out in TeamCity
-So I won't give you a tutorial in TeamCity, but I did need to test it out there, so I ran my same `inspec exec` command inside a development enviroment build configuartion in TeamCity to see if the environment variables worked there. I did have to tweak it a bit to work within that pipeline but not a big deal.
+So I won't give you a tutorial in TeamCity, but I did need to test it out there, so I ran my same `inspec exec` command inside a development environment build configuration in TeamCity to see if the environment variables worked there. I did have to tweak it a bit to work within that pipeline but not a big deal.
 
 First, of course, I had set another build step to do the rake.
 

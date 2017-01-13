@@ -7,7 +7,7 @@ tags: chef, devsecops, devsecops, devops
 image: /assets/article_images/2016-07-15-chefconf/chefconf.jpg
 image2: /assets/article_images/2016-07-15-chefconf/chefconf-mobile.jpg
 ---
-I was so thrilled this week to be able to attend [ChefConf 2016](https://chefconf.chef.io/)! There were so many cool things about the week that got me super excited about the coming year. But also, there were things that made me excited about the future of the industry and how I can be a meaninful part of it. 
+I was so thrilled this week to be able to attend [ChefConf 2016](https://chefconf.chef.io/)! There were so many cool things about the week that got me super excited about the coming year. But also, there were things that made me excited about the future of the industry and how I can be a meaningful part of it. 
  
 First of all, let me just say that I was a little hesitant about going. I'm new to the industry, and I do *not* know everything about everything. But something I learned while I was there is that no one does! All it takes is a willingness and drive to learn more and more each day. That's all anyone is doing.
 
@@ -36,7 +36,7 @@ At 10:12, Barry Crist addresses this topic so well that I would have sworn he re
 ## Fitting In
 So I was interested to see how security and compliance were fitting into devops overall. DevOpsSec or DevSecOps or whatever you want to call it, has been a thing for a while now, but is security really as integrated as it needs to be into the ethos of devops strategies within organizations - not just up top but with your engineers, developers, sys admins, architects, etc? Short answer, I've found, is that it depends on the organization. Some have really embraced the challenge and have started doing it quite well, like [Optum](https://chefconf2016.sched.org/speaker/odie_routh.1v2stk3s) and [NCR](https://chefconf2016.sched.org/speaker/michael_hedgepeth.1v5jkgrw), and are becoming shining examples for others to emulate.
 
-For others, however, it seems like it's still the stereotypical nuissance that is getting tacked on to the end of production. That just tells me that there is still a lot of growth to happen and a lot of room for more education and change. 
+For others, however, it seems like it's still the stereotypical nuisance that is getting tacked on to the end of production. That just tells me that there is still a lot of growth to happen and a lot of room for more education and change. 
 
 ## Where Security is Headed
 That said, it looks like dev and ops folks will come on board soon enough because companies are asking for it, leadership is pushing for it, and security automation is becoming more obviously necessary. 

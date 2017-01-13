@@ -38,7 +38,7 @@ Development, on the other hand, wants to get their software shipped as quickly a
 
 The problem lies in that the two groups are speaking different languages. Security speaks PDF, and Development speaks code. So how do we translate for these two groups? (I think you see what's coming here.) Ahem...InSpec does a great job at this. But how can your DevOps people convince your Security people that this is the way to go?
 
-As I've seen it played out, this is not as easy as it may seem. It takes a bit of *finesse*. These two groups in your company may have been at odds for so long that it requires dipolomatic and empathetic soft skills on the part of the DevOps person managing this affair - someone who can convince the rest of Development that security matters and that it's not mitutia and who can convince Security that automation will make everyone's lives so much easier and enable them to focus on the higher level issues instead of staying in the weeds all the time. An openness to change and learn is necessary for all involved, from the top down.
+As I've seen it played out, this is not as easy as it may seem. It takes a bit of *finesse*. These two groups in your company may have been at odds for so long that it requires diplomatic and empathetic soft skills on the part of the DevOps person managing this affair - someone who can convince the rest of Development that security matters and that it's not minutia and who can convince Security that automation will make everyone's lives so much easier and enable them to focus on the higher level issues instead of staying in the weeds all the time. An openness to change and learn is necessary for all involved, from the top down.
 
 Once the most empathetic DevOps person convinces Security to give it a go, they can use the magic of [Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance) to most likely get them to about 80% compliant with their corporate security initiatives using the built-in profiles to scan against. This will give all people involved a greater sense of their current state of affairs, and Development can start remediating the heck out of things instead of spending all their time confused about what the security risks are. I can pretty much promise that this will get people excited, and things will start rolling with DevOps and Security working with each other instead of against each other.
 
@@ -47,7 +47,7 @@ Because each organization is unique and has their own security policies, we'll p
 
 *"Wait, what?! A developer on the security team?!"* 
 
-Well, why not? This person would still need to understand security at a deep level, but their main objective would be to understand the language of both worlds and bring them together. DevOps would serve a support function, but since Security would still need to be in control of the audit process, this person would bring the necessary additional skillset for automation and how to drive it.
+Well, why not? This person would still need to understand security at a deep level, but their main objective would be to understand the language of both worlds and bring them together. DevOps would serve a support function, but since Security would still need to be in control of the audit process, this person would bring the necessary additional skill-set for automation and how to drive it.
 
 Because this gives Security the ability to focus on higher level security matters, the cost of hiring on another person to fill this role is a no-brainer to me. It totally takes their company to the next level of security and compliance. 
 
@@ -66,6 +66,6 @@ And so, my story continues, and we'll see where it goes from here. I'd be very i
 
 P.S. Thank you to all my Twitter friends who retweeted that [I'm on the prowl](https://twitter.com/anniehedgie/status/748643963431587840) for a job in Chef/InSpec/Security! Feeling the love. 
 
-P.S.S. I'll be at [ChefConf](https://chefconf2016.eventcore.com/) next week, so give me a shoutout if you'll be there!
+P.S.S. I'll be at [ChefConf](https://chefconf2016.eventcore.com/) next week, so give me a shout-out if you'll be there!
 
 Go to Day 8: [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)

@@ -106,9 +106,9 @@ I think that the ability to create inherited profiles is absolutely necessary wh
 
 I did have a few minor issues with this process that I'm sure they'll fix soon, but it's something that you can be aware of so it doesn't slow you down. 
 
-First of all, I had a really minor error; I was missing an `end` and didn't notice. So when I tried to upload my compressed profile, it didn't do anything - not even give me an error message that I could understand. It took me creating an [embarassingly simple issue on github](https://github.com/chef/inspec/issues/789) to learn of my typo.
+First of all, I had a really minor error; I was missing an `end` and didn't notice. So when I tried to upload my compressed profile, it didn't do anything - not even give me an error message that I could understand. It took me creating an [embarrassingly simple issue on github](https://github.com/chef/inspec/issues/789) to learn of my typo.
 
-The other thing that was kind of a bummer is that I couldn't run it locally first before uploading it. So that embarassingly tiny error went unnoticed and caused me a bit of a headache. 
+The other thing that was kind of a bummer is that I couldn't run it locally first before uploading it. So that embarrassingly tiny error went unnoticed and caused me a bit of a headache. 
 
 All in all, errors aside, the process was pretty simple, and it taught me a new concept since I didn't even know what inheritance was before I learned this process. 
 

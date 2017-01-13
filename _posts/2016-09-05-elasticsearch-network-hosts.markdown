@@ -7,7 +7,7 @@ tags: elasticsearch, network hosts, cookbooks, chef
 image: /assets/article_images/2016-09-05-elasticsearch-network-hosts/elasticsearch.jpg
 image2: /assets/article_images/2016-09-05-elasticsearch-network-hosts/elasticsearch-mobile.jpg
 ---
-Hello, friends! I've missed you. I've been a busy bee. I got hired onto a contract-to-hire position at a consultancy for whom I'm working on a Chef project. I'm having a great time because I'm learning so much. To say that I'm drinking from a firehose is an understatement.
+Hello, friends! I've missed you. I've been a busy bee. I got hired onto a contract-to-hire position at a consultancy for whom I'm working on a Chef project. I'm having a great time because I'm learning so much. To say that I'm drinking from a fire-hose is an understatement.
 
 But I definitely want to slow down and share some breakthroughs so that I can remember them for later and hopefully help some of you out along the way. 
 
@@ -89,4 +89,4 @@ end
 And call it good. :)
 
 # Concluding Thoughts
-Everything seems hard until you break it into small, bite-sized, managable chunks. I didn't want to deal with this issue, and so I put it off until the very end. But when I sat down, talked it through, and mapped it out with Michael, it was suddenly much more managable. Sounds a lot like life!
+Everything seems hard until you break it into small, bite-sized, manageable chunks. I didn't want to deal with this issue, and so I put it off until the very end. But when I sat down, talked it through, and mapped it out with Michael, it was suddenly much more manageable. Sounds a lot like life!

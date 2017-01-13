@@ -15,7 +15,7 @@ Hello my friends. I hope you're back for some [InSpec](https://github.com/chef/i
   - Day 4: [Custom Matchers](http://www.anniehedgie.com/inspec-basics-4)
   - Day 5: [Creating a Profile](http://www.anniehedgie.com/inspec-basics-5)
 
-I've been quite occupied lately building my skillset with some studying up on Linux, Chef, Kitchen, remediation workflow, and little bit of Ruby so that I can use InSpec in a broader sense. No big. Seriously, though, starting from scratch is not easy, but it's definitely not boring, either. 
+I've been quite occupied lately building my skill-set with some studying up on Linux, Chef, Kitchen, remediation workflow, and little bit of Ruby so that I can use InSpec in a broader sense. No big. Seriously, though, starting from scratch is not easy, but it's definitely not boring, either. 
 
 I'm not exactly giving you another tutorial today, but instead I want to step back a little bit to get a broader perspective of InSpec. I'm going to talk about the different ways in which we can run InSpec and the different places in which to store it. 
 

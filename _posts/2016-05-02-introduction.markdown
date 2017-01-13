@@ -14,12 +14,12 @@ So this is my introductory post, and I can't shake that feeling like I just walk
 
 I have a BFA in Film, a minor in Theatre, and I worked as a Casting Director before leaving full-time employment for more flexible endeavors while I was raising babies. I did some blogging, and currently I have a home decorating business. 
 
-[I'm ready to go back to full-time employment now](http://leanin.org/book/), but I also want a career change. The obvious career path for someone with my skillset is probably HR or Marketing, and I get that. But here's the catch - I don't want that. 
+[I'm ready to go back to full-time employment now](http://leanin.org/book/), but I also want a career change. The obvious career path for someone with my skill-set is probably HR or Marketing, and I get that. But here's the catch - I don't want that. 
 
 I'd love to take the soft skills that I've gained through my creative pursuits and apply them to technology. I feel like I could contribute something original and learn to create at a level that I haven't yet experienced.
 
 Over the course of the next few weeks and months I'll be doing a series of small projects and sharing what I learn. I'm taking baby steps to get to where I want to be, but [I'm excited about the process](https://youtu.be/C13JC_YP2Q8). 
 
-When I first started learning how to speak French the biggest hurdle was just getting out there and speaking it with people withouth being embarassed. If I didn't humble myself in that way, then I would have never improved. I made a ton of mistakes (and am still not totally fluent), but I have finally learned to not be embarassed. 
+When I first started learning how to speak French the biggest hurdle was just getting out there and speaking it with people without being embarrassed. If I didn't humble myself in that way, then I would have never improved. I made a ton of mistakes (and am still not totally fluent), but I have finally learned to not be embarrassed. 
 
-This website for me is like speaking horribly broken French to native Parisians. It's a little embarassing, but I'm hoping that the upside will be lots of growth and understanding.    
+This website for me is like speaking horribly broken French to native Parisians. It's a little embarrassing, but I'm hoping that the upside will be lots of growth and understanding.    

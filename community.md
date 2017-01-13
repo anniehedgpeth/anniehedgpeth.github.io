@@ -7,9 +7,9 @@ permalink: /community/
 
 
 # BLOGS / PODCASTS:
-[Arrested DevOps: ChefConf 2016](https://www.youtube.com/watch?v=U7i4JE4Zk7w&t=578s)
-
-[Arrested DevOps podcast: DevOpsDays DFW 2016](https://www.arresteddevops.com/devopsdays-dfw-2016/)
+Arrested DevOps podcast: 
+ - [ChefConf 2016](https://www.youtube.com/watch?v=U7i4JE4Zk7w&t=578s)
+ - [DevOpsDays DFW 2016](https://www.arresteddevops.com/devopsdays-dfw-2016/)
 
 SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gRAtHs)
 

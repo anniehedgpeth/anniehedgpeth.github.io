@@ -21,4 +21,4 @@ Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/statu
 
  DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA)
 
-UPCOMING: [ConfigManagementCamp Gent] - Tuesday, February 7, 2017(http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html)
+UPCOMING: [ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html)- Tuesday, February 7, 2017

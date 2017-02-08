@@ -19,6 +19,6 @@ SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gR
 # SPEAKING ENGAGEMENTS:
 Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/status/807033959188086785)
 
- DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA)
+DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA)
 
-UPCOMING: [ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html)- Tuesday, February 7, 2017
+[ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html): [My Journey Into Technology Through InSpec](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)

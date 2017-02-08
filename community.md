@@ -17,8 +17,8 @@ SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gR
 10th Magnitude blog: [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
 
 # SPEAKING ENGAGEMENTS:
-Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/status/807033959188086785)
+Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/status/807033959188086785), [slides](http://prezi.com/2dkunsfxz99y/?utm_campaign=share&rc=ex0share&utm_medium=copy)
 
-DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA)
+DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA), [slides](http://prezi.com/teptbcs7stva/?utm_campaign=share&rc=ex0share&utm_medium=copy)
 
-[ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html): [My Journey Into Technology Through InSpec](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)
+[ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html): My Journey Into Technology Through InSpec[slides](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)

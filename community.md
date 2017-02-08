@@ -3,7 +3,7 @@ layout: page
 title: Community Involvements
 permalink: /community/
 ---
-<img src='/assets/article_images/community/chefconfado.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+[<img src='/assets/article_images/community/chefconfado.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://www.youtube.com/watch?v=U7i4JE4Zk7w&t=578s)
 
 
 # BLOGS / PODCASTS:
@@ -21,4 +21,4 @@ Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/statu
 
 DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA), [slides](http://prezi.com/teptbcs7stva/?utm_campaign=share&rc=ex0share&utm_medium=copy)
 
-[ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html): My Journey Into Technology Through InSpec[slides](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)
+[ConfigManagementCamp Gent](http://cfgmgmtcamp.eu/schedule/main/annie-hedgpeth.html): My Journey Into Technology Through InSpec, [slides](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)

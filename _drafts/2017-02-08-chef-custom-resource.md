@@ -11,11 +11,11 @@ I have been working toward my Chef certification here lately, and my husband cam
 
 I really love this kata that Michael created because I can:
 
-1) copy and paste the tasks into my [Checkvist](https://checkvist.com/),
-2) create a [base cookbook](https://github.com/anniehedgpeth/chefkata), 
-3) create a branch, 
-4) run through the kata, knocking out each task on my Checkvist as I go, 
-5) and then create another branch off of the base cookbook the next time I go through the kata.
+1. copy and paste the tasks into my [Checkvist](https://checkvist.com/),
+2. create a [base cookbook](https://github.com/anniehedgpeth/chefkata), 
+3. create a branch, 
+4. run through the kata, knocking out each task on my Checkvist as I go, 
+5. and then create another branch off of the base cookbook the next time I go through the kata.
 
 It's been really good for me. It causes the things that I just don't understand to really stand out so that I can focus on them a little more. So one of those things that kept getting me stuck was [custom resources](https://docs.chef.io/custom_resources.html). For me, the documentation just wasn't enough. So I'm going to explicitly explain this one custom resource that I had to make so that I can come back to this and remember. Maybe it'll help some of you, too!
 

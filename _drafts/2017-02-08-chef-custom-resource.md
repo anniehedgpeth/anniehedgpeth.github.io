@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "A Chef Custom Resource"
-date:   2017-02-08 12:00:00
+date:   2017-02-10 06:00:00
 categories: devops training, chef, custom resource, cookbooks, recipe, Learning, kata
 tags: devops training, chef, custom resource, cookbooks, recipe, Learning, kata
-image: /assets/article_images/2017-02-08-a-chef-custom-resource/chef-custom-resource.jpg
-image2: /assets/article_images/2017-02-08-a-chef-custom-resource/chef-custom-resource-mobile.jpg
+image: /assets/article_images/2017-02-10-chef-custom-resource/chef-custom-resource.jpg
+image2: /assets/article_images/2017-02-10-chef-custom-resource/chef-custom-resource-mobile.jpg
 ---
-I have been working toward my Chef certification here lately, and my husband came up with this really cool [kata](hhttps://github.com/mhedgpeth/chef-by-example) that I've been working on lately to study up for my first exam. A kata is something that you do over and over for training and for the purpose of bringing the broken parts of the process to light. It's origins are in karate, and I'm sure you've heard of how it was implemented at Toyota with their famous Toyota-kata. 
+I have been working toward my Chef certification here lately, and my husband came up with this really cool [kata](https://github.com/mhedgpeth/chef-by-example) that I've been working on lately to study up for my first exam. A kata is something that you do over and over for training and for the purpose of bringing the broken parts of the process to light. It's origins are in karate, and I'm sure you've heard of how it was implemented at Toyota with their famous Toyota-kata. 
 
 I really love this kata that Michael created because I can:
 
@@ -22,7 +22,7 @@ It's been really good for me. It causes the things that I just don't understand 
 #Why I wasn't getting it
 Here's what the Chef docs say:
 
-[<img src='/assets/article_images/2017-02-08-a-chef-custom-resource/chefdocs.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://docs.chef.io/custom_resources.html)
+[<img src='/assets/article_images/2017-02-10-chef-custom-resource/chefdocs.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://docs.chef.io/custom_resources.html)
 
 Honestly, when it all came down to it, I realized that I didn't understand the documentation because I didn't know the proper names for all of the parts of the resource. My understanding now of a very basic resource declaration is this:
 
@@ -129,4 +129,4 @@ end
 ```
 
 #Concluding Thoughts
-I have to admit that the way resources are created doesn't feel all that intuitive to me just yet. It could very well be that I just haven't used Chef enough for it to be intuitive yet; that's what [Michael](http://hedge-ops.com) says, anyway. But that's what this kata is for - to practice over and over until it is engrained. 
+I have to admit that the way resources are created doesn't feel all that intuitive to me just yet. It could very well be that I just haven't used Chef enough for it to be intuitive yet; that's what [Michael](http://hedge-ops.com) says, anyway. But that's what this kata is for - to practice over and over until it is ingrained. 

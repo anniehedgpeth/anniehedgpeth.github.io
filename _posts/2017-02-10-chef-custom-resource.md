@@ -19,7 +19,7 @@ I really love this kata that Michael created because I can:
 
 It's been really good for me. It causes the things that I just don't understand to really stand out so that I can focus on them a little more. So one of those things that kept getting me stuck was [custom resources](https://docs.chef.io/custom_resources.html). For me, the documentation just wasn't enough. So I'm going to explicitly explain this one custom resource that I had to make so that I can come back to this and remember. Maybe it'll help some of you, too!
 
-#Why I wasn't getting it
+# Why I wasn't getting it
 Here's what the Chef docs say:
 
 [<img src='/assets/article_images/2017-02-10-chef-custom-resource/chefdocs.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://docs.chef.io/custom_resources.html)
@@ -39,7 +39,7 @@ end
 `action` is a property of the resource that tells chef-client what to do.
 `value` is the value that you're giving to `property`.
 
-#My Recipe's Starting Point
+# My Recipe's Starting Point
 Some of the tasks in the [kata](hhttps://github.com/mhedgpeth/chef-by-example) are:
  - Run the command `echo ran command > /var/website/command.txt`
  - Don't run the command the second time Chef converges (i.e. make it idempotent)
@@ -68,7 +68,7 @@ There are a couple of reasons we'd want to make a custom resource.
 
 So how do I make that whole block (above) into one custom resource? First, I'm going to show you what I ended up with, and then I'm going to show you what each thing means.
 
-##My Custom Resource
+## My Custom Resource
 
 Sibling to my `recipes` directory, I created a `resources` directory. Within that, I created a Ruby file that was just for that one custom resource that I wanted to create. I called it `chefkata.rb`, and put this in it.
 
@@ -112,7 +112,7 @@ directory '/var/website'
 
 By omitting the `path`, which is the `name_property` for the `directory` resource, Chef will set the `path` property to `/var/website` because that's what I set the `name` to. So really, each resource has a different default `name_property` that you can find in docs.chef.io. 
 
-##In the recipe
+## In the recipe
 
 After that was finished, I was able to then call that resource in my recipe, which looked simply like this:
 
@@ -128,5 +128,5 @@ chefkata 'example' do
 end
 ```
 
-#Concluding Thoughts
+# Concluding Thoughts
 I have to admit that the way resources are created doesn't feel all that intuitive to me just yet. It could very well be that I just haven't used Chef enough for it to be intuitive yet; that's what [Michael](http://hedge-ops.com) says, anyway. But that's what this kata is for - to practice over and over until it is ingrained. 

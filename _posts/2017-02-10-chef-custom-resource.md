@@ -20,6 +20,7 @@ I really love this kata that Michael created because I can:
 It's been really good for me. It causes the things that I just don't understand to really stand out so that I can focus on them a little more. So one of those things that kept getting me stuck was [custom resources](https://docs.chef.io/custom_resources.html). For me, the documentation just wasn't enough. So I'm going to explicitly explain this one custom resource that I had to make so that I can come back to this and remember. Maybe it'll help some of you, too!
 
 # Why I wasn't getting it
+
 Here's what the Chef docs say:
 
 [<img src='/assets/article_images/2017-02-10-chef-custom-resource/chefdocs.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://docs.chef.io/custom_resources.html)
@@ -40,6 +41,7 @@ end
 `value` is the value that you're giving to `property`.
 
 # My Recipe's Starting Point
+
 Some of the tasks in the [kata](hhttps://github.com/mhedgpeth/chef-by-example) are:
  - Run the command `echo ran command > /var/website/command.txt`
  - Don't run the command the second time Chef converges (i.e. make it idempotent)
@@ -129,4 +131,5 @@ end
 ```
 
 # Concluding Thoughts
+
 I have to admit that the way resources are created doesn't feel all that intuitive to me just yet. It could very well be that I just haven't used Chef enough for it to be intuitive yet; that's what [Michael](http://hedge-ops.com) says, anyway. But that's what this kata is for - to practice over and over until it is ingrained. 

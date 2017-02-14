@@ -21,4 +21,4 @@ Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/statu
 
 DevOps Live!: [“InSpec in the Cloud”](https://www.youtube.com/watch?v=Y9kqolVaMOA), [slides](http://prezi.com/teptbcs7stva/?utm_campaign=share&rc=ex0share&utm_medium=copy)
 
-ConfigManagementCamp Gent: [My Journey Into Technology Through InSpec](https://youtu.be/Vg9ViDHKWJc), [slides](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)
+ConfigManagementCamp Gent: [My Journey Into Technology Through InSpec](https://youtu.be/Vg9ViDHKWJc?t=23m47s), [slides](http://prezi.com/3k-pdefzgx9t/?utm_campaign=share&rc=ex0share&utm_medium=copy)

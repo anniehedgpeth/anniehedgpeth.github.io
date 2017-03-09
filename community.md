@@ -11,6 +11,7 @@ Arrested DevOps podcast:
 
  - [ChefConf 2016](https://www.youtube.com/watch?v=U7i4JE4Zk7w&t=578s)
  - [DevOpsDays DFW 2016](https://www.arresteddevops.com/devopsdays-dfw-2016/)
+ - [Introduce a Girl to Engineering Day 2017](https://youtu.be/MitmkB-MLOw)
 
 SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gRAtHs)
 

@@ -10,4 +10,4 @@ netsh advfirewall firewall add rule name="WinRM 5986" protocol=TCP dir=in localp
 sc config winrm start=auto
 net start winrm
 rem install chocolatey
-iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"

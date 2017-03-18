@@ -1,6 +1,6 @@
-choco install chefdk
-choco install chef-client
-choco install git
-choco install googlechrome
-choco install visualstudiocode
-chef gem install kitchen-azurerm
+choco install chefdk -y
+choco install chef-client -y
+choco install git -y
+choco install googlechrome -y
+choco install visualstudiocode -y
+chef gem install kitchen-azurerm -y

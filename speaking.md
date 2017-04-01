@@ -25,4 +25,6 @@ Arrested DevOps podcast:
 
 SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gRAtHs)
 
-10th Magnitude blog: [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
+10th Magnitude blog: 
+[DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
+[Compliance as Code: An Introduction to InSpec](https://www.10thmagnitude.com/tech-blog/compliance-code-introduction-inspec/)

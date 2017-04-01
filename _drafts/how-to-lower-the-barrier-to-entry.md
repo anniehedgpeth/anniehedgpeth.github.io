@@ -26,7 +26,6 @@ If you're reading this, then chances are that you have some sort of privilege. [
 
 3) **Do experiments to learn what motivates your apprentice.** 
 This might require some trial and error and experimentation. I did a series of experiments to see if I was more of a developer or more of an operations person. Turns out that I have more of a developer mindset, but how would I have known that without discovery? From there, we were able to chart a course of learning, starting very small and building. 
-<img src='/assets/article_images/2017-04-01-barriers/firstcommit.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 4) **Create a sense of urgency.** 
 Once you have a course charted, then motivation is going to ebb and flow. The only thing that is going to get this apprentice of yours through those valleys is a sense of urgency. For me that meant self-imposed deadlines and goals, public accountability with Twitter and a blog, and a weekly meeting with [someone](https://twitter.com/chri_hartmann) that I didn't want to let down who was loaning me his privilege.
@@ -34,11 +33,12 @@ Once you have a course charted, then motivation is going to ebb and flow. The on
 
 5) **Discover inverted learning.** 
 The most overwhelming thing for a person new to technology is the idea that they have to know _everything_. When I learned InSpec, I didn't know what I was testing. As an infrastructure auditing framework, I knew that I was testing to see if the infrastructure was the way it was supposed to be, but I didn't really know what those things meant. I had to dig in to learn that. When I had learned InSpec enough to move on to add Chef to my repertoire, I was able to remediate the failures with a cookbook, furthering my learning of what those audits actually meant. Mind you, I was doing everything with oversight. I don't propose that you create a bunch of code-monkeys who simple create code that they don't understand, but rather use the code to teach, grow, and develop thinkers. 
-<img src='/assets/article_images/2017-04-01-barriers/invertedlearning.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2017-04-01-barriers/shouldbeinspec.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 6) **Don't rush it!**
 Imagine your student's learning as a kanban board with columns **A** (skills they have yet to learn), **B** (skills they are currently learning), and **C** (skills they've mastered) with the goal of a good flow through the board. As [Kathy Sierra](http://www.oreilly.com/pub/expert/kathysierra) notes in her [highly recommended talk](https://www.youtube.com/watch?v=FKTxC9pl-WM), we cannot bypass B! If we either pile up too many skills into the **B** board or we try to rush them through **B**, then we will end up with a bunch of half-learned skills that will likely be lost. This leads to discouragement, frustration, failure, and a higher likelihood of giving up. Your student is best served with patience, given the allowance to master skills at their own pace.
 <img src='/assets/article_images/2017-04-01-barriers/kathysierra.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 7) **Allow them to specialize in a skill.**
 Once they master a skill, they have the ability to practice it with confidence, advise others on it, and add value! If you've invested in the right type of person, then they desire more than anything to add value, and when you allow them to add value, you grow the confidence that will propel them to learn and master even more. 
 
@@ -49,5 +49,3 @@ Could your team use some diversity? From what type of minds could your team bene
 Your apprentice's uphill climb will last for quite some time. They will need mentorship focused on growth and development. Start out being very explicit in what is expected of them. Very slowly, be less and less explicit. Protect them from failure and set them up for many wins, big and small alike. Their confidence is key in this first year of transition. Without it, their grit and fortitude will not last. 
 
 I hope this propels you to be an integral part of someone's story. They need you, and you can be a game-changer for them. 
-
-<img src='/assets/article_images/2017-04-01-barriers/futureself.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />

@@ -19,7 +19,7 @@ Let's assume you have someone in mind that you want to encourage in their journe
 
 1) **Convince them to give you three weeks.**
 Surely you have a problem that needs solving with which this person can experiment. With me it was [InSpec](http://inspec.io/tutorials/). [My husband](http://hedge-ops.com/) wanted to see if I could prove that InSpec was approachable to non-developers. I totally wasn't feeling it and thought he was crazy. He convinced me to give it three weeks. I couldn't fail. If I was able to learn it, then I proved their assumption correct. If I couldn't learn it, then it was valuable information to both him and the authors of the framework. The rest is history.
-<img src='/assets/article_images/2017-04-01-barriers/barriers2.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2017-04-01-barriers/barriers2.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 2) **Lend your privilege.** 
 If you're reading this, then chances are that you have some sort of privilege. [Anjuan Simmons](http://www.anjuansimmons.com/) speaks about [lending your privilege](http://www.anjuansimmons.com/my-talks/lendingprivilege) to those that could benefit from your platform. I would not have had the opportunities that I've been given without so many people generously loaning me their privilege, the most of whom is my husband. He loaned me his knowledge, his network, his time and energy, and his mind. So inspired by the generosity of others, I'm seeking to loan my privilege as I can, too.

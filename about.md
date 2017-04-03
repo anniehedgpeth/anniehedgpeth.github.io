@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img src='/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+<img src='/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 At [10th Magnitude](https://www.10thmagnitude.com/), I focus on accelerating Azure cloud adoption through automation and DevOps. I have done this through configuration management with Chef, provisioning infrastructure with ARM templates and Terraform, and compliance automation through InSpec. I'm also working toward automating our Azure Site Recovery projects and to utilize Mesosphere to operationalize containers.
 

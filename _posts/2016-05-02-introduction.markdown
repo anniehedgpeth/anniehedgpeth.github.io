@@ -12,7 +12,7 @@ image2: /assets/article_images/2016-05-02-introduction/introduction-mobile.jpg
 So this is my introductory post, and I can't shake that feeling like I just walked into the men's restroom. It's not because it's [mostly men in technology](http://martinfowler.com/articles/born-for-it.html) (well, a little), but it's because I don't know how I got here and if I should exit quickly before making eye contact with anyone. 
 <!--more-->
 
-I have a BFA in Film, a minor in Theatre, and I worked as a Casting Director before leaving full-time employment for more flexible endeavors while I was raising babies. I did some blogging, and currently I have a home decorating business. 
+I have a BFA in Film, a minor in Theatre, and I worked as a [Casting Director](http://www.imdb.com/name/nm1805484/?ref_=nv_sr_1) before leaving full-time employment for more flexible endeavors while I was raising babies. I did some blogging, and currently I have a home decorating business. 
 
 [I'm ready to go back to full-time employment now](http://leanin.org/book/), but I also want a career change. The obvious career path for someone with my skill-set is probably HR or Marketing, and I get that. But here's the catch - I don't want that. 
 

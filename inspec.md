@@ -3,7 +3,7 @@ layout: page
 title: InSpec Basics
 permalink: /inspec/
 ---
-[<img src='/assets/article_images/inspec/InSpecLogo.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)
+[<img src='/assets/images/InSpecLogo.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)
 
 Learning InSpec is completely approachable, and if you follow these tutorials, you'll be writing compliance as code in no time!
 

@@ -73,16 +73,16 @@ Just zip it up and upload it. You can also upload it from the command line using
 
 When you're scanning on Chef Compliance, you can only use profiles that are stored on the Compliance server, not on Github or the Chef Supermarket. But I hear rumblings of the ability to store it on Chef Supermarket for use in Chef Compliance in the near future.
 
+## Running InSpec in an [audit cookbook](https://github.com/chef-cookbooks/audit)
 **You might not be able to scan on Chef Compliance.** Perhaps you don't want to store credentials on the Chef Compliance server. And you may not want the Chef Compliance server to see the nodes you're scanning for security purposes. 
 
-## Running InSpec in an [audit cookbook](https://github.com/chef-cookbooks/audit)
-So you'll probably want to use this [audit cookbook](https://github.com/chef-cookbooks/audit) if you've decided that you can't let the Chef Compliance server scan your machines. You can run this on your machine that's running Chef, and while the results of the scan will go to the Compliance server, the server will never have scanned your machine.  
+In that case, you'll want to use this [audit cookbook](https://github.com/chef-cookbooks/audit) if you've decided that you can't let the Chef Compliance server scan your machines. This cookbook will run your InSpec profiles as a part of your `chef-client` run by pulling your profiles off of wherever you're storing them - the Supermarket, Compliance Server, Github, etc. While the results of the scan will go to the Compliance server and supply the data for all those pretty charts, the server will never have scanned your machine.
 
 This, too, is for use in all stages of the development life cycle and has the flexibility to have profiles stored in: 
 
   - [Github](https://github.com/)
   - [Chef Supermarket](https://supermarket.chef.io)
-  - [Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)
+  - [Chef Compliance / Automate](http://www.anniehedgie.com/tour-of-chef-compliance)
 
 ## Concluding Thoughts
 After learning InSpec at a very basic level, I was pleased with how approachable and easy to grasp it was. And the more I've worked with it, I've come to find InSpec quite versatile. It's been a great study tool for me because I was able to start out so simply and build on that knowledge. I think that's the key to learning any new skill, really - start with small, manageable chunks and work your way up. Try not to get discouraged by what you don't know, and focus on what you do know. 

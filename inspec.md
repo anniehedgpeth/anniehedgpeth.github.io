@@ -3,10 +3,10 @@ layout: page
 title: InSpec Basics
 permalink: /inspec/
 ---
-<img src='/assets/article_images/inspec/what-is-inspec.svg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+[<img src='/assets/article_images/inspec/what-is-inspec.svg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)
 
-  - [Setting Up Compliance](http://www.anniehedgie.com/setting-up-compliance)
-  - [Tour of Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)
+Learning InSpec is completely approachable, and if you follow these tutorials, you'll be writing compliance as code in no time!
+
   - [Hello World](http://www.anniehedgie.com/inspec-basics-1) 
   - [Command Resource](http://www.anniehedgie.com/inspec-basics-2)
   - [File Resource](http://www.anniehedgie.com/inspec-basics-3)
@@ -17,3 +17,5 @@ permalink: /inspec/
   - [Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
   - [Attributes](http://www.anniehedgie.com/inspec-basics-9)
   - [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)
+  - [Setting Up Compliance](http://www.anniehedgie.com/setting-up-compliance)
+  - [Tour of Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)

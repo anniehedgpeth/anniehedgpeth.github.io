@@ -43,6 +43,8 @@ Defaults!ALL !requiretty
 
 That's it! Now we're ready to roll.
 
+UPDATE: This is just a problem with CentOS. 
+
 ## Ingredients
 You're going to need about a bazillion windows open for our little workflow to happen, so open up these:
   

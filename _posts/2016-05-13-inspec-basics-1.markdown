@@ -9,11 +9,11 @@ image2: /assets/article_images/2016-05-13-inspec-basics-1/inspec-basics-1-mobile
 ---
 I've been sharing what I've learned about [Chef Compliance](http://www.anniehedgie.com/setting-up-compliance), and because it uses the [InSpec framework](https://www.chef.io/compliance/), I want to start a little series on [InSpec](https://www.chef.io/inspec/) to gain a fuller understanding, appreciation for, and greater flexibility with [Compliance](https://www.chef.io/compliance/). 
 
-It's possible that you're part of a company, perhaps without a dedicated security team, that might be totally content to run scans off of the premade [CIS profiles](https://benchmarks.cisecurity.org/) and call it a day. In my opinion, that's when you're getting the biggest bang for your buck with Compliance. It couldn't be easier! 
+It's possible that you're part of a company, perhaps without a dedicated security team, that uses Chef Compliance from within [Chef Automate](https://www.chef.io/automate/). And it's possible that you're totally content to run scans off of the premade [CIS profiles](https://benchmarks.cisecurity.org/) and call it a day. That's a huge selling point of Compliance. It couldn't be easier! 
 
-But it's more likely that the built-in Compliance profiles will get you to 80% of what you need, and then you'll want to add or edit a bunch of other specific tests or maybe even take away some of the profile's tests to meet the other 20% of your needs. By the end of this series, I'll know how to do it (because I'm learning as I go), and you will, too!
+In reality, however, the built-in Compliance profiles will get you to 80% of what you need, and then you'll want to add or modify a bunch of other specific tests from the profiles to meet the other 20% of your needs. By the end of this series, I'll know how to do it (because I'm learning as I go), and you will, too!
 
-Today, we're going to run through a really simple set up and run a *Hello World* test, just to get our feet wet. And don't forget, I'm going totally basic on you because I want non-developer-types to learn, too! That's actually the thing that attracted me [getting started in my tech journey](http://www.anniehedgie.com/introduction) with InSpec and Compliance - because it's totally approachable and the authors *want* it to be understandable by non-developer-types. 
+Today, we're going to run through a really simple set up and run a *Hello World* test, just to get our feet wet. And don't forget, InSpec was written with non-developer-types in mind! That's actually the thing that attracted me [getting started in my tech journey](http://www.anniehedgie.com/introduction) with InSpec and Compliance - because it's totally approachable and the authors *want* it to be approachable. 
 
 By the end of this series, I suppose, I will have tested their intentions one way or another. And for full disclosure, Chef is not paying me for these posts, so you're getting a truly unbiased opinion. [My husband's](http://hedge-ops.com) [company](http://www.ncr.com) is a customer of Chef's which is what gave me the idea to delve into Compliance as a starting point.
 
@@ -21,8 +21,10 @@ By the end of this series, I suppose, I will have tested their intentions one wa
 ## Installation
 Okay, enough about me, let's open up some terminals and get started. If you already have the updated versions of Homebrew, Ruby, and InSpec, then skip ahead!  
 
+UPDATE: If you have the current ChefDK installed, skip down to [Hello World Tutorial](#hello-world-tutorial). Also, there are a few other installation options listed [here](https://github.com/chef/inspec#installation).
+
 ### Install Homebrew
-So apparently, before I could install InSpec, I needed to have the latest version of Ruby installed. And before I could install the latest version of Ruby, I had to install [Homebrew](http://brew.sh/), the OS X package manager. 
+Before I could install InSpec, I needed to have the latest version of Ruby installed. And before I could install the latest version of Ruby, I had to install [Homebrew](http://brew.sh/), the OS X package manager. 
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -43,7 +45,7 @@ rbenv install 2.3.0
 rbenv global 2.3.0
 ```
 
-Close terminal and reopen
+Close terminal and reopen.
 
 ```
 ruby -v
@@ -53,6 +55,8 @@ So now do you have the latest version of Ruby 2.3.0?? It'll say after you run th
 
 ### Installing InSpec
 Now we're on to the good stuff. Let's install InSpec:
+
+UPDATE: It's preferable to use the InSpec that comes with the ChefDK, but if you're not using ChefDK otherwise, feel free to use the standalone version of InSpec. They do update it more often. Again, here are the other [installation options](https://github.com/chef/inspec#installation).
 
 ```
 gem install inspec
@@ -79,8 +83,8 @@ control "world-1.0" do                                # A unique ID for this con
   title "Hello World"                                 # Readable by a human
   desc "Text should include the words 'hello world'." # Optional description
   describe file('hello.txt') do                       # The actual test
-   its('content') { should match 'Hello World' }
-  end
+   its('content') { should match 'Hello World' }      # You could just do the "describe file" block if you want. The  
+  end                                                 # rest is just metadata, but it's a good habit to get into.
 end
 ```
 

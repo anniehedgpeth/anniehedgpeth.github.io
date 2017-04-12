@@ -38,7 +38,7 @@ That means that we're going to need two different sets of tests:
 
 If you're following along in the [practice InSpec profile](https://github.com/anniehedgpeth/practice-inspec-profile), then you'll see that there are three different sets of tests (well, really just one test in each control, but you get the picture.) We're going to set it up so that we can run one test for each role.
 
-Now, the big bummer of this is that attributes don't work in Test Kitchen just yet, but I think that would be great if they did! (hint hint) Maybe sometime soon we'll get that.
+Now, the big bummer of this is that attributes don't work for InSpec in Test Kitchen just yet like they do for [recipes](https://docs.chef.io/config_yml_kitchen.html), but I think that would be great if they did! (hint hint) Maybe sometime soon we'll get that.
 
 # Declaring the Attributes
 Let's go over to our control and add the attributes hard-coded with a default value and see what it does. We're going to declare the attributes above where we're using them. So add this above your `client` control.
@@ -48,7 +48,7 @@ role = attribute('role', default: 'base', description: 'type of node that the In
 ```
 
 # Use the attributes in an IF statement
-Now that the attributes are declared, we'll need to wrap our controls in an `if` statement so that it only tests that block when we want it to. So your `client` control block is going to end up looking like this:
+Now that the attributes are declared, we'll need to wrap our controls in an `if` statement so that it only tests that block when we want it to. Your `client` control block is going to end up looking like this:
 
 ```ruby
 if ['client', 'base'].include? role

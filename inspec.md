@@ -1,6 +1,6 @@
 ---
 layout: page
-title: InSpec Basics
+# title: InSpec Basics
 permalink: /inspec/
 ---
 [<img src='/assets/images/InSpecLogo.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://inspec.io/)

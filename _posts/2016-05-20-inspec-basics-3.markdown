@@ -24,7 +24,7 @@ Open these up, and make sure your CentOS vm is up and running.
   - [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec)
   - [InSpec Reference page](https://docs.chef.io/inspec_reference.html)
   - [Rubular](http://rubular.com/)
-  - [Download the PDF of the CIS CentOS Linux Benchmark](https://benchmarks.cisecurity.org/downloads/show-single/?file=centos6.110)
+  - [Download the PDF of the CIS CentOS Linux Benchmark](https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_6_Benchmark_v1.1.0.pdf)
   - your text editor  
   - your command line
   
@@ -45,7 +45,7 @@ So head over to [Nathen Harvey's workshop](https://github.com/chef-training/work
 ![](/assets/article_images/2016-05-20-inspec-basics-3/01-nathen-harvey.png)
 
 ### 2. Find and read the control in the CIS pdf
-Open the [CIS CentOS Linux 6 Benchmarks v1.1.0](https://benchmarks.cisecurity.org/downloads/show-single/?file=centos6.110) that you downloaded, then look for our command inside there: 1.2.2. [Remember](http://www.anniehedgie.com/inspec-basics-2#find-and-read-the-control-in-the-cis-pdf) how we need those bits of info to fill in our control?
+Open the [CIS CentOS Linux 6 Benchmarks v1.1.0](https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_6_Benchmark_v1.1.0.pdf) that you downloaded, then look for our command inside there: 1.2.2. [Remember](http://www.anniehedgie.com/inspec-basics-2#find-and-read-the-control-in-the-cis-pdf) how we need those bits of info to fill in our control?
 
 ```ruby
 control "cis-1-2-2" do

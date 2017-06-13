@@ -6,7 +6,8 @@ permalink: /speaking/
 ### [ChefConf 2017](https://chefconf.chef.io/2017/agenda/) - "My Journey Into Technology Through InSpec"
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/bNxc6Y8ZHsI" frameborder="0" allowfullscreen></iframe>
-
+<br/>
+<br/>
 ### dockercon17 - "Lowering the Barrier to Entry with Docker"
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/YWgIm3DpSI8" frameborder="0" allowfullscreen></iframe>

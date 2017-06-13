@@ -3,6 +3,10 @@ layout: page
 title: Speaking
 permalink: /speaking/
 ---
+### [ChefConf 2017](https://chefconf.chef.io/2017/agenda/) - "My Journey Into Technology Through InSpec"
+
+<iframe width="200" height="113" src="https://www.youtube.com/embed/bNxc6Y8ZHsI" frameborder="0" allowfullscreen></iframe>
+
 ### dockercon17 - "Lowering the Barrier to Entry with Docker"
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/YWgIm3DpSI8" frameborder="0" allowfullscreen></iframe>
@@ -44,8 +48,6 @@ permalink: /speaking/
 ## [DevOpsDays DFW 2016](https://www.arresteddevops.com/devopsdays-dfw-2016/)
 
 ## Women Who Code: [My Journey Into Technology](https://twitter.com/WWCodeDFW/status/807033959188086785), [slides](http://prezi.com/2dkunsfxz99y/?utm_campaign=share&rc=ex0share&utm_medium=copy)
-
-## [ChefConf 2017](https://chefconf.chef.io/2017/agenda/)
 
 
 # GUEST BLOG POSTS

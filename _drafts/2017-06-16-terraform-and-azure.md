@@ -73,7 +73,17 @@ And you'll end up with something like this inside that directory. Kinda fun, rig
 
 ![terraform graph](https://github.com/hashicorp/terraform/blob/master/examples/azure-vnet-two-subnets/graph.png?raw=true)
 
-### 4) [Virtual Machine Extensions](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html)
+### 4) [Validate](https://www.terraform.io/docs/commands/validate.html) and [Format](https://www.terraform.io/docs/commands/fmt.html)
+You write Terraform in HCL (HashiCorp configuration language), and a cool little trick to validate that you've written your code properly is just to run `terraform validate` in your directory, and it'll let you know if you've got any errors in that directory. 
+
+Also, if you don't want to waste your time getting all of the spacing all pretty and perfect, you can just run `terraform fmt` in your directory, and it will clean up all of your spacing in that directory.
+
+### 5) [Plan](https://www.terraform.io/docs/commands/plan.html) 
+You've gotten your script just the way you want it, and now you want to see if it will work, but you don't want to run the whole thing. Great! Run `terraform plan`, and you'll get a lovely, formatted list of all of the resources that you *plan* to create. And if anything is incorrect in your script, then it will tell you that it doesn't work and why. Always run a plan before applying!
+
+There's a lot of debate about how Terraform handles [state](https://www.terraform.io/docs/state/index.html), too, but I'm going to tackle that in another post.
+
+### 6) [Virtual Machine Extensions](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html)
 So I've always heard (and agree with) the sentiment that you should only use Terraform for provisioning infrastructure and leave the configuration of all of those things to the tools that are good at doing configuration (i.e. Chef or Ansible). And I have tried to run many a shell script with Terraform to know that it's a big pain. There are just countless things that can go wrong and waste a whole bunch of your time troubleshooting them (mostly access issues, IMHO).
 
 So normally you would use one of the [provisioners](https://www.terraform.io/docs/provisioners/index.html) such as `remote-exec`, `local-exec`, or `connection` using a `bastion_host`. And sometimes this works wonderfully, and other times you run into a miriad of issues concerning privileges or ssh or something. 
@@ -104,7 +114,7 @@ SETTINGS
 
 ...Azure will give you a completely open door into that machine for you while you're provisioning with no need to alter its network security group (i.e. ssh rules) or worry about root access or any of that. I love this feature. It really simplifies things. (Here's an example of setting up a [Wordpress MySql Replication](https://github.com/hashicorp/terraform/blob/master/examples/azure-wordpress-mysql-replication/main.tf#L221).)
 
-### 5) [ARM Template Deployment](https://www.terraform.io/docs/providers/azurerm/r/template_deployment.html)
+### 7) [ARM Template Deployment](https://www.terraform.io/docs/providers/azurerm/r/template_deployment.html)
 Now hear me out! You're used to the argument being Terraform or ARM, am I right? And the staunch ARM supporters tote that Azure's API will always be better than Terraform's, so if there's a resource that they need, they don't want to wait around for Terraform to create it, yada yada. I get it.
 
 But what if I told you that you could run an ARM template straight FROM Terraform? Think of the leverage that would bring you! There are a LOT of ARM templates out there that you can leverage, and wouldn't it be nice if you could just drop it straight into your Terraform script (like this [example](https://github.com/hashicorp/terraform/blob/master/examples/azure-encrypt-running-linux-vm/main.tf#L77)) using all of your variables? Bam! Instant access to ARM.

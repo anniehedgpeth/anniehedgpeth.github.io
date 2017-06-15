@@ -7,7 +7,7 @@ tags: provisioning, terraform, azure, cloud, infrastructure as code
 image: /assets/article_images/2017-06-16-terraform-and-azure/terraform-and-azure.jpg
 image2: /assets/article_images/2017-06-16-terraform-and-azure/terraform-and-azure-mobile.jpg
 ---
-I've been really getting into [Terraform](https://www.terraform.io) lately and have been interested to see how well it plays with [Azure]https://www.terraform.io/docs/providers/azurerm/). I have to say, I'm pretty impressed. In fact, I've had a lot of fun with it. 
+I've been really getting into [Terraform](https://www.terraform.io) lately and have been interested to see how well it plays with [Azure](https://www.terraform.io/docs/providers/azurerm/). I have to say, I'm pretty impressed. In fact, I've had a lot of fun with it. 
 
 If you're not familiar with Terraform, in their words:
 

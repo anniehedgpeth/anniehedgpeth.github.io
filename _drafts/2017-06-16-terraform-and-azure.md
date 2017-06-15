@@ -63,7 +63,7 @@ resource "azurerm_network_interface" "nic" {
 ```
 
 ### 3) Graphs
-I'm a fan of the graphs. I think they can be helpful and get even point out errors in the logic of your architecture. If you would like to create a graph of the template that you created, you may run this command from within your template's directory:
+I'm a fan of the graphs. I think they can be helpful and even point out errors in the logic of your architecture. If you would like to create a graph of the template that you created, you may run this command from within your template's directory:
 
 ```
 terraform graph | dot -Tpng > graph.png

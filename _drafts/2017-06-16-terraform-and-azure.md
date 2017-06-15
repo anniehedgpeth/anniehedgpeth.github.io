@@ -78,7 +78,7 @@ So I've always heard (and agree with) the sentiment that you should only use Ter
 
 So normally you would use one of the [provisioners](https://www.terraform.io/docs/provisioners/index.html) such as `remote-exec`, `local-exec`, or `connection` using a `bastion_host`. And sometimes this works wonderfully, and other times you run into a miriad of issues concerning privileges or ssh or something. 
 
-But if access issues cause the majority of those issues, giving Terraform a bad reputation for configuring infrastructure, then [Virtual Machine Extensions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features) confuse that sentiment, in a really good way. In Microsoft's words:
+But if access issues cause the majority of those issues, giving Terraform a bad reputation for configuring infrastructure, then what if I told you that there's something that makes configuring Azure infrastructure with Terraform easier? I give you [Virtual Machine Extensions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features). In Microsoft's words:
 
 > Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Azure VM extensions can be run by using the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new virtual machine deployment or run against any existing system.
 
@@ -105,7 +105,9 @@ SETTINGS
 ...Azure will give you a completely open door into that machine for you while you're provisioning with no need to alter its network security group (i.e. ssh rules) or worry about root access or any of that. I love this feature. It really simplifies things. (Here's an example of setting up a [Wordpress MySql Replication](https://github.com/hashicorp/terraform/blob/master/examples/azure-wordpress-mysql-replication/main.tf#L221).)
 
 ### 5) [ARM Template Deployment](https://www.terraform.io/docs/providers/azurerm/r/template_deployment.html)
-Now hear me out! You're used to the argument being Terraform or ARM, am I right? But what if I told you that you could run an ARM template straight FROM Terraform? Why would you want to do that, you ask? Leverage, of course. There are a LOT of ARM templates out there that you can leverage, and wouldn't it be nice if you could just drop it straight into your Terraform script (like this [example](https://github.com/hashicorp/terraform/blob/master/examples/azure-encrypt-running-linux-vm/main.tf#L77)) using all of your variables? 
+Now hear me out! You're used to the argument being Terraform or ARM, am I right? And the staunch ARM supporters tote that Azure's API will always be better than Terraform's, so if there's a resource that they need, they don't want to wait around for Terraform to create it, yada yada. I get it.
+
+But what if I told you that you could run an ARM template straight FROM Terraform? Think of the leverage that would bring you! There are a LOT of ARM templates out there that you can leverage, and wouldn't it be nice if you could just drop it straight into your Terraform script (like this [example](https://github.com/hashicorp/terraform/blob/master/examples/azure-encrypt-running-linux-vm/main.tf#L77)) using all of your variables? Bam! Instant access to ARM.
 
 # Concluding Thoughts
 I still agree with the sentiment that Terraform should do what it does best (standing up infrastructure) and that you should use the correct tool for the job, and that Terraform isn't the correct tool for configuration. In a lot of situations, though, letting Azure do the heavy lifting is a very valid option (re: extensions and ARM deployment).

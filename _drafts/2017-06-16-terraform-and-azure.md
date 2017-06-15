@@ -74,7 +74,7 @@ And you'll end up with something like this inside that directory. Kinda fun, rig
 ![terraform graph](https://github.com/hashicorp/terraform/blob/master/examples/azure-vnet-two-subnets/graph.png?raw=true)
 
 ### 4) [Virtual Machine Extensions](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html)
-So I've always heard (and mostly agree with) the sentiment that you should only use Terraform for provisioning infrastructure and leave the configuration of all of those things to the tools that are good at doing configuration (i.e. Chef or Ansible). And I have tried to run many a shell script with Terraform to know that it's a big pain. There are just countless things that can go wrong and waste a whole bunch of your time troubleshooting them (mostly access issues, IMHO).
+So I've always heard (and agree with) the sentiment that you should only use Terraform for provisioning infrastructure and leave the configuration of all of those things to the tools that are good at doing configuration (i.e. Chef or Ansible). And I have tried to run many a shell script with Terraform to know that it's a big pain. There are just countless things that can go wrong and waste a whole bunch of your time troubleshooting them (mostly access issues, IMHO).
 
 So normally you would use one of the [provisioners](https://www.terraform.io/docs/provisioners/index.html) such as `remote-exec`, `local-exec`, or `connection` using a `bastion_host`. And sometimes this works wonderfully, and other times you run into a miriad of issues concerning privileges or ssh or something. 
 

@@ -69,7 +69,7 @@ I'm a fan of the graphs. I think they can be helpful and even point out errors i
 terraform graph | dot -Tpng > graph.png
 ```
 
-And you'll end up with something like this inside that directory.
+And you'll end up with something like this inside that directory. Kinda fun, right?
 
 ![terraform graph](https://github.com/hashicorp/terraform/blob/master/examples/azure-vnet-two-subnets/graph.png?raw=true)
 

@@ -57,3 +57,9 @@ SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gR
 10th Magnitude blog: 
 [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
 [Compliance as Code: An Introduction to InSpec](https://www.10thmagnitude.com/tech-blog/compliance-code-introduction-inspec/)
+
+# AWARDS
+
+[Awesome Community Chefs – 2017 Award Winner](https://blog.chef.io/2017/06/08/awesome-community-chefs-2017-award-winners/)
+
+![Awesome Community Chef Award](https://22jr213zpp00e1zym36icrs1-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/awesome-chefs-all-768x446.jpg)

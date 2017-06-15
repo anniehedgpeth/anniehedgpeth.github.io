@@ -82,7 +82,7 @@ But if access issues cause the majority of those issues, giving Terraform a bad 
 
 > Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Azure VM extensions can be run by using the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new virtual machine deployment or run against any existing system.
 
-They left [Terraform](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html) off of that list! That means that with this resource:
+They left [Terraform](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html) off of that list, but I'm here to tell you that you can use it with Terraform, too! That means that with this resource:
 
 ```
 resource "azurerm_virtual_machine_extension" "test" {

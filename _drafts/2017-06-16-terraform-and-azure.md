@@ -78,11 +78,11 @@ So I've always heard (and agree with) the sentiment that you should only use Ter
 
 So normally you would use one of the [provisioners](https://www.terraform.io/docs/provisioners/index.html) such as `remote-exec`, `local-exec`, or `connection` using a `bastion_host`. And sometimes this works wonderfully, and other times you run into a miriad of issues concerning privileges or ssh or something. 
 
-But if access issues cause the majority of those issues, giving Terraform a bad reputation for configuring infrastructure, then [Virtual Machine Extensions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features) cloud that sentiment, in a really good way. In Microsoft's words:
+But if access issues cause the majority of those issues, giving Terraform a bad reputation for configuring infrastructure, then [Virtual Machine Extensions](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/extensions-features) confuse that sentiment, in a really good way. In Microsoft's words:
 
-> Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Azure VM extensions can be run by using the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. (AND [TERRAFORM](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html)!!!!!) Extensions can be bundled with a new virtual machine deployment or run against any existing system.
+> Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. For example, if a virtual machine requires software installation, anti-virus protection, or Docker configuration, a VM extension can be used to complete these tasks. Azure VM extensions can be run by using the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new virtual machine deployment or run against any existing system.
 
-That means that with this resource:
+They left [Terraform]](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine_extension.html) off of that list! That means that with this resource:
 
 ```
 resource "azurerm_virtual_machine_extension" "test" {

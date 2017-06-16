@@ -28,15 +28,15 @@ The [README](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blo
   - This is an exercise guide meant for daily use. This guide is most effective for those that are not currently using Chef in their daily practice or are just starting in Chef. It will give you a comfort with Chef enough for navigating the topics of the exam.
 
   In your kata, you will practice:
-    
-    * creating different types of resources
-    * creating and using data bags
-    * using [Test Kitchen](http://kitchen.ci/)
-    * creating custom resources
-    * bootstrapping nodes
-    * performing searches
-    * creating run-lists, roles, and environments
-    * and more!  
+
+  - creating different types of resources
+  - creating and using data bags
+  - using [Test Kitchen](http://kitchen.ci/)
+  - creating custom resources
+  - bootstrapping nodes
+  - performing searches
+  - creating run-lists, roles, and environments
+  - and more!  
 
 ### [Basic Chef Fluency Kata Cheat Sheet](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blob/master/basic-chef-fluency-kata-cheatsheet.md)
   - This is used in conjunction with the Basic Chef Fluency Kata. If you are uncertain about how to carry out an exercise, then you can consult the cheat sheet. As I did the kata, I took notes on anything that stumped me or that I didn't want to have to look up every time.

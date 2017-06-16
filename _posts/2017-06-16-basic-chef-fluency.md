@@ -46,3 +46,5 @@ If you have improvements that can be made to this guide, please submit a [pull r
 Also, be on the lookout for more guides for the other tests! [Local Cookbook Development](https://training.chef.io/local-cookbook-development-badge) is coming up next!
 
 Good luck on your [exam](https://training.chef.io/basic-chef-fluency-badge)!
+
+Edited to add: [Local Cookbook Development](https://github.com/anniehedgpeth/chef-certification-study-guides/blob/master/local-cookbook-development/local-cookbook-development-study-guide.md) is up!!!! It doesn't contain a kata, so I'm not doing a full write-up about it - just a straight study sheet. Enjoy!

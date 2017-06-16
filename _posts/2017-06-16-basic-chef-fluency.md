@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Study Guide for the Basic Chef Fluency Badge Exam"
-date:   2017-06-16 12:00:00
+date:   2017-06-16 09:00:00
 categories: learning, studying, chef
 tags: basic chef fluency badge exam, chef certification, study guide
 image: /assets/article_images/2017-06-16-basic-chef-fluency-badge/basic-chef-fluency-badge.jpg
@@ -22,14 +22,26 @@ I've created this [BASIC CHEF FLUENCY STUDY GUIDE](https://github.com/anniehedgp
 The [README](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blob/master/README.md) has instructions on how to use the guide, but it's pretty simple. There are three files in the guide:
 
 ### [Basic Chef Fluency Study Guide](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blob/master/basic-chef-fluency-study-sheet.md)
-  - This is meant to study the concepts outlined in the [scope PDF](https://training.chef.io/static/Basic_Chef_Fluency_Badge_Scope.pdf) by Chef.
+  - This is meant to study the concepts outlined in the [scope PDF](https://training.chef.io/static/Basic_Chef_Fluency_Badge_Scope.pdf) by Chef. You can even print it out and mark everything with which you're not familiar so that you can just focus on those things.
 
 ### [Basic Chef Fluency Kata](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blob/master/basic-chef-fluency-kata.md)
   - This is an exercise guide meant for daily use. This guide is most effective for those that are not currently using Chef in their daily practice or are just starting in Chef. It will give you a comfort with Chef enough for navigating the topics of the exam.
 
+  In your kata, you will practice:
+    * creating different types of resources
+    * creating and using data bags
+    * using [Test Kitchen](http://kitchen.ci/)
+    * creating custom resources
+    * bootstrapping nodes
+    * performing searches
+    * creating run-lists, roles, and environments
+    * and more!  
+
 ### [Basic Chef Fluency Kata Cheat Sheet](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/blob/master/basic-chef-fluency-kata-cheatsheet.md)
-  - This is used in conjunction with the Basic Chef Fluency Kata. If you are uncertain about how to carry out an exercise, then you can consult the cheat sheet.
+  - This is used in conjunction with the Basic Chef Fluency Kata. If you are uncertain about how to carry out an exercise, then you can consult the cheat sheet. As I did the kata, I took notes on anything that stumped me or that I didn't want to have to look up every time.
 
 If you have improvements that can be made to this guide, please submit a [pull request](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/pulls) or [issue](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide/issues)!
+
+Also, be on the lookout for more guides for the other tests! [Local Cookbook Development](https://training.chef.io/local-cookbook-development-badge) is coming up next!
 
 Good luck on your [exam](https://training.chef.io/basic-chef-fluency-badge)!

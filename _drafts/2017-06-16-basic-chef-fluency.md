@@ -7,7 +7,15 @@ tags: basic chef fluency badge exam, chef certification, study guide
 image: /assets/article_images/2017-06-16-basic-chef-fluency-badge/basic-chef-fluency-badge.jpg
 image2: /assets/article_images/2017-06-16-basic-chef-fluency-badge/basic-chef-fluency-badge-mobile.jpg
 ---
-I took the Basic Chef Fluency test a few months ago now, and a lot of people have asked about a study guide. While there are a lot of courses out there, there's little in the way of a simple study guide. Chef has a pdf of the things that you need to know for the exam, and when I was studying for the exam, I wrote out bullets for each of those points. And now I'm sharing them with you! 
+I took the Basic Chef Fluency test (the first one toward Chef certification) a few months ago now, so I wanted to share what I thought about it and a study guide which lot of people have asked about. 
+
+<img src='/assets/article_images/2017-06-16-basic-chef-fluency-badge/badge-basic-chef-fluency.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
+So first off, you pay for it then schedule it, and you can take it remotely. You should sign in a little early to get set up. You'll have access to a proctor to whom you communicate through instant message. That person will screen share with you, ensuring that all other windows are closed. They'll also have a stream of your camera, so they'll have you do a scan of your room, so make sure you're in a room with no notes around (i.e. I removed my bulletin board from the wall). Another note, my screen froze up, and I panicked a little, but it unfroze and no time was given back to me. Just be aware that could happen. It sucks, but whatever.
+
+The test was pretty easy if you're familiar with the stuff on the study guide. Obviously, right? So if you're not familiar with the stuff in this study guide, then don't take the test until you are. There's not a lab portion of this test, just 40 questions and 60 minutes to answer them.
+
+While there are a lot of courses out there, there's little in the way of a simple study guide. Chef has a pdf of the things that you need to know for the exam, and when I was studying for the exam, I wrote out bullets for each of those points. And now I'm sharing them with you! 
 
 I've created this [BASIC CHEF FLUENCY STUDY GUIDE](https://github.com/anniehedgpeth/basic-chef-fluency-study-guide) repo, and it's meant for community consumption, so please...consume! 
 

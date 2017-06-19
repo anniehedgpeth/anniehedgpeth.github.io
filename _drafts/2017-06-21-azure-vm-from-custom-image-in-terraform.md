@@ -98,7 +98,7 @@ The image that you just made has a VHD, and you need the uri to this VHD. There 
 
 <img src='/assets/article_images/2017-06-21-azure-vm-from-custom-image-in-terraform/portal.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
-Another way I can find that is to use Azure CLI 2.0 to find out the names of my resource group (`az group list`), storage account (`az resource list -g <ResourceGroupName> -o table`), and os disk (if you're not using managed disks, then I don't know of a command to find this name, so I hope you saved it from when you created it). If I have those things, then I can build the uri like this:
+Another way I can find that is to use Azure CLI 2.0 to find out the names of my resource group (`az group list`), storage account (`az resource list -g <ResourceGroupName> -o table`), and os disk (if you're not using managed disks, then I don't know of a command to find this name - create an [issue](https://github.com/anniehedgpeth/anniehedgpeth.github.io/issues) if you do, so I hope you saved it from when you created it). If I have those things, then I can build the uri like this:
 
 ```
 https://<StorageAcctName>.blob.core.windows.net/vhds/<osdiskName>.vhd
@@ -115,3 +115,4 @@ And that's it! If you want to create a vm with managed disks, you can figure it 
 - [Simple Linux with Managed Disks](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-simple-linux-managed-disk)
 
 # Concluding Thoughts
+Having some foresight into this entire process before you get started will help you along the way in creating virtual machines from this image. It will cause you to carefully consider disk type, where to store everything, resource group structure, etc. as opposed to flying by the seat of your pants (which will most likely result in you starting over - trust me). Having this high level view of the process will really simplify it for you. So I hope this helps! Happy Terraforming! 

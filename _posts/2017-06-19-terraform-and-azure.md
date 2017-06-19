@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Terraform and Azure"
-date:   2017-06-19 12:00:00
+date:   2017-06-19 09:00:00
 categories: provisioning, terraform, azure, cloud, infrastructure as code
 tags: provisioning, terraform, azure, cloud, infrastructure as code
 image: /assets/article_images/2017-06-19-terraform-and-azure/terraform-and-azure.jpg

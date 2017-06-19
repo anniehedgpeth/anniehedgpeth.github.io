@@ -19,8 +19,8 @@ First of all, there are a lot of ways in which you can create your image, [Packe
 5. [Create Image](#5-create-your-image)
 6. [Create Virtual Machine with Terraform](#6-terraform-it-up)
 
-## 1. Create your Source Virtual Machine
-This is totally up to you. Provision this bad boy however you want. Just know that you're not going to actually use this machine, just use it to make an image from it. Just make note that whether you use managed disks or not will come into play later. Regardless, make sure you you note what your osdisk name is. You'll need this later.
+## 1. [Create your Source Virtual Machine](https://docs.microsoft.com/en-us/cli/azure/vm#create)
+This is totally up to you. Provision this bad boy however you want. Just know that you're not going to actually use this machine, just use it to make an image from it. Just make note that whether you use managed or unmanaged disks will come into play later. This example uses unmanaged disks, however, if you create a vm and don't specifically flag it to use unmanaged disks, then it will default to managed disks. Regardless, make sure you you note what your **osdisk name** is. You'll need this later.
 
 ## 2. Deprovision or Sysprep your Source Virtual Machine
 Whether you're making a [Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/capture-image) or [Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image) image, the steps are generally the same. For Linux, you'll *deprovision* your machine, and for Windows, you'll *Sysprep* it. 

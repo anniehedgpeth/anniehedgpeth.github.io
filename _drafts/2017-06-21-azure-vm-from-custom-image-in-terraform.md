@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "VM from Custom Image with Terraform and Azure"
-date:   2017-06-19 09:00:00
+date:   2017-06-21 09:00:00
 categories: provisioning, terraform, azure, cloud, infrastructure as code, custom image, golden image
 tags: provisioning, terraform, azure, cloud, infrastructure as code, custom image, golden image
 image: /assets/article_images/2017-06-21-azure-vm-from-custom-image-in-terraform/azure-vm-from-custom-image-in-terraform.jpg

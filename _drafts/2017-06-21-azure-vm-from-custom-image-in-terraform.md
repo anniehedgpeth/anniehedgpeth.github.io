@@ -20,7 +20,11 @@ First of all, there are a lot of ways in which you can create your image, [Packe
 6. [Create Virtual Machine with Terraform](#6-terraform-it-up)
 
 ## 1. [Create your Source Virtual Machine](https://docs.microsoft.com/en-us/cli/azure/vm#create)
-This is totally up to you. Provision this bad boy however you want. Just know that you're not going to actually use this machine, just use it to make an image from it. Just make note that whether you use managed or unmanaged disks will come into play later. This example uses unmanaged disks, however, if you create a vm and don't specifically flag it to use unmanaged disks, then it will default to managed disks. Regardless, make sure you you note what your **osdisk name** is. You'll need this later.
+This is totally up to you. Provision this bad boy however you want. Just know that you're not going to actually use this machine, just use it to make an image from it. Also, this post is about creating a VM with unmanaged disks, so if you want to follow along, you'll need to specify `--use-unmanaged-disk` in the `az vm create` command or in the Azure Portal. Default is to use managed disks, so be aware.
+
+Make sure you you note what your **osdisk name** is. You'll need this later.
+
+As of today, there is an [issue](https://github.com/hashicorp/terraform/issues/13932) with creating a VM from a user image with managed disks. I hope to write another post when the issue is resolved to tell you how to create that. 
 
 ## 2. Deprovision or Sysprep your Source Virtual Machine
 Whether you're making a [Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/capture-image) or [Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image) image, the steps are generally the same. For Linux, you'll *deprovision* your machine, and for Windows, you'll *Sysprep* it. 
@@ -29,7 +33,7 @@ Whether you're making a [Linux](https://docs.microsoft.com/en-us/azure/virtual-m
 
 > Only run this command on a VM that you intend to capture as an image. It does not guarantee that the image is cleared of all sensitive information or is suitable for redistribution. The +user parameter also removes the last provisioned user account. If you are baking account credentials in to the VM, use -deprovision to leave the user account in place.
 
-**WINDOWS:** [Sysprep](https://technet.microsoft.com/library/bb457073.aspx) gets a machine ready for be used as an image by deleting personal account information, among other things. To Sysprep your Windows machine, sign into your Windows vm. Navigate to `%windir%\system32\sysprep` (whether it be in the Command Prompt or just in Explorer) and run `sysprep.exe`. When the ** System Preparation Tool** dialog box pops up, select **Enter System Out-of-Box Experience (OOBE)**, and make sure that the **Generalize** check box is selected. And **Shutdown Options** should be **Shutdown** because we want it to shutdown when it's finished sysprepping.
+**WINDOWS:** [Sysprep](https://technet.microsoft.com/library/bb457073.aspx) gets a machine ready for be used as an image by deleting personal account information, among other things. To Sysprep your Windows machine, sign into your Windows VM. Navigate to `%windir%\system32\sysprep` (whether it be in the Command Prompt or just in Explorer) and run `sysprep.exe`. When the ** System Preparation Tool** dialog box pops up, select **Enter System Out-of-Box Experience (OOBE)**, and make sure that the **Generalize** check box is selected. And **Shutdown Options** should be **Shutdown** because we want it to shutdown when it's finished sysprepping.
 
 <img src='/assets/article_images/2017-06-21-azure-vm-from-custom-image-in-terraform/sysprepgeneral.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
@@ -47,7 +51,7 @@ Once your machine is deallocated, it's ready to be generalized, the final step b
 az vm generalize --resource-group <ResourceGroupName> --name <SourceVirtualMachineName>
 ```
 ## 5. Create your Image
-Alas, we're ready to create your image from which you'll clone machines. Go ahead and run (please note, now, that "name" refers to the image and not the vm):
+Alas, we're ready to create your image from which you'll clone machines. Go ahead and run (please note, now, that "name" refers to the image and not the VM):
 
 ```
 az image create --resource-group <ResourceGroupName> --name <ImageName> --source <SourceVirtualMachineName>
@@ -58,7 +62,9 @@ A good note from [Microsoft](https://docs.microsoft.com/en-us/azure/virtual-mach
 > The image is created in the same resource group as your source VM. You can create VMs in any resource group within your subscription from this image. From a management perspective, you may wish to create a specific resource group for your VM resources and images.
 
 ## 6. Terraform it up!
-Now for the fun stuff! Okay, so we have our image sitting there in our resource group, and now we have a couple of options. If we want to use [managed disks](https://azure.microsoft.com/en-us/services/managed-disks/?v=17.23h), then we can use an image from one resource group and create a vm in another resource group (but still in the same subscription). For this example, however, I'm going to use unmanaged disks because it's simpler. [This example](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-from-user-image) is nice and easy to walk through because it does exactly what we're wanting to do. Let's take a look at the `azurerm_virtual_machine` block of the [main.tf](https://github.com/hashicorp/terraform/blob/master/examples/azure-vm-from-user-image/main.tf#L48).
+Now for the fun stuff! Okay, so we have our image sitting there in our resource group, and now we have a couple of options. If we want to use [managed disks](https://azure.microsoft.com/en-us/services/managed-disks/?v=17.23h) (after the [issue](https://github.com/hashicorp/terraform/issues/13932) is resolved, then we can use an image from one resource group and create a VM in another resource group (but still in the same subscription). 
+
+For this example, as I said, though, I'm going to use unmanaged disks. [This example](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-from-user-image) is nice and easy to walk through because it does exactly what we're wanting to do. Let's take a look at the `azurerm_virtual_machine` block of the [main.tf](https://github.com/hashicorp/terraform/blob/master/examples/azure-vm-from-user-image/main.tf#L48).
 
 ```t
 resource "azurerm_virtual_machine" "vm" {
@@ -89,7 +95,7 @@ resource "azurerm_virtual_machine" "vm" {
 }
 ```
 
-First of all, if you're comparing this vm block to building a [virtual machine](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine.html) *not* from an image you'll notice that a we're missing a `storage_image_reference` block. This is neglected because the image provides that information. On the other hand, `vm_size` is required, and it must be the same size as the image.
+First of all, if you're comparing this VM block to building a [virtual machine](https://www.terraform.io/docs/providers/azurerm/r/virtual_machine.html) *not* from an image you'll notice that a we're missing a `storage_image_reference` block. This is neglected because the image provides that information. On the other hand, `vm_size` is required, and it must be the same size as the image.
 
 In the `storage_os_disk` block the two things we'll look at are the `image_uri` and the `vhd_uri`. 
 
@@ -109,7 +115,7 @@ The only change would be if you changed the default name of the vhds directory. 
 ### vhd_uri
 Since this example does not have us using managed disks, we're going to have to put our new vhd into our existing storage account. Therefore, the `storage_account_name` variable that you see there is for the *existing* storage account in which your image's vhd resides (the one we used for the `image_uri`).
 
-And that's it! If you want to create a vm with managed disks, you can figure it out from here with the information I gave you. If not, check out these other examples:
+And that's it! If you want to create a VM with managed disks, it's not too different, but I'll show you after that issue gets resolved. You can also check out these other examples of creating VMs from images:
 
 - [VM on a New Storage Account from a Custom Image](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-custom-image-new-storage-account)
 - [Simple Linux with Managed Disks](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-simple-linux-managed-disk)

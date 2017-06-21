@@ -121,4 +121,6 @@ And that's it! If you want to create a VM with managed disks, it's not too diffe
 - [Simple Linux with Managed Disks](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-simple-linux-managed-disk)
 
 # Concluding Thoughts
-Having some foresight into this entire process before you get started will help you along the way in creating virtual machines from this image. It will cause you to carefully consider disk type, where to store everything, resource group structure, etc. as opposed to flying by the seat of your pants (which will most likely result in you starting over - trust me). Having this high level view of the process will really simplify it for you. So I hope this helps! Happy Terraforming! 
+Having some foresight into this entire process before you get started will help you along the way in creating virtual machines from this image. It will cause you to carefully consider disk type, where to store everything, resource group structure, etc. as opposed to flying by the seat of your pants (which will most likely result in you starting over - trust me). Having this high level view of the process will really simplify it for you. So I hope this helps! Happy Terraforming!
+
+> In case you missed it...here's my post on tips for working with [Terraform in Azure](http://www.anniehedgie.com/terraform-and-azure).

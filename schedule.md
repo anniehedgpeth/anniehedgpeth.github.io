@@ -45,7 +45,7 @@ permalink: /dod
 2. [Nell Shamrell-Harrington: DevOps: A History (Seattle)](https://www.papercall.io/cfps/402/submissions/15354)
 3. [Logan Daigle: Measuring DevOps To Provide Objective Continuous Improvement In Your Organization (North Carolina)](https://www.papercall.io/cfps/402/submissions/18461)
 4. [JJ Ashgar: Ruby APIs 101 (Austin)](Ruby APIs 101 https://www.papercall.io/cfps/402/submissions/14837)
-5. [Corey Quinn (San Francisco)](https://www.papercall.io/cfps/402/submissions/17935)
+5. [Corey Quinn: DevOps and the Rise of the Full Stack Overflow Developer (San Francisco)](https://www.papercall.io/cfps/402/submissions/17935)
 6. [Tyler King: Effective collaboration between technical minds and design thinkers SUBMITTED (NYC)](https://www.papercall.io/cfps/402/submissions/18306)
 7. CaptitalOne DevOps Team Lead
 8. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)

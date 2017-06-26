@@ -9,7 +9,7 @@ image2: /assets/article_images/2017-06-23-arm-to-terrafomr/arm-to-terrafomr-mobi
 ---
 So you want to translate your ARM template into a Terraform script. Well, I can help you with that.
 
-First of all, what the main components of an [ARM template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates)?
+First of all, what are the main components of an [ARM template](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates)?
 
 ```json
 {
@@ -93,3 +93,23 @@ And in even greater detail...
 }
 ```
 
+Advantages over ARM:
+ - Readability (HCL vs. JSON)
+ - Plan (allows us to see what will change before it changes)
+ - Extensibility (can extend with any command you can run locally or remotely)
+ - Modularity (modules can be depended on/reused across templates)
+ - Syntax (clearer syntax, more powerful string interpolation, can use templated scripts to extend VM config)
+ - Extends beyond just Azure resources
+
+Disadvantages:
+ - Requires users to learn Terraform vs. native Azure tooling
+ - Component support can lag behind ARM
+
+
+When to break up:
+
+Modules (any reproducible chunk of code that produces a single thing, i.e. a hub/spoke network, bastion host, VPN gateway, Chef server, etc.)
+
+Stack (any unique resources or combination of modules that you want separated by tfstate - should be distinct and able to be destroyed/rebuilt separately, ideally)
+
+Environment (like a stack, but the only difference is variable inputs - creates a separate tfstate per environment based on the same stack)

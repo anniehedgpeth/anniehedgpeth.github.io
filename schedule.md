@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Proposed DoD-DFW Schedule
-permalink: /dod/
+permalink: /dod
 ---
 | Day 1 | | |
 |-|-|-|  

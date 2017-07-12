@@ -42,6 +42,7 @@ permalink: /dod
 
 ## KEYNOTES
 Adam Jacob - adam@chef.io
+
 John Willis - botchagalupe@gmail.com
 
 ## CONFIRMED 30 MINUTE TALKS

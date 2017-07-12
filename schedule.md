@@ -66,7 +66,7 @@ kmugrage@thoughtworks.com
 
 
 ## REQUESTED 30 MINUTE TALKS:
-[Corey Quinn: DevOps and the Rise of the Full Stack Overflow Developer (San Francisco)](https://www.papercall.io/cfps/402/submissions/17935)
+
 
 ## BACKUPS
 Backup [Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
@@ -112,3 +112,4 @@ Franklin Mosley??
 
 [Nell Shamrell-Harrington: Open Source Governance: The Hard Parts](https://www.papercall.io/cfps/402/submissions/15355)
 
+[Corey Quinn: DevOps and the Rise of the Full Stack Overflow Developer (San Francisco)](https://www.papercall.io/cfps/402/submissions/17935)

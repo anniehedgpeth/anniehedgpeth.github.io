@@ -66,14 +66,11 @@ kmugrage@thoughtworks.com
 
 
 ## REQUESTED 30 MINUTE TALKS:
-
-
-## BACKUPS
 Backup [Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
 
-Backup for Manah Khalil: [Logan Daigle: Measuring DevOps To Provide Objective Continuous Improvement In Your Organization (North Carolina)](https://www.papercall.io/cfps/402/submissions/18461)
-
+## BACKUPS
 Backup: [Tyler King: Effective collaboration between technical minds and design thinkers SUBMITTED (NYC)](https://www.papercall.io/cfps/402/submissions/18306)
+
 Backup: [Leon Fayer: The Lost Art of Troubleshooting](https://www.papercall.io/cfps/402/submissions/19012)
 
 

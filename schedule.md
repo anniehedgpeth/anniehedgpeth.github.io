@@ -66,7 +66,7 @@ kmugrage@thoughtworks.com
 
 
 ## REQUESTED 30 MINUTE TALKS:
-Backup [Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
+[Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
 
 ## BACKUPS
 Backup: [Tyler King: Effective collaboration between technical minds and design thinkers SUBMITTED (NYC)](https://www.papercall.io/cfps/402/submissions/18306)
@@ -85,8 +85,9 @@ bushwald@gmail.com
 4. [Roby Hirschfeld: Why did they call it Serverless? The Dev Rebellion Against Infrastructure](https://www.papercall.io/cfps/402/submissions/16940)
 rob@zehicle.com
 
+5. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
+
 ## UNCONFIRMED IGNITES:
-[Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
 
 
 Paul Grizzaffi??

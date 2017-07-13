@@ -63,10 +63,8 @@ misschloecondon@gmail.com
 \# 5. [Ken Mugrage: Everything I need to know about DevOps I learned in The Marines](https://www.papercall.io/cfps/402/submissions/19998)
 kmugrage@thoughtworks.com
 
+\- 6. [Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
 
-
-## REQUESTED 30 MINUTE TALKS:
-[Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
 
 ## BACKUPS
 Backup: [Tyler King: Effective collaboration between technical minds and design thinkers SUBMITTED (NYC)](https://www.papercall.io/cfps/402/submissions/18306)

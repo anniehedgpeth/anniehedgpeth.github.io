@@ -76,7 +76,8 @@ Backup: [Leon Fayer: The Lost Art of Troubleshooting](https://www.papercall.io/c
 1. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
 dlaulusa@gmail.com
 
-2. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)  
+2. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
+
 3. [Michael Coté: How to survive and thrive in a BigCo culture](https://www.papercall.io/cfps/402/submissions/14807)
 bushwald@gmail.com
 
@@ -85,11 +86,21 @@ rob@zehicle.com
 
 5. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
 
+6. [Pete Chestna: From Rogue One to Rebel Alliance: Building Developers into Security Champions](https://www.papercall.io/cfps/402/submissions/14685) (Requests to speak on Tuesday)
+
+7. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
+
+8. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
+
+
 ## UNCONFIRMED IGNITES:
 
+2. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 
-Paul Grizzaffi??
-Franklin Mosley??
+9. Nicole Forsgren
+
+8. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
+
 
 ## NEEDED IGNITES:
 1. 

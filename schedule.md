@@ -92,14 +92,13 @@ rob@zehicle.com
 
 8. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
 
+9. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 
 ## UNCONFIRMED IGNITES:
 
-2. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
+10. Nicole Forsgren
 
-9. Nicole Forsgren
-
-8. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
+11. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
 
 
 ## NEEDED IGNITES:

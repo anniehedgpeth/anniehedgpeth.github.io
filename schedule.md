@@ -79,40 +79,41 @@ Backup: [Leon Fayer: The Lost Art of Troubleshooting](https://www.papercall.io/c
 1. [Michael Coté: How to survive and thrive in a BigCo culture](https://www.papercall.io/cfps/402/submissions/14807)
 bushwald@gmail.com
 
-2. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
+2. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
+kdormevil@gmail.com
 
-3. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
+3. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
+dlaulusa@gmail.com
 
-4. [Roby Hirschfeld: Why did they call it Serverless? The Dev Rebellion Against Infrastructure](https://www.papercall.io/cfps/402/submissions/16940)
-rob@zehicle.com
+4. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
 
-5. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
+5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
 
-6. ???
+6. TBA
 
 
 ### Day 2:
 
-1. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
+1. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 
-2. ???
+2. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
+emily@kickbox.io
 
 3. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
 
-4. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
-dlaulusa@gmail.com
+4. TBA
 
 5. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
 
-6. ???
+6. [Roby Hirschfeld: Why did they call it Serverless? The Dev Rebellion Against Infrastructure](https://www.papercall.io/cfps/402/submissions/16940)
+rob@zehicle.com
 
 
 ## UNCONFIRMED IGNITES:
 
 10. Nicole Forsgren
 
-11. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
-
+11. 
 
 ## REJECTED:
 

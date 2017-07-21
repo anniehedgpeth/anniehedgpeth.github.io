@@ -73,41 +73,45 @@ Backup: [Leon Fayer: The Lost Art of Troubleshooting](https://www.papercall.io/c
 
 
 ## CONFIRMED IGNITES
-1. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
-dlaulusa@gmail.com
 
-2. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
+### Day 1:
 
-3. [Michael Coté: How to survive and thrive in a BigCo culture](https://www.papercall.io/cfps/402/submissions/14807)
+1. [Michael Coté: How to survive and thrive in a BigCo culture](https://www.papercall.io/cfps/402/submissions/14807)
 bushwald@gmail.com
+
+2. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
+
+3. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 
 4. [Roby Hirschfeld: Why did they call it Serverless? The Dev Rebellion Against Infrastructure](https://www.papercall.io/cfps/402/submissions/16940)
 rob@zehicle.com
 
-5. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
+5. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
 
-6. [Pete Chestna: From Rogue One to Rebel Alliance: Building Developers into Security Champions](https://www.papercall.io/cfps/402/submissions/14685) (Requests to speak on Tuesday)
+6. ???
 
-7. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
 
-8. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
+### Day 2:
 
-9. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
+1. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
+
+2. ???
+
+3. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
+
+4. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
+dlaulusa@gmail.com
+
+5. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
+
+6. ???
+
 
 ## UNCONFIRMED IGNITES:
 
 10. Nicole Forsgren
 
 11. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
-
-
-## NEEDED IGNITES:
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
 
 
 ## REJECTED:

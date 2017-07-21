@@ -42,8 +42,10 @@ permalink: /dod
 
 ## KEYNOTES
 Adam Jacob - adam@chef.io
+- waiting on abstract
 
 John Willis - botchagalupe@gmail.com
+- waiting on abstract
 
 ## CONFIRMED 30 MINUTE TALKS
 \* = technical # = culture - = both
@@ -66,12 +68,6 @@ kmugrage@thoughtworks.com
 \- 6. [Paul Grizzaffi: I'm Hunting Sasquatch – Finding Intermittent Issues Using Periodic Automation](https://www.papercall.io/cfps/402/submissions/18780)
 
 
-## BACKUPS
-Backup: [Tyler King: Effective collaboration between technical minds and design thinkers SUBMITTED (NYC)](https://www.papercall.io/cfps/402/submissions/18306)
-
-Backup: [Leon Fayer: The Lost Art of Troubleshooting](https://www.papercall.io/cfps/402/submissions/19012)
-
-
 ## CONFIRMED IGNITES
 
 ### Day 1:
@@ -81,15 +77,20 @@ bushwald@gmail.com
 
 2. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
 kdormevil@gmail.com
+***NEEDS TO BE ON SPEAKER PAGE***
+***WAITING FOR HEADSHOT***
 
 3. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
 dlaulusa@gmail.com
 
 4. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
 pchestna@Veracode.com
+***NEEDS TO BE ON SPEAKER PAGE***
 
 5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
 janyatest@gmail.com
+***NEEDS TO BE ON SPEAKER PAGE***
+***WAITING FOR HEADSHOT***
 
 6. TBA
 
@@ -98,9 +99,12 @@ janyatest@gmail.com
 
 1. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 franklin.p.mosley@gmail.com
+***NEEDS TO BE ON SPEAKER PAGE***
 
 2. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
 emily@kickbox.io
+***NEEDS TO BE ON SPEAKER PAGE***
+***WAITING FOR HEADSHOT***
 
 3. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
 lucas.harms@gmail.com
@@ -116,16 +120,6 @@ rob@zehicle.com
 
 ## UNCONFIRMED IGNITES:
 
-10. Nicole Forsgren
+Nicole Forsgren
 
-11. GM Financial
-
-## REJECTED:
-
-[Mary Cochran: Lessons Learned in Using IoT Devices in Industry](https://www.papercall.io/cfps/402/submissions/17176) - 30 min
-
-[JJ Asghar: VMware ecosystem in 5 minutes](https://www.papercall.io/cfps/402/submissions/14836) - Ignite
-
-[Nell Shamrell-Harrington: Open Source Governance: The Hard Parts](https://www.papercall.io/cfps/402/submissions/15355)
-
-[Corey Quinn: DevOps and the Rise of the Full Stack Overflow Developer (San Francisco)](https://www.papercall.io/cfps/402/submissions/17935)
+GM Financial

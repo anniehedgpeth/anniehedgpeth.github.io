@@ -86,24 +86,28 @@ kdormevil@gmail.com
 dlaulusa@gmail.com
 
 4. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
+pchestna@Veracode.com
 
 5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
-
+**Needs calendar invites**
 6. TBA
 
 
 ### Day 2:
 
 1. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
+franklin.p.mosley@gmail.com
 
 2. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
 emily@kickbox.io
 
 3. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
+lucas.harms@gmail.com
 
 4. TBA
 
 5. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
+dabrown@redhat.com
 
 6. [Roby Hirschfeld: Why did they call it Serverless? The Dev Rebellion Against Infrastructure](https://www.papercall.io/cfps/402/submissions/16940)
 rob@zehicle.com

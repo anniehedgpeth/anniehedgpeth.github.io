@@ -54,7 +54,7 @@ monahk@gmail.com
 \* 2. [Carlos Nunez: On the difference between configuration management and provisioning. (DFW)](https://www.papercall.io/cfps/402/submissions/16381)
 google@carlosnunez.me
 
-\- 3. [Mark Andersen: Captital One's DevOps Journey](https://www.papercall.io/cfps/402/submissions/20479)
+\- 3. [Mark Andersen: Capital One's DevOps Journey](https://www.papercall.io/cfps/402/submissions/20479)
 mark.andersen2@capitalone.com
 
 \* 4. [Chloe Condon: Why You Need to Stop Using “The” Staging Server](https://www.papercall.io/cfps/402/submissions/19083)
@@ -89,7 +89,8 @@ dlaulusa@gmail.com
 pchestna@Veracode.com
 
 5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
-**Needs calendar invites**
+janyatest@gmail.com
+
 6. TBA
 
 
@@ -117,7 +118,7 @@ rob@zehicle.com
 
 10. Nicole Forsgren
 
-11. 
+11. GM Financial
 
 ## REJECTED:
 

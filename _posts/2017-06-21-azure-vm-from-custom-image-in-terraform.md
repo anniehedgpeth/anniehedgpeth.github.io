@@ -64,7 +64,7 @@ A good note from [Microsoft](https://docs.microsoft.com/en-us/azure/virtual-mach
 ## 6. Terraform it up!
 Now for the fun stuff! Okay, so we have our image sitting there in our resource group, and now we have a couple of options. If we want to use [managed disks](https://azure.microsoft.com/en-us/services/managed-disks/?v=17.23h) (after the [issue](https://github.com/hashicorp/terraform/issues/13932) is resolved, then we can use an image from one resource group and create a VM in another resource group (but still in the same subscription). 
 
-For this example, as I said, though, I'm going to use unmanaged disks. [This example](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-from-user-image) is nice and easy to walk through because it does exactly what we're wanting to do. Let's take a look at the `azurerm_virtual_machine` block of the [main.tf](https://github.com/hashicorp/terraform/blob/master/examples/azure-vm-from-user-image/main.tf#L48).
+For this example, as I said, though, I'm going to use unmanaged disks. [This example](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vm-from-user-image) is nice and easy to walk through because it does exactly what we're wanting to do. Let's take a look at the `azurerm_virtual_machine` block of the [main.tf](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vm-from-user-image/main.tf#L48).
 
 ```t
 resource "azurerm_virtual_machine" "vm" {
@@ -117,8 +117,8 @@ Since this example does not have us using managed disks, we're going to have to 
 
 And that's it! If you want to create a VM with managed disks, it's not too different, but I'll show you after that issue gets resolved. You can also check out these other examples of creating VMs from images:
 
-- [VM on a New Storage Account from a Custom Image](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-custom-image-new-storage-account)
-- [Simple Linux with Managed Disks](https://github.com/hashicorp/terraform/tree/master/examples/azure-vm-simple-linux-managed-disk)
+- [VM on a New Storage Account from a Custom Image](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vm-custom-image-new-storage-account)
+- [Simple Linux with Managed Disks](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vm-simple-linux-managed-disk)
 
 # Concluding Thoughts
 Having some foresight into this entire process before you get started will help you along the way in creating virtual machines from this image. It will cause you to carefully consider disk type, where to store everything, resource group structure, etc. as opposed to flying by the seat of your pants (which will most likely result in you starting over - trust me). Having this high level view of the process will really simplify it for you. So I hope this helps! Happy Terraforming!

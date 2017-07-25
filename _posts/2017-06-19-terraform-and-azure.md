@@ -13,7 +13,7 @@ If you're not familiar with Terraform, in their words:
 
 > Terraform enables you to safely and predictably create, change, and improve production infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
-First of all, did you know that Azure has a ton of example templates in [Terraform's Github repo](https://github.com/hashicorp/terraform/tree/master/examples)? This is a great starting point if you've never used Terraform before. The templates range in complexity, from a simple Linux virtual machine all the way up to creating an entire OpenShift Origin deployment. You could play around with the deployment of those templates into your Azure account and get pretty familiar with it.
+First of all, did you know that Azure has a ton of example templates in [Terraform's Github repo](https://github.com/terraform-providers/terraform-provider-azurerm/tree/master/examples)? This is a great starting point if you've never used Terraform before. The templates range in complexity, from a simple Linux virtual machine all the way up to creating an entire OpenShift Origin deployment. You could play around with the deployment of those templates into your Azure account and get pretty familiar with it.
 
 I do have a few tips if you're just getting started with Terraform and Azure:
 
@@ -71,7 +71,7 @@ terraform graph | dot -Tpng > graph.png
 
 And you'll end up with something like this inside that directory. Kinda fun, right?
 
-![terraform graph](https://github.com/hashicorp/terraform/blob/master/examples/azure-vnet-two-subnets/graph.png?raw=true)
+![terraform graph](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vnet-two-subnets/graph.png)
 
 ### 4) [Validate](https://www.terraform.io/docs/commands/validate.html) and [Format](https://www.terraform.io/docs/commands/fmt.html)
 You write Terraform in HCL (HashiCorp configuration language), and a cool little trick to validate that you've written your code properly is just to run `terraform validate` in your directory, and it'll let you know if you've got any errors in that directory. 
@@ -112,12 +112,12 @@ SETTINGS
 }
 ```
 
-...Azure will give you a completely open door into that machine for you while you're provisioning with no need to alter its network security group (i.e. ssh rules) or worry about root access or any of that. I love this feature. It really simplifies things. (Here's an example of setting up a [Wordpress MySql Replication](https://github.com/hashicorp/terraform/blob/master/examples/azure-wordpress-mysql-replication/main.tf#L221).)
+...Azure will give you a completely open door into that machine for you while you're provisioning with no need to alter its network security group (i.e. ssh rules) or worry about root access or any of that. I love this feature. It really simplifies things. (Here's an example of setting up a [Wordpress MySql Replication](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/wordpress-mysql-replication/main.tf#L221).)
 
 ### 7) [ARM Template Deployment](https://www.terraform.io/docs/providers/azurerm/r/template_deployment.html)
 Now hear me out! You're used to the argument being Terraform or ARM, am I right? And the staunch ARM supporters tote that Azure's API will always be better than Terraform's, so if there's a resource that they need, they don't want to wait around for Terraform to create it, yada yada. I get it.
 
-But what if I told you that you could run an ARM template straight FROM Terraform? Think of the leverage that would bring you! There are a LOT of ARM templates out there that you can leverage, and wouldn't it be nice if you could just drop it straight into your Terraform script (like this [example](https://github.com/hashicorp/terraform/blob/master/examples/azure-encrypt-running-linux-vm/main.tf#L77)) using all of your variables? Bam! Instant access to ARM.
+But what if I told you that you could run an ARM template straight FROM Terraform? Think of the leverage that would bring you! There are a LOT of ARM templates out there that you can leverage, and wouldn't it be nice if you could just drop it straight into your Terraform script (like this [example](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/encrypt-running-linux-vm/main.tf#L77)) using all of your variables? Bam! Instant access to ARM.
 
 # Concluding Thoughts
 I still agree with the sentiment that Terraform should do what it does best (standing up infrastructure) and that you should use the correct tool for the job, and that Terraform isn't the correct tool for configuration. In a lot of situations, though, letting Azure do the heavy lifting is a very valid option (re: extensions and ARM deployment).

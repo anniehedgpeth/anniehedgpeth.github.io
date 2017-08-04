@@ -87,7 +87,8 @@ pchestna@Veracode.com
 5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
 janyatest@gmail.com
 
-6. TBA
+6. [Joshua Vogelman: Where DevOps runs head on against corporate culture](https://www.papercall.io/cfps/402/submissions/20415)
+joshua.vogelman@verizon.com
 
 
 ### Day 2:
@@ -111,6 +112,3 @@ dabrown@redhat.com
 rob@zehicle.com
 
 
-## UNCONFIRMED IGNITES:
-[Joshua Vogelman: Where DevOps runs head on against corporate culture](https://www.papercall.io/cfps/402/submissions/20415)
-joshua.vogelman@verizon.com

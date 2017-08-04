@@ -77,20 +77,15 @@ bushwald@gmail.com
 
 2. [Karen Odegaard: Driving the DevOps agenda through an experience strategy](https://www.papercall.io/cfps/402/submissions/19786)
 kdormevil@gmail.com
-***NEEDS TO BE ON SPEAKER PAGE***
-***WAITING FOR HEADSHOT***
 
 3. [David Laulusa: Lessons from an Idaho Potato Farmer](https://www.papercall.io/cfps/402/submissions/15418)
 dlaulusa@gmail.com
 
 4. [Pete Chestna: Full Spectrum  Engineering - The New Full-Stack](https://www.papercall.io/cfps/402/submissions/14682)
 pchestna@Veracode.com
-***NEEDS TO BE ON SPEAKER PAGE***
 
 5. [Jane Prusakova: Better Remote Teams](https://www.papercall.io/cfps/402/submissions/17994)
 janyatest@gmail.com
-***NEEDS TO BE ON SPEAKER PAGE***
-***WAITING FOR HEADSHOT***
 
 6. TBA
 
@@ -99,17 +94,15 @@ janyatest@gmail.com
 
 1. [Franklin Mosley: How to make a Unicorn: Finding Cybersecurity Talent in the Real World](https://www.papercall.io/cfps/402/submissions/20274)
 franklin.p.mosley@gmail.com
-***NEEDS TO BE ON SPEAKER PAGE***
 
 2. [Emily Freeman: The Dr. Seuss Guide to Code Craftsmanship](https://www.papercall.io/cfps/402/submissions/19912)
 emily@kickbox.io
-***NEEDS TO BE ON SPEAKER PAGE***
-***WAITING FOR HEADSHOT***
 
 3. [Lucas Harms: Assessing Situational Awareness](https://www.papercall.io/cfps/402/submissions/18182)
 lucas.harms@gmail.com
 
-4. TBA
+4. Nora Kennedy: Empowering the Business – Self-Service Test Data Generation
+nora.kennedy@gmfinancial.com
 
 5. [Dave Brown: Openstack and DevOps / What you don’t want in your infrastructure templates](https://www.papercall.io/cfps/402/submissions/20385)
 dabrown@redhat.com
@@ -121,5 +114,4 @@ rob@zehicle.com
 ## UNCONFIRMED IGNITES:
 
 Nicole Forsgren
-
-GM Financial
+???

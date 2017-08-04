@@ -112,6 +112,5 @@ rob@zehicle.com
 
 
 ## UNCONFIRMED IGNITES:
-
-Nicole Forsgren
-???
+[Joshua Vogelman: Where DevOps runs head on against corporate culture](https://www.papercall.io/cfps/402/submissions/20415)
+joshua.vogelman@verizon.com

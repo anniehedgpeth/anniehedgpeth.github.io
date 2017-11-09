@@ -53,7 +53,8 @@ permalink: /speaking/
 
 # GUEST BLOG POSTS
 
-SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](buff.ly/2gRAtHs)
+SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html?utm_content=buffer1c4b0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
 10th Magnitude blog: 
 [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
 [Compliance as Code: An Introduction to InSpec](https://www.10thmagnitude.com/tech-blog/compliance-code-introduction-inspec/)

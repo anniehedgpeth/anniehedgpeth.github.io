@@ -22,7 +22,7 @@ Let's get started and I'll show you what I mean.
 ## Ingredients
 Don't forget our bazillion windows. Open these up, and make sure your CentOS vm is up and running.
   
-  - [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec)
+  - [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec)
   - [InSpec Reference page](https://docs.chef.io/inspec_reference.html)
   - [Rubular](http://rubular.com/)
   - [Download the PDF of the CIS CentOS Linux Benchmark](https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_6_Benchmark_v1.1.0.pdf)
@@ -42,7 +42,7 @@ At first I thought I'd have to make a flowchart because the workflow would chang
 8. [Test](#test)
 
 ### 1. Go to Harvey's workshop and look up our control
-So head over to [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec), and let's do the third one this time.
+So head over to [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec), and let's do the third one this time.
 
 ![](/assets/article_images/2016-05-23-inspec-basics-4/01-Harvey.png)
 

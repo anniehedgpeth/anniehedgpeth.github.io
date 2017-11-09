@@ -23,7 +23,7 @@ end
 But first make sure that you go through [last week's tutorial](http://www.anniehedgie.com/inspec-basics-1) so that we can make sure you have all of the proper software installed and updated.
 
 ## Nathen Harvey's InSpec Workshop
-[Nathen Harvey](http://nathenharvey.com/) has a [fantastic InSpec workshop](https://github.com/chef-training/workshops/tree/master/InSpec) that I'm going through right now, and he talks about it on [Chef's YouTube channel](https://youtu.be/dEPe-JXRjVU), too. Throughout my InSpec tutorial series, I'll be showing you some basics for getting through his workshop successfully. Think of my tutorial as a remedial class before you take Harvey's workshop, or some extra tutoring along the way. 
+[Nathen Harvey](http://nathenharvey.com/) has a [fantastic InSpec workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec) that I'm going through right now, and he talks about it on [Chef's YouTube channel](https://youtu.be/dEPe-JXRjVU), too. Throughout my InSpec tutorial series, I'll be showing you some basics for getting through his workshop successfully. Think of my tutorial as a remedial class before you take Harvey's workshop, or some extra tutoring along the way. 
 
 How about we just dive right in?
 
@@ -48,7 +48,7 @@ UPDATE: This is just a problem with CentOS.
 ## Ingredients
 You're going to need about a bazillion windows open for our little workflow to happen, so open up these:
   
-  - [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec)
+  - [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec)
   - [InSpec Reference page](https://docs.chef.io/inspec_reference.html)
   - [Rubular](http://rubular.com/)
   - [Download the PDF of the CIS CentOS Linux Benchmark](https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_6_Benchmark_v1.1.0.pdf)
@@ -68,7 +68,7 @@ This is what our basic workflow for the workshop is going to look like.
 8. [Test](#test)
 
 ### 1. Go to Harvey's workshop and look up our control
-So head over to [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec), and note the very first one on the list because that's what we're after.
+So head over to [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec), and note the very first one on the list because that's what we're after.
 ![](/assets/article_images/2016-05-17-inspec-basics-2/04-nathen-harvey.png)
 
 ### 2. Find and read the control in the CIS pdf

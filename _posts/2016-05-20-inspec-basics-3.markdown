@@ -21,7 +21,7 @@ Welcome back! If you're just now joining me, then you'll want to take a look at 
 ## Ingredients
 Open these up, and make sure your CentOS vm is up and running.
   
-  - [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec)
+  - [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec)
   - [InSpec Reference page](https://docs.chef.io/inspec_reference.html)
   - [Rubular](http://rubular.com/)
   - [Download the PDF of the CIS CentOS Linux Benchmark](https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_6_Benchmark_v1.1.0.pdf)
@@ -41,7 +41,7 @@ Even though we are dealing with a file resource this time, the workflow will sti
 8. [Test](#test)
 
 ### 1. Go to Harvey's workshop and look up our control
-So head over to [Nathen Harvey's workshop](https://github.com/chef-training/workshops/tree/master/InSpec), and let's do the second one since we did the first one last time.
+So head over to [Nathen Harvey's workshop](https://github.com/anniehedgpeth/workshops/tree/7d2bd8d98514a833a4293c0b3ff4b01bc6297b20/InSpec), and let's do the second one since we did the first one last time.
 ![](/assets/article_images/2016-05-20-inspec-basics-3/01-nathen-harvey.png)
 
 ### 2. Find and read the control in the CIS pdf

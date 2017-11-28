@@ -2,7 +2,7 @@
 
 > Bored with his Halloween routine, Jack Skellington longs to spread Christmas joy, but his antics put Santa and the holiday in jeopardy! - [Disney](http://movies.disney.com/the-nightmare-before-christmas)
 
-I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [holiday-InSpec joy](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html?utm_content=buffer1c4b0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. All my client wanted for Christmas was to be able to run my InSpec profile in the Jenkins pipeline to validate configuration of their nodes, and I was eager to give that to them.
+I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [holiday-InSpec joy](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html) with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. All my client wanted for Christmas was to be able to run my InSpec profile in the Jenkins pipeline to validate configuration of their nodes, and I was eager to give that to them.
 
 Sit back and let me tell the holiday tale of how I had no other choice but to use Chef [push jobs](http://sysadvent.blogspot.com/2013/12/day-9-getting-pushy-with-chef.html) to run InSpec in an air-gapped environment and why it almost ruined Christmas. 
 
@@ -46,4 +46,12 @@ I will not get into the gorey details of automating this process, but here is th
 - updates the InSpec profile version number in the attributes file
 - makes a pull request to the wrapper cookbook's master branch that also has a pull request build which ensures that Test Kitchen passes before it is merged
 
-So...this works, but it's not fun at all. It's definitely the Nightmare Before Christmas and the Grinch Who Stole Christmas wrapped up into one. An alternative to doing it this way given our constraints would have been Salt and Chef Automate. 
+So...this works, but it's not fun at all. It's definitely the Nightmare Before Christmas and the Grinch Who Stole Christmas wrapped up into one. An alternative to doing it this way given our constraints would have been Salt and Chef Automate, but neither of those were an option for me.
+
+As ugly as this process is, every time I see those all successful test results displayed in the Jenkins output, I can't help but put a big ol' jolly smile on my face. Sure, it super sucks to jump through all these hoops to get InSpec to work in this environment, but it when the automation works, it just works and no one knows what I had to go through to get it there. It's like a Christmas miracle. 
+
+Do I recommend doing it this way if you don't have to? No. Is this a great workaround if you have no other way to validate your configuration? Absolutely.
+
+And if you need further convincing of the Christmas magic of InSpec, be sure to read my post last year about [how InSpec builds empathy across organizations](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html).
+
+I hope you enjoyed my post! You can follow me on Twitter [@anniehedgie](https://twitter.com/anniehedgie). If you'd like to read more about InSpec, I wrote a whole tutorial series for you to follow [here](http://www.anniehedgie.com/inspec/). And if you'd like me and my team at [10th Magnitude](https://www.10thmagnitude.com/contact/) to help you out with all things Azure, [give us a shout](https://www.10thmagnitude.com/contact/)! 

@@ -2,7 +2,7 @@
 
 > Bored with his Halloween routine, Jack Skellington longs to spread Christmas joy, but his antics put Santa and the holiday in jeopardy! - [Disney](http://movies.disney.com/the-nightmare-before-christmas)
 
-I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some holiday-InSpec joy with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. Sit back and let me tell the holiday tale of how I had no other choice but to use Chef push jobs to run InSpec in an air-gapped environment and why it almost ruined Christmas. 
+I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [holiday-InSpec joy](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html?utm_content=buffer1c4b0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. Sit back and let me tell the holiday tale of how I had no other choice but to use Chef [push jobs](http://sysadvent.blogspot.com/2013/12/day-9-getting-pushy-with-chef.html) to run InSpec in an air-gapped environment and why it almost ruined Christmas. 
 
 Nothing would have brought me more holiday cheer than to be able to run run the tests as a `winrm` or `ssh` command from the Jenkins server directly from a profile on the git server, not checked out. However, my soul sank as I uncovered reason after reason for the lack of joy for the season:
 

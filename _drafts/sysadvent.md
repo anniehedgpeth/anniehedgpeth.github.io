@@ -1,5 +1,7 @@
 # Running InSpec as a Push Job...or...The Nightmare Before Christmas
 
+<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/sys-advent-title.jpg?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 > Bored with his Halloween routine, Jack Skellington longs to spread Christmas joy, but his antics put Santa and the holiday in jeopardy! - [Disney](http://movies.disney.com/the-nightmare-before-christmas)
 
 <img src='https://media.giphy.com/media/4rKzbIk2U8dnW/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
@@ -45,8 +47,6 @@ The `inspec_command` attribute was defined like like this (more nesting):
 
 And all of that needs to be automated so that it actually stays updated. Yay...
 
-<img src='https://media.giphy.com/media/XwRP4JkXOsPII/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
-
 I will not get into the details of automating this process, but here is the basic idea. It is necessary to leverage a build that is kicked off in Jenkins by a pull request made in git. That build, which is a Jenksinsfile in my InSpec profile, does this:
 - archives the profile after it merges into master
 - checks out the wrapper cookbook and creates a branch
@@ -54,13 +54,15 @@ I will not get into the details of automating this process, but here is the basi
 - updates the InSpec profile version number in the attributes file
 - makes a pull request to the wrapper cookbook's master branch that also has a pull request build which ensures that Test Kitchen passes before it is merged
 
+<img src='https://media.giphy.com/media/XwRP4JkXOsPII/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 So...this works, but it's not fun at all. It's definitely the Nightmare Before Christmas and the Grinch Who Stole Christmas wrapped up into one. It takes a few plugins in both Jenkins and BitBucket, which can be difficult to pull off if you don’t have admin rights. I used this [blog post](http://hedge-ops.com/cookbook-pipeline-with-jenkinsfile/) as a reference. 
 
 I battled internally with a simpler way to do this. A couple of nice alternatives could have been [Saltstack](https://saltstack.com/) and [Chef Automate](https://docs.chef.io/chef_automate.html), but neither of those were an option for me. I’m not familiar with Saltstack, but I’m told that its [remote execution](https://saltstack.com/remote-execution/) feature would be able to run InSpec in an air-gapped environment. Likewise, Chef Automate has the [Chef Compliance](https://www.chef.io/automate/#automate-compliance) feature which runs all of your InSpec profiles from the Compliance server that you can put in your network. I’m still on the fence about whether those would have been easier to implement, though, because of the heavy dependence I had on the node attributes and data-bags that are stored on the Chef server.
 
-<img src='https://media.giphy.com/media/gslUJA7JocSkg/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
-
 As ugly as this process is, every time I see those all successful test results displayed in the Jenkins output, I can't help but put a big ol' jolly smile on my face. Sure, it super sucks to jump through all these hoops to get InSpec to work in this environment, but it when the automation works, it just works and no one knows what I had to go through to get it there. It's like a Christmas miracle.
+
+<img src='https://media.giphy.com/media/gslUJA7JocSkg/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 Do I recommend doing it this way if you don't have to? No. Is this a great workaround if you have no other way to validate your configuration? Absolutely.
 

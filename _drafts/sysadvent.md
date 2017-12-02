@@ -2,7 +2,7 @@
 
 > Bored with his Halloween routine, Jack Skellington longs to spread Christmas joy, but his antics put Santa and the holiday in jeopardy! - [Disney](http://movies.disney.com/the-nightmare-before-christmas)
 
-![alt text](https://gph.is/2daERPp)
+![alt text](https://media.giphy.com/media/4rKzbIk2U8dnW/giphy.gif)
 
 I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [holiday-InSpec joy](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html) with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. All my client wanted for Christmas was to be able to run my InSpec profile in the Jenkins pipeline to validate configuration of their nodes, and I was eager to give that to them.
 

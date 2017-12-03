@@ -8,8 +8,6 @@
 
 I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [holiday-InSpec joy](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html) with my client, but the antics of their air-gapped environment almost put InSpec and my holiday joy in jeopardy. All my client wanted for Christmas was to be able to run my InSpec profile in the Jenkins pipeline to validate configuration of their nodes, and I was eager to give that to them.
 
-<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/holiday_inspec.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
-
 Sit back and let me tell the holiday tale of how I had no other choice but to use Chef [push jobs](http://sysadvent.blogspot.com/2013/12/day-9-getting-pushy-with-chef.html) to run InSpec in an air-gapped environment and why it almost ruined Christmas.
 
 Nothing would have brought me more holiday cheer than to be able to run run the tests as a `winrm` or `ssh` command from the Jenkins server directly from a profile it a git repository, not checked out. However, my soul sank as I uncovered reason after reason for the lack of joy for the season:
@@ -20,8 +18,6 @@ Scroogey Problems:
 3) _SSL Verification:_ There is an SSL error when trying to access the git repo in order to run the InSpec profile remotely. Chef is working on a feature to disable SSL verification. When that is ready, we can access InSpec via a git link but not now.
 
 Because we were already using push jobs for other tasks, I finally succumbed to the idea that I would need to run my InSpec profiles as ::sigh:: push jobs.
-
-<img src='https://media.giphy.com/media/l2JhMHSW254pAV904/giphy.gif' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 Let me tell you real quickly what a push job is. Basically, you run a cookbook on your node that allows you to push a job from the Chef server onto your node. When you run the push jobs cookbook, you define that job with a simple name like "inspec" and what it does, for example: `inspec exec .`. Then you run that job with a knife command, like `knife job start inspec mynodename`.
 

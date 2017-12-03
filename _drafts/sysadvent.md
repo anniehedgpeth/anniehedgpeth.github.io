@@ -10,11 +10,11 @@ I feel a kindred spirit with Jack Skellington. I, too, wanted to spread some [ho
 
 Sit back and let me tell the holiday tale of how I had no other choice but to use Chef [push jobs](http://sysadvent.blogspot.com/2013/12/day-9-getting-pushy-with-chef.html) to run InSpec in an air-gapped environment and why it almost ruined Christmas.
 
-Nothing would have brought me more holiday cheer than to be able to run run the tests as a `winrm` or `ssh` command from the Jenkins server directly from a profile it a git repository, not checked out. However, my soul sank as I uncovered reason after reason for the lack of joy for the season:
+Nothing would have brought me more holiday cheer than to be able to run run the tests as a `winrm` or `ssh` command from the Jenkins server directly from a profile in a git repository, not checked out. However, my soul sank as I uncovered reason after reason for the lack of joy for the season:
 
 Scroogey Problems:
 1) _Network Connectivity:_ The nodes are in an air-gapped environment, and we needed InSpec to run every time a node was added.
-2) _Jumpbox Not an Option:_ I could have PowerShell remoted into the jumpbox and run my InSpec command remotely, but this was, again, not an option for me. You see, my InSpec profile required an [attributes file](http://www.anniehedgie.com/inspec-basics-10). An [attribute](https://docs.chef.io/attributes.html) is a specific detail about a node, so I had to create from a template in the Chef cookbook because I needed node attributes and [data-bag](https://docs.chef.io/data_bags.html) information for my tests that were specific to that particular Chef environment.
+2) _Jumpbox Not an Option:_ I could have PowerShell remoted into the jumpbox and run my InSpec command remotely, but this was, again, not an option for me. You see, my InSpec profile required an [attributes file](http://www.anniehedgie.com/inspec-basics-10). An [attribute](https://docs.chef.io/attributes.html) is a specific detail about a node, so I had to create an attributes file for my InSpec profile by using a template resource in the Chef cookbook. This is because I needed node attributes and [data-bag](https://docs.chef.io/data_bags.html) information for my tests that were specific to that particular Chef environment.
 3) _SSL Verification:_ There is an SSL error when trying to access the git repo in order to run the InSpec profile remotely. Chef is working on a feature to disable SSL verification. When that is ready, we can access InSpec via a git link but not now.
 
 Because we were already using push jobs for other tasks, I finally succumbed to the idea that I would need to run my InSpec profiles as ::sigh:: push jobs.

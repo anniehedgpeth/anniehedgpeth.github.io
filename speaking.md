@@ -3,6 +3,10 @@ layout: page
 title: Speaking
 permalink: /speaking/
 ---
+### [Arrested DevOps](https://www.arresteddevops.com/career-change-into-devops/) - "Career Change into DevOps"
+
+### [DevOpsDays DFW 2017](https://www.youtube.com/channel/UClMmc8BcfAzyZwFAtFVq1gA/videos) - MC and Speaker Coordinator
+
 ### [ChefConf 2017](https://chefconf.chef.io/2017/agenda/) - "My Journey Into Technology Through InSpec"
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/bNxc6Y8ZHsI" frameborder="0" allowfullscreen></iframe>
@@ -53,10 +57,17 @@ permalink: /speaking/
 
 # GUEST BLOG POSTS
 
-SysAdvent yearly holiday blog: [Building Empathy: a devopssec story](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html?utm_content=buffer1c4b0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
-
+SysAdvent yearly holiday blog: 
+<br/>
+[Building Empathy: a devopssec story](http://sysadvent.blogspot.com/2016/12/day-3-building-empathy-devopsec-story.html?utm_content=buffer1c4b0&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+<br/>
+[Running InSpec as a Push Job](http://sysadvent.blogspot.com/2017/12/day-7-running-inspec-as-push-job.html)
+<br/>
+<br/>
 10th Magnitude blog: 
+<br/>
 [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
+<br/>
 [Compliance as Code: An Introduction to InSpec](https://www.10thmagnitude.com/tech-blog/compliance-code-introduction-inspec/)
 
 # AWARDS

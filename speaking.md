@@ -4,10 +4,13 @@ title: Speaking
 permalink: /speaking/
 ---
 ### [Arrested DevOps](https://www.arresteddevops.com/career-change-into-devops/) - "Career Change into DevOps"
+<br/>
 
 ### [DevOpsDays DFW 2017](https://www.youtube.com/channel/UClMmc8BcfAzyZwFAtFVq1gA/videos) - MC and Speaker Coordinator
+<br/>
 
 ### [ChefConf 2017](https://chefconf.chef.io/2017/agenda/) - "My Journey Into Technology Through InSpec"
+<br/>
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/bNxc6Y8ZHsI" frameborder="0" allowfullscreen></iframe>
 <br/>

@@ -5,8 +5,10 @@ permalink: /speaking/
 ---
 ### [Arrested DevOps](https://www.arresteddevops.com/career-change-into-devops/) - "Career Change into DevOps"
 <br/>
+<br/>
 
 ### [DevOpsDays DFW 2017](https://www.youtube.com/channel/UClMmc8BcfAzyZwFAtFVq1gA/videos) - MC and Speaker Coordinator
+<br/>
 <br/>
 
 ### [ChefConf 2017](https://chefconf.chef.io/2017/agenda/) - "My Journey Into Technology Through InSpec"
@@ -76,5 +78,5 @@ SysAdvent yearly holiday blog:
 # AWARDS
 
 [Awesome Community Chefs – 2017 Award Winner](https://blog.chef.io/2017/06/08/awesome-community-chefs-2017-award-winners/)
-
+<br/>
 ![Awesome Community Chef Award](https://22jr213zpp00e1zym36icrs1-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/awesome-chefs-all-768x446.jpg)

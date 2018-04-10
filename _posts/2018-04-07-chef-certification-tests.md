@@ -11,7 +11,7 @@ Last week I finished the last of the three required tests to become a _Certified
 
 [<img src='/assets/article_images/2018-04-07-certified-chef-developer/ChefCertification.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://training.chef.io/certification)
 
-My understanding of the badges is that you need three to get certified. The two required badges are _Basic Chef Fluency_ and _Local Cookbook_Development, and then you have a choice between _[Extending Chef](https://training.chef.io/extending-chef-badge)_ and _Deploying Cookbooks_. The [InSpec badge](https://training.chef.io/auditing-with-inspec-badge) is the wildcard. I don't know that they have a plan for that one yet, which is why I haven't taken it. I will after they more clearly define it.
+My understanding of the badges is that you need three to get certified. The two required badges are _Basic Chef Fluency_ and _Local Cookbook Development_, and then you have a choice between _[Extending Chef](https://training.chef.io/extending-chef-badge)_ and _Deploying Cookbooks_. The [InSpec badge](https://training.chef.io/auditing-with-inspec-badge) is the wildcard. I don't know what their plan is for that one yet, which is why I haven't taken it. I will after I hear more about it.
 
 Back when I took this test I [told you](http://www.anniehedgie.com/basic-chef-fluency) that I had created a Github [repo](https://github.com/anniehedgpeth/chef-certification-study-guides) to house my study materials. I continued to add to it as I studied for the exams. 
 
@@ -24,12 +24,16 @@ I found it really useful to go through the the PDFs that they created with the l
 2. [Local Cookbook Development](#local-cookbook-development)
 3. [Deploying Cookbooks](deploying-cookbooks)
 
-Now, Chef has some really good study materials. I don't know why, though, but they just didn't jive for me for whatever reason. I would start on a [Chef Rally](https://learn.chef.io) lesson and then never finish. I think maybe for me they get a little too detailed with stuff that doesn't matter really, and I get confused, then discouraged, then distracted. What does work for me is starting at a super elementary level and working my way up. [Chef Rally](https://learn.chef.io) does work for a lot of people, though, so give it a go and see if you get lucky.
+Now, Chef has some really good study materials. I don't know why, though, but they just didn't jive for me for whatever reason. I would start on a [Chef Rally](https://learn.chef.io) lesson and then never finish. I think maybe for me they get a little too detailed with stuff that I don't work with often really, and I get confused, then discouraged, then distracted. What does work for me is starting at a super elementary level and working my way up. [Chef Rally](https://learn.chef.io) does work for a lot of people, though, so give it a go and see if that's you. It really is the best place to start because it'll be the same wording and logic as the exams. 
+
+[Linux Academy]: (https://linuxacademy.com/devops/training/course/name/certified-chef-developer-basic-chef-fluency-badge)
+They have classes for the first two badges, and I didn't have time to complete them, but they have a practice test and note cards that were nice.
+
 
 Otherwise, I'll share below what I did to prepare for each exam. Before I do that, I'll share some notes about the exam experience that pertain to all three exams.
 
 # Notes about my Exam experience
- - There was not a visible timer, so you have to chat with the proctor to ask how much time is left, which wastes time.
+ - There was not a visible timer, so if you don't remember the exact time you started, then you have to chat with the proctor to ask how much time is left, which wastes time.
  
  - If your internet connection is interrupted (mine was 6 times for one exam), they will give you the lost time, however, this is not ideal, because it makes you frantic and you can't go to the bathroom (it's a problem).
  
@@ -53,9 +57,6 @@ The idea is not to do the entire kata but to give yourself an allotted amount of
 
 ### [Basic Chef Fluency Kata Cheat Sheet](https://github.com/anniehedgpeth/chef-certification-study-guides/blob/master/basic-chef-fluency/basic-chef-fluency-kata-cheatsheet.md)
 As I was going through the kata daily, I would make reminders of what I did to solve the problem. That helped me to solidify it in my head and also gave me a quick reminder when I needed it. 
-
-#### [Certified Chef Developer Basic Chef Fluency Badge by Linux Academy](https://linuxacademy.com/devops/training/course/name/certified-chef-developer-basic-chef-fluency-badge)
-I have not taken this class, but I hear it is very good for preparing you for the exam.
 
 [<img src='/assets/article_images/2018-04-07-certified-chef-developer/badge-local-cookbook-development.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://training.chef.io/local-cookbook-development-badge)
 # [LOCAL COOKBOOK DEVELOPMENT](https://training.chef.io/static/Local_Cookbook_Development_Badge_Scope.pdf)

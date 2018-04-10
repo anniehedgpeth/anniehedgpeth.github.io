@@ -9,7 +9,7 @@ image2: /assets/article_images/2018-04-07-certified-chef-developer/certified-che
 ---
 Last week I finished the last of the three required tests to become a _Certified Chef Developer_ (and passed - woohoo!). I took it kind of slowly, and just made it a quarterly objective to either study for or take a test over the past six months. It was a great experience, and I know that the tests are a bit mysterious, so I wanted to try and demystify it for you. (Their [FAQs](https://training.chef.io/certification-faq) are also helpful.)
 
-![](/assets/article_images/2018-04-07-certified-chef-developer/ChefCertification.png) 
+[<img src='/assets/article_images/2018-04-07-certified-chef-developer/ChefCertification.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](https://training.chef.io/certification)
 
 My understanding of the badges is that you need three to get certified. The two required badges are _Basic Chef Fluency_ and _Local Cookbook_Development, and then you have a choice between _[Extending Chef](https://training.chef.io/extending-chef-badge)_ and _Deploying Cookbooks_. The [InSpec badge](https://training.chef.io/auditing-with-inspec-badge) is the wildcard. I don't know that they have a plan for that one yet, which is why I haven't taken it. I will after they more clearly define it.
 

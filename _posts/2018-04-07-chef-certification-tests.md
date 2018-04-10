@@ -117,3 +117,6 @@ That was me. I've never been good at multiple choice tests because I take too lo
 3) After the first pass at the multiple choice questions, I started and finished the lab.
 
 4) Then I returned to my Atom file and began looking up all of the questions in docs.chef.io and answering them.
+
+# Concluding Thoughts
+Honestly, this whole process has made me rethink my approach to studying and test-taking. I used to have huge test anxiety, but when I realized that it's just a skill that can be developed just like any other skill, I felt in control again, like I could move the needle on this instead of just feeling sorry for myself. Learning new skills is very empowering.

@@ -9,13 +9,15 @@ image2: /assets/article_images/2018-04-07-certified-chef-developer/certified-che
 ---
 Last week I finished the last of the three required tests to become a _Certified Chef Developer_ (and passed - woohoo!). I took it kind of slowly, and just made it a quarterly objective to either study for or take a test over the past six months. It was a great experience, and I know that the tests are a bit mysterious, so I wanted to try and demystify it for you. (Their [FAQs](https://training.chef.io/certification-faq) are also helpful.)
 
+![](/assets/article_images/2018-04-07-certified-chef-developer/ChefCertification.png) 
+
 My understanding of the badges is that you need three to get certified. The two required badges are _Basic Chef Fluency_ and _Local Cookbook_Development, and then you have a choice between _Extending Chef_ and _Deploying Cookbooks_. The InSpec badge is the wildcard. I don't know that they have a plan for that one yet, which is why I haven't taken it. I will after they more clearly define it.
 
 Back when I took this test I [told you](http://www.anniehedgie.com/basic-chef-fluency) that I had created a Github [repo](https://github.com/anniehedgpeth/chef-certification-study-guides) to house my study materials. I continued to add to it as I studied for the exams. 
 
 I found it really useful to go through the the PDFs that they created with the lists of topics that would be covered in the exams and just write out as much info as I could about that topic. Searching through docs.chef.io was the best bet for these topics, not only because that's considered the source of truth, but also because it familiarizes you with where to find everything in the docs. This is particularly useful in the exam when you are allowed access to docs.chef.io and need to use your time wisely.
 
-![](/assets/article_images/2017-06-16-basic-chef-fluency-badge/badge-basic-chef-fluency.png) 
+![](/assets/article_images/2018-04-07-certified-chef-developer/paths.png) 
 
 # The badges I got
 1. [Basic Chef Fluency](#basic-chef-fluency)
@@ -37,7 +39,7 @@ Otherwise, I'll share below what I did to prepare for each exam. Before I do tha
  
  - The language of the questions is unnecessarily complicated. I had to reread some of them over and over only to find out it was a simple question with very confusing wording (exacerbated by nervousness).
 
-![](/assets/article_images/2018-04-07-chef-certification-tests/badge-basic-chef-fluency.png) 
+![](/assets/article_images/2018-04-07-certified-chef-developer/badge-basic-chef-fluency.png) 
 # [BASIC CHEF FLUENCY](https://training.chef.io/static/Basic_Chef_Fluency_Badge_Scope.pdf)
 There are two basic components: a study sheet (cheat sheet) and a lab (kata).
 
@@ -55,7 +57,7 @@ As I was going through the kata daily, I would make reminders of what I did to s
 #### [Certified Chef Developer Basic Chef Fluency Badge by Linux Academy](https://linuxacademy.com/devops/training/course/name/certified-chef-developer-basic-chef-fluency-badge)
 I have not taken this class, but I hear it is very good for preparing you for the exam.
 
-![](/assets/article_images/2018-04-07-chef-certification-tests/badge-local-cookbook-development.png)
+![](/assets/article_images/2018-04-07-certified-chef-developer/badge-local-cookbook-development.png)
 # [LOCAL COOKBOOK DEVELOPMENT](https://training.chef.io/static/Local_Cookbook_Development_Badge_Scope.pdf)
 You can expect this 2 part exam to be tougher than the Basic Chef Fluency badge. It will be heavily focused on Test Kitchen, InSpec, and just basically creating cookbooks. So if you have healthy test-driven development practices with your cookbook development, then you will likely do just fine. If you don't, then this test will expose that. And guess what, I have another [study guide](https://github.com/anniehedgpeth/chef-certification-study-guides/tree/master/local-cookbook-development)!
 
@@ -78,7 +80,7 @@ The second time I took it on Linux and breezed through it.
 
 The Windows lab will require that you make 10 InSpec tests pass with the recipe. The requirements are very Windows specific (see above for examples).
 
-![](/assets/article_images/2018-04-07-chef-certification-tests/DeployingCookbooks.png)
+![](/assets/article_images/2018-04-07-certified-chef-developer/DeployingCookbooks.png)
 # [DEPLOYING COOKBOOKS](https://training.chef.io/static/Deploying_Cookbooks.pdf)
 You can expect this 2 part exam to be tougher than the first two badges. This particular badge provides an alternative path to becoming _Certified Chef Developer_. The alternative is taking the _Extending Chef_ exam, which is focused a lot on extending Chef's capabilities, so creating OHAI plugins, custom resources, that type of stuff. Whereas, _Deploying Cookbooks_ is focused primarily on what you do with the cookbook after it's created, such as `knife` stuff, Chef server stuff, environments, roles, etc. If you already have _Basic Chef Fluency_ and _Local Cookbook Development_ badges, then if you pass this badge you will become Certified. Yay!
 

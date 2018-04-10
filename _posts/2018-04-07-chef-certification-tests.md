@@ -107,8 +107,13 @@ would have done more of those questions and less of the first 10 multiple choice
 That was me. I've never been good at multiple choice tests because I take too long second-guessing myself. Essay exams were always a breeze for me because I could explain what I knew, but I always felt multiple choice exams were always too harsh. Well,  my very wise husband suggested that perhaps I wasn't good at taking tests because I had never properly learned how to take a test, that perhaps I could create a game-plan for the test and see if I improved. Well, I did, and boy was he right. My anxiety went down, and I passed! Here's what I did:
 
 1) Opened up Atom and created a blank file to write notes.
+
 2) Started the questions and went through the first 40 pacing myself at about 60 seconds per question (it's a 90 minute exam).
+
    - Any time I got to a question I wasn't super certain of, I'd type the question number in the blank Atom file to come back to it later.
+
    - If I knew exactly where the answer was in docs.chef.io and I knew I could find it quickly, then I would, but if it required digging, I typed the question number in Atom.
+
 3) After the first pass at the multiple choice questions, I started and finished the lab.
+
 4) Then I returned to my Atom file and began looking up all of the questions in docs.chef.io and answering them.

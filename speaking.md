@@ -3,6 +3,10 @@ layout: page
 title: Speaking
 permalink: /speaking/
 ---
+### [The New Stack Makers](https://www.youtube.com/watch?v=PotvNcL6voc) - ft. Dominik Richter & Annie Hedgpeth at ChefConf 2018
+<br/>
+<br/>
+
 ### [Arrested DevOps](https://www.arresteddevops.com/career-change-into-devops/) - "Career Change into DevOps"
 <br/>
 <br/>

@@ -4,8 +4,8 @@ title:  "Packer and Azure Managed Images"
 date:   2018-09-23 09:00:00
 categories: devops, azure, packer, managed images
 tags: devops, azure, packer, managed images
-image: /assets/article_images/2018-09-23-managed-images/managed-images.jpg
-image2: /assets/article_images/2018-09-23-managed-images/managed-images-mobile.jpg
+image: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images.jpg
+image2: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images-mobile.jpg
 ---
 I ran across and interesting question at work the other day for which I had to do a little digging, so I thought I'd share it with you to maybe save you some of the digging of your own.
 

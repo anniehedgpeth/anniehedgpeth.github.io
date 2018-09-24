@@ -11,19 +11,25 @@ I ran across and interesting question at work the other day for which I had to d
 
 Disclaimer: I'm only talking about AZURE here, so if you see me write "subscription" just know I'm talking about an Azure RM subscription.
 
-# The Goal
+# The Problem and Goal
 
-Our end goal was to create a bunch of managed images in Azure using Packer and Chef and use them across several subscriptions and regions. Fear not, dear friends, I learned that we are able to achieve this state, however, I'd like to clear up a few questions we had along the way.
+We wanted to create managed images at a base level so that provisioning and configuring is bit quicker and less error prone because there's less to do. Our end goal was to create a bunch of managed images in Azure using Packer and Chef and use them across several subscriptions and regions. We'd have a base image for each type of server, i.e. web, agent, SQL, etc. The important thing for us, however, was that we didn't have to keep the same image in several different subscriptions.
+
+We had a lot of managed images in several different subscriptions, which is wasteful and error prone. How can you ensure that all of the images are up to date and the same? You may look in your desired subscription, see that the image you want isn't there, and create a new one. But, "Oh wait," you say, "let's just make this one little tweak to the code first," and now your image is different than the standard image. As you can see, this can get out of hand and become very error prone quickly, so wouldn't it be easier to just have one golden image?
+
+Also, we don't want to have to keep the OS disk around for these images. They're just base images so it's not necessary, therefore we don't want to pay for something that's not necessary.
+
+Fear not, dear friends, I learned that we are able to achieve this state, however, I'd like to clear up a few questions we had along the way.
 
 # Questions
 
 ## 1. What's the difference between an Azure "Snapshot" and an Azure "Managed Image"?
 
-This is an important distinction because they are not interchangeable and what you can do with one, you can't necessarily do with the other. I don't find the Microsoft documentation to be super clear about this, but I ran across a GitHub discussion where [@Karishma-Tiwari-MSFT](https://github.com/Karishma-Tiwari-MSFT) laid it all out very clearly. [She says](https://github.com/MicrosoftDocs/azure-docs/issues/12540):
+This is an important distinction because they are not interchangeable and what you can do with one, you can't necessarily do with the other. I don't find the Microsoft documentation to be super clear about this, so when I was researching it, I kept thinking that I would be able to do something, but really I couldn't because I was reading about snapshots and not managed images. I ran across a GitHub discussion where [@Karishma-Tiwari-MSFT](https://github.com/Karishma-Tiwari-MSFT) laid it all out very clearly. [She says](https://github.com/MicrosoftDocs/azure-docs/issues/12540):
 
-> A VM Image contains an OS disk, which has been generalized and needs to be provisioned during deployment time. OS Images today are generalized. This is meant to be used as a “model” to quickly stamp out similar virtual machines, such as scaling out a front-end to your application in production or spinning up and tearing down similar development and test environments quickly.
+> A VM [managed] Image contains an OS disk, which has been generalized and needs to be provisioned during deployment time. OS Images today are generalized. This is meant to be used as a “model” to quickly stamp out similar virtual machines, such as scaling out a front-end to your application in production or spinning up and tearing down similar development and test environments quickly.
 
-> An image of a virtual machine is a copy of the VM which encompasses the full definition of virtual machine’s storage, containing the OS disk, all data disks, data files and applications. It captures the disk properties (such as host caching) you need in order to deploy a VM in a reusable unit.
+> An image of a virtual machine is a copy of the VM which encompasses the full definition of [the] virtual machine’s storage, containing the OS disk, all data disks, data files and applications. It captures the disk properties (such as host caching) you need in order to deploy a VM in a reusable unit.
 
 > A Snapshot contains an OS disk, which is already provisioned. It is similar to a disk today in that it is “ready-to-use”, but unlike a disk, the VHDs of a Snapshot are treated as read-only and copied when deploying a new virtual machine. A snapshot is a copy of the virtual machine's disk file at a given point in time, meant to be used to deploy a VM to a good known point in time, such as check pointing a developer machine, before performing a task which may go wrong and render the virtual machine useless.
 

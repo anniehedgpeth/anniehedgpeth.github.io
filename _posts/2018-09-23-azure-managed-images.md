@@ -11,11 +11,11 @@ I ran across and interesting question at work the other day for which I had to d
 
 Disclaimer: I'm only talking about AZURE here, so if you see me write "subscription" just know I'm talking about an Azure RM subscription.
 
-# The Problem and Goal
+# The Problem and the Goal
 
-We wanted to create managed images at a base level so that provisioning and configuring is bit quicker and less error prone because there's less to do. Our end goal was to create a bunch of managed images in Azure using Packer and Chef and use them across several subscriptions and regions. We'd have a base image for each type of server, i.e. web, agent, SQL, etc. The important thing for us, however, was that we didn't have to keep the same image in several different subscriptions.
+We wanted to create managed images at a base level so that the provisioning and configuring is a bit quicker and less error prone since there would be less to do. We'd have just one base image for each type of server, i.e. web, agent, SQL, etc. It was important for us that we didn't have to keep the same image in several different subscriptions. Our end goal was to create a bunch of managed images in Azure using Packer and Chef and use them across several subscriptions and regions, as opposed to having the same image in multiple subscriptions.
 
-We had a lot of managed images in several different subscriptions, which is wasteful and error prone. How can you ensure that all of the images are up to date and the same? You may look in your desired subscription, see that the image you want isn't there, and create a new one. But, "Oh wait," you say, "let's just make this one little tweak to the code first," and now your image is different than the standard image. As you can see, this can get out of hand and become very error prone quickly, so wouldn't it be easier to just have one golden image?
+We were already doing that, and it wasn't working for us. We had a lot of managed images in several different subscriptions, which is wasteful and error prone. How can you ensure that all of the images are up to date and the same? You may look in your desired subscription, see that the image you want isn't there, and create a new one. But, "Oh wait," you say, "let's just make this one little tweak to the code first," and now your image is different than the standard image. As you can see, this can get out of hand and become very error prone quickly, so wouldn't it be easier to just have one golden image for each of your component servers?
 
 Also, we don't want to have to keep the OS disk around for these images. They're just base images so it's not necessary, therefore we don't want to pay for something that's not necessary.
 

@@ -9,7 +9,7 @@ image2: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-imag
 ---
 I ran across and interesting question at work the other day for which I had to do a little digging, so I thought I'd share it with you to maybe save you some of the digging of your own.
 
-Disclaimer: I'm only talking about AZURE here, so if you see me write "subscription" just know I'm talking about an Azure RM subscription.
+**Disclaimer:** I'm only talking about AZURE here, so if you see me write "subscription" just know I'm talking about an Azure RM subscription. Also, this assumes that all of the subscriptions are under the same AAD [(Azure Active Directory)](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwji4t7rvdbdAhWXVw0KHdDkBnkYABAAGgJxYg&ohost=www.google.com&cid=CAESQeD2PH4wHnpZykrCS1AHYXFBpYP7yBGgLS7gu5xsKLi9XOAWHRtj7_3RcCKelJEoFJ6t5nH-o-agHVvInP1yAE4n&sig=AOD64_3D8HbbMxK7ebZZMwHLHDISMcbCXA&q=&ved=2ahUKEwjuntjrvdbdAhUCoVMKHV_7BhsQ0Qx6BAgCEAI&adurl=) group and that you or your [Service Principal](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps) have access and rights to the necessary subscriptions.
 
 # The Problem and the Goal
 
@@ -34,6 +34,8 @@ This is an important distinction because they are not interchangeable and what y
 > A Snapshot contains an OS disk, which is already provisioned. It is similar to a disk today in that it is “ready-to-use”, but unlike a disk, the VHDs of a Snapshot are treated as read-only and copied when deploying a new virtual machine. A snapshot is a copy of the virtual machine's disk file at a given point in time, meant to be used to deploy a VM to a good known point in time, such as check pointing a developer machine, before performing a task which may go wrong and render the virtual machine useless.
 
 I thought she did a great job describing the difference, and Microsoft should use it for their documentation, but I digress.
+
+So if the snapshot isn't generalized, then that means that you can't do certain things that you might want to do with an image, like change the hostname. It's not generic enough like an image is.
 
 What I will be discussing in this post is definitely "Managed Images" not "Snapshots". As a freebie, though, I can tell you that Snapshots seem much easier to move around. The PowerShell module “AzureRmSnapshot” will work for moving snapshots across regions and subscriptions. Likewise, there is a PowerShell module for copying managed disks, as well, but I have yet to find one for managed images without the OS disk (more on that later).
 
@@ -131,5 +133,6 @@ All in all, it's better just to use separate builders in the Packer template. Su
 In the end, we'd like to never have to do the workflow in #4 because we will hopefully not _need_ to. Because Azure allows you to create a VM from an image in a different subscription and region, it is not likely that we will need to copy images.
 
 <img src='/assets/article_images/2018-09-23-managed-images/mountain-managed-image.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+^ It's a mountain-scape image...get it??
 
 And as always, if you see any errors in this post, [create a pull request](https://github.com/anniehedgpeth/anniehedgpeth.github.io) with the fix and give yourself credit! Cheers!

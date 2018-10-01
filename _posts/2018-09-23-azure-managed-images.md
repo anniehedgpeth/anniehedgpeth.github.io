@@ -7,7 +7,7 @@ tags: devops, azure, packer, managed images
 image: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images.jpg
 image2: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images-mobile.jpg
 ---
-I ran across and interesting question at work the other day for which I had to do a little digging, so I thought I'd share it with you to maybe save you some of the digging of your own.
+I ran across an interesting question at work the other day for which I had to do a little digging, so I thought I'd share it with you to maybe save you some of the digging of your own.
 
 **Disclaimer:** I'm only talking about AZURE here, so if you see me write "subscription" just know I'm talking about an Azure RM subscription. Also, this assumes that all of the subscriptions are under the same AAD [(Azure Active Directory)](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwji4t7rvdbdAhWXVw0KHdDkBnkYABAAGgJxYg&ohost=www.google.com&cid=CAESQeD2PH4wHnpZykrCS1AHYXFBpYP7yBGgLS7gu5xsKLi9XOAWHRtj7_3RcCKelJEoFJ6t5nH-o-agHVvInP1yAE4n&sig=AOD64_3D8HbbMxK7ebZZMwHLHDISMcbCXA&q=&ved=2ahUKEwjuntjrvdbdAhUCoVMKHV_7BhsQ0Qx6BAgCEAI&adurl=) group and that you or your [Service Principal](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps) have access and rights to the necessary subscriptions.
 

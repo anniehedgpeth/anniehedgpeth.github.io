@@ -89,6 +89,20 @@ There is one kicker: you have to make sure to turn on image-sharing permissions 
 Failed to complete #create action: [{"error"=>{"code"=>"BadRequest", "message"=>"Image sharing not supported for subscription."}}] on windows-vm-azure
 ```
 
+You can run this to enable the image sharing:
+
+```POWERSHELL
+Register-AzureRmProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UserImageSharing"
+```
+
+It takes a few minutes, but you can monitor the feature registration with this:
+
+```POWERSHELL
+Get-AzureRmProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UserImageSharing"
+```
+
+(Thanks, for that tip, Robert!)
+
 ## 4. But how _do_ you copy Managed Images from one subscription or region to another?
 
 I was still really curious about how you would actually copy the images to other subscriptions just in case we ran across a situation where we couldn't change the image sharing permissions on a subscription or whatever else might come up. I learned that you can use `az image copy` to copy managed images to another region and/or another subscription. However, the thing that makes it super inconvenient is that it relies on the **un-generalized source OS disk** as the actual source of the copy. Therefore, if you want to copy the managed image to other regions or subscriptions, you will have to have the un-generalized OS disk from the original VM.

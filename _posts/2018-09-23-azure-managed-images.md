@@ -89,7 +89,7 @@ There is one kicker: you have to make sure to turn on image-sharing permissions 
 Failed to complete #create action: [{"error"=>{"code"=>"BadRequest", "message"=>"Image sharing not supported for subscription."}}] on windows-vm-azure
 ```
 
-You can run this to enable the image sharing:
+Right now the UserImageSharing feature is only in *PRIVATE PREVIEW*. If you want to use that, you can run this to enable the image sharing:
 
 ```POWERSHELL
 Register-AzureRmProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UserImageSharing"

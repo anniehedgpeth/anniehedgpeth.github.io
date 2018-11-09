@@ -71,7 +71,7 @@ terraform graph | dot -Tpng > graph.png
 
 And you'll end up with something like this inside that directory. Kinda fun, right?
 
-![terraform graph](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vnet-two-subnets/graph.png)
+![terraform graph](https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/examples/vm-custom-image-new-storage-account/graph.png?raw=true)
 
 ### 4) [Validate](https://www.terraform.io/docs/commands/validate.html) and [Format](https://www.terraform.io/docs/commands/fmt.html)
 You write Terraform in HCL (HashiCorp configuration language), and a cool little trick to validate that you've written your code properly is just to run `terraform validate` in your directory, and it'll let you know if you've got any errors in that directory. 

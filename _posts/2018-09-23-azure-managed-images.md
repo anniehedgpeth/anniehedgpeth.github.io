@@ -89,19 +89,13 @@ There is one kicker: you have to make sure to turn on image-sharing permissions 
 Failed to complete #create action: [{"error"=>{"code"=>"BadRequest", "message"=>"Image sharing not supported for subscription."}}] on windows-vm-azure
 ```
 
-Right now the UserImageSharing feature is only in *PRIVATE PREVIEW*. If you want to use that, you can run this to enable the image sharing:
+Right now the UserImageSharing feature is only in *PRIVATE PREVIEW*.
 
-```POWERSHELL
-Register-AzureRmProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UserImageSharing"
-```
+******************************************
+EDIT as of Dec. 26:
 
-It takes a few minutes, but you can monitor the feature registration with this:
-
-```POWERSHELL
-Get-AzureRmProviderFeature -ProviderNamespace Microsoft.Compute -FeatureName "UserImageSharing"
-```
-
-(Thanks, for that tip, Robert!)
+I have just learned that Shared Image Gallery addresses all these issues. The feature now gives you the ability to manage your images efficiently, share your images across subscriptions and regions, and scale your VM/VMSS deployments. The feature is currently in Public Preview and will be generally available Q1 2019. UserImageSharing, however, was only being previewed by a set of customers, and I just learned that it will never be generally available. You can find the documentation for Shared Image Gallery [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/shared-image-galleries).
+******************************************
 
 ## 4. But how _do_ you copy Managed Images from one subscription or region to another?
 

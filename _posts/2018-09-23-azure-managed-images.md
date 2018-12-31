@@ -92,9 +92,10 @@ Failed to complete #create action: [{"error"=>{"code"=>"BadRequest", "message"=>
 Right now the UserImageSharing feature is only in *PRIVATE PREVIEW*.
 
 ******************************************
-EDIT as of Dec. 26:
+> *EDIT as of Dec. 26:*
 
-I have just learned that Shared Image Gallery addresses all these issues. The feature now gives you the ability to manage your images efficiently, share your images across subscriptions and regions, and scale your VM/VMSS deployments. The feature is currently in Public Preview and will be generally available Q1 2019. UserImageSharing, however, was only being previewed by a set of customers, and I just learned that it will never be generally available. You can find the documentation for Shared Image Gallery [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/shared-image-galleries).
+> I have just learned that Shared Image Gallery addresses all these issues. The feature now gives you the ability to manage your images efficiently, share your images across subscriptions and regions, and scale your VM/VMSS deployments. The feature is currently in Public Preview and will be generally available Q1 2019. UserImageSharing, however, was only being previewed by a set of customers, and I just learned that it will never be generally available. You can find the documentation for Shared Image Gallery [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/shared-image-galleries).
+
 ******************************************
 
 ## 4. But how _do_ you copy Managed Images from one subscription or region to another?

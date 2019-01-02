@@ -7,7 +7,7 @@ tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsec
 image: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11.jpg
 image2: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11-mobile.jpg
 ---
-Up until InSpec 2.0, you could only use InSpec to scan actual infrastructure. When resources became available in InSpec to scan cloud subscriptions, I was thrilled. There are a million and one reasons you'd want to take stock of your Azure resources. Whether you're trying to validate that your ARM template or Terraform script did what it said it was going to do, or you have compliance standards that you have to audit, or you just want to make sure that you don't write over anything before a deployment, the [`inspec-azure`](https://github.com/inspec/inspec-azure) gem is a great tool for this.
+Up until InSpec 2.0, you could only use InSpec to scan actual infrastructure. When resources became available in InSpec to scan cloud subscriptions, I was thrilled. There are a million and one reasons you'd want to take stock of your Azure resources. Whether you're trying to validate that your ARM template or Terraform script did what it said it was going to do, or you have compliance standards that you have to audit, or you just want to make sure that you don't write over anything before a deployment, the [`inspec-azure`](https://github.com/inspec/inspec-azure) resource pack is a great tool for this.
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -29,7 +29,7 @@ If you like to skip ahead, feel free:
 1. [What you are going to do with InSpec in this tutorial](#what-you-are-going-to-do-with-inspec-in-this-tutorial)
 1. [Why do I need to validate my Azure subscriptions?](#why-do-i-need-to-validate-my-azure-subscriptions)
 1. [Prerequisites](#prerequisites)
-1. [InSpec Azure Gem](#inspec-azure-gem)
+1. [InSpec Azure Resource Pack](#inspec-azure-resouce-pack)
 1. [RED - write a failing test](#red-write-a-failing-test)
 1. [GREEN - make the tests pass with Terraform](#green-make-the-tests-pass-with-terraform)
 1. [Concluding Thoughts](#concluding-thoughts)
@@ -60,13 +60,13 @@ Now, before we start, let's get some stuff in order. You're going to need the fo
 
 If you haven't worked with an Azure service principal before, go to the link above and follow the direction for *Setting up Azure credentials for InSpec* and *Setting up the Azure Credenitals File* exactly. It can be pretty frustrating if you set it up incorrectly, so follow the directions carefully. When you think you're finished, validate that your service principal is set up properly by trying to make a few calls to your Azure subscription with Azure CLI or Powershell. Both instructions will tell you how to log in on the command line with your service principal. If you want to further validate that your service principal can see your resources, then look up some commands such as [`az vm list`](https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-list) or [`Get-AzureRM`](https://docs.microsoft.com/en-us/powershell/module/azurerm.compute/get-azurermvm?view=azurermps-6.13.0) and try them out. Just be careful if you're not familiar with interacting with your Azure subscription from the command line; don't go deleting stuff you're not supposed to be deleting.
 
-# Inspec Azure Gem
+# Inspec Azure Resource Pack
 
 So honestly, if you just set up your credentials, then the hard part is over. If you've used InSpec before, then you're smooth sailing from here. If not, then follow along.
 
 The first thing we need to do is create an InSpec profile, so if you remember how to create one, then do that and make sure it's commited to git. If you don't remember, then follow this [quick tutorial](http://www.anniehedgie.com/inspec-basics-5) to set one up.
 
-In order to validate Azure resources, we're now going to put the inspec-azure gem to use so that we can run our automated tests against Azure. To do that, all we have to do is tell the InSpec profile to depend on the `inspec-azure` gem. To do that, all we need to do is add a few lines to the `inspec.yml` file in your profile. 
+In order to validate Azure resources, we're now going to put the inspec-azure resource pack to use so that we can run our automated tests against Azure. To do that, all we have to do is tell the InSpec profile to depend on the `inspec-azure` resource pack. To do that, all we need to do is add a few lines to the `inspec.yml` file in your profile. 
 
 Open up the InSpec profile that you just created in your editor of choice (mine's Visual Studio Code), and add these lines to the end of your `inspec.yml`:
 

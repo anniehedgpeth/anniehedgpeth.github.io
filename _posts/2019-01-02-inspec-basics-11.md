@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "InSpec Basics: Day 11 - Validating Azure Resources with InSpec Azure"
-date:   2018-12-31 12:00:00
+date:   2019-01-02 12:00:00
 categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, azure, inspec-azure, terraform
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, azure, inspec-azure, terraform
-image: /assets/article_images/2018-12-31-inspec-basics-11/inspec-basics-11.jpg
-image2: /assets/article_images/2018-12-31-inspec-basics-11/inspec-basics-11-mobile.jpg
+image: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11.jpg
+image2: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11-mobile.jpg
 ---
-There are a million and one reasons you'd want to take stock of your Azure resources. Whether you're trying to validate that your ARM template or Terraform script did what it said it was going to do, or you have compliance standards that you have to audit, or you just want to make sure that you don't write over anything before a deployment, the [`inspec-azure`](https://github.com/inspec/inspec-azure) gem is a great tool for this.
+Up until InSpec 2.0, you could only use InSpec to scan actual infrastructure. When resources became available in InSpec to scan cloud subscriptions, I was thrilled. There are a million and one reasons you'd want to take stock of your Azure resources. Whether you're trying to validate that your ARM template or Terraform script did what it said it was going to do, or you have compliance standards that you have to audit, or you just want to make sure that you don't write over anything before a deployment, the [`inspec-azure`](https://github.com/inspec/inspec-azure) gem is a great tool for this.
 
 But first, if you've missed out on any of my tutorials, you can find them here:
 
@@ -22,14 +22,17 @@ But first, if you've missed out on any of my tutorials, you can find them here:
   - Day 9: [Attributes](http://www.anniehedgie.com/inspec-basics-9)
   - Day 10: [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)
 
-# Why and How:
+# Why and How
+
 If you like to skip ahead, feel free:
+
 1. [What you are going to do with InSpec in this tutorial](#what-you-are-going-to-do-with-InSpec-in-this-tutorial)
 1. [Why do I need to validate my Azure subscriptions?](#why-do-I-need-to-validate-my-Azure-subscriptions)
 1. [Prerequisites](#prerequisites)
 1. [InSpec Azure Gem](#inspec-azure-gem)
 1. [RED - write a failing test](#red-write-a-failing-test)
-1. [GREEN - make the tests pass](#green-make-the-tests-pass)
+1. [GREEN - make the tests pass with Terraform](#green-make-the-tests-pass-with-terraform)
+1. [Concluding Thoughts](#concluding-thoughts)
 
 # What you are going to do with InSpec in this tutorial
 
@@ -131,8 +134,6 @@ And finally, in that same resource group called "my-resources", there should exi
 
 There are two different ways we're going to run this profile against your subscription. First, we're just going to run it locally, and second, we're going to run it against your profile in git, but that will come later after we've created some resources in Azure to test against.
 
-## Locally
-
 It's helpful to run locally when you're developing your profile so that you don't have a bazillion git commits of incorrect tests, so let's do that now before you commit your work.
 
 NOTE: This is not making any changes to your subscription.
@@ -210,7 +211,7 @@ If it doesn't, then you'll need to try some troubleshooting. You can start with 
 
 If you did successfully run your InSpec profile against your Azure subscription and get the expected failures as noted above, then GREAT! Now commit that bad boy to git, and let's move on to the next step! Let's remediate those failures by adding some resources to your subscription so that those tests pass.
 
-# GREEN (make the tests pass)
+# GREEN (make the tests pass with Terraform)
 
 To make this easier, we're going to use Terraform to create the resources InSpec expects to see in this Azure subscription. If you want to do this without Terraform, say manually in the portal, with PowerShell, Azure CLI or whatever, feel free! But IMHO, this is the easiest way to remediate our failures. Onward!
 

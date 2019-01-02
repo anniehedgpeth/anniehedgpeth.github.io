@@ -300,6 +300,8 @@ $ terraform destroy
 
 # Concluding Thoughts
 
+There are a ton of resources ready to use that you can find [here](https://www.inspec.io/docs/reference/resources/#azure-resources). I encourage you to take a look and explore what all can be audited with InSpec out of the box.
+
 This is not a new tool, by any stretch. I remember at ChefConf 2017 talking to [Dominik Richter](https://twitter.com/arlimus?lang=en), co-creator of InSpec, about it, and I had to keep it hush because it wasn't released yet. I was very eager to use it because I was working with Terraform a lot at the time, and I could see a ton of value in it. After InSpec 2.0 was released with Azure resources, I gave it a go, but it was buggy for a little while _or maybe I was buggy_, so I didn't use it. Whatever the case, I overcame the user error and the bugs got fixed, and it's super easy now! Like so easy I want to use it for everything.
 
 *Who's has need of validating Azure resources in your organization?* Help them out and whip up a quick profile! Or just send them this post and show them how easy it is to use. Seriously, they'll love you for it.

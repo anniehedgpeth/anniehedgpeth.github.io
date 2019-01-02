@@ -17,5 +17,6 @@ Learning InSpec is completely approachable, and if you follow these tutorials, y
   - [Day 8: Regular Expressions](http://www.anniehedgie.com/inspec-basics-8)
   - [Day 9: Attributes](http://www.anniehedgie.com/inspec-basics-9)
   - [Day 10: Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)
+  - [Day 11: Validating Azure Resources with InSpec Azure](http://www.anniehedgie.com/inspec-basics-11)
   - [Setting Up Compliance](http://www.anniehedgie.com/setting-up-compliance)
   - [Tour of Chef Compliance](http://www.anniehedgie.com/tour-of-chef-compliance)

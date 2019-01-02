@@ -26,8 +26,8 @@ But first, if you've missed out on any of my tutorials, you can find them here:
 
 If you like to skip ahead, feel free:
 
-1. [What you are going to do with InSpec in this tutorial](#what-you-are-going-to-do-with-InSpec-in-this-tutorial)
-1. [Why do I need to validate my Azure subscriptions?](#why-do-I-need-to-validate-my-Azure-subscriptions)
+1. [What you are going to do with InSpec in this tutorial](#what-you-are-going-to-do-with-inspec-in-this-tutorial)
+1. [Why do I need to validate my Azure subscriptions?](#why-do-i-need-to-validate-my-azure-subscriptions)
 1. [Prerequisites](#prerequisites)
 1. [InSpec Azure Gem](#inspec-azure-gem)
 1. [RED - write a failing test](#red-write-a-failing-test)

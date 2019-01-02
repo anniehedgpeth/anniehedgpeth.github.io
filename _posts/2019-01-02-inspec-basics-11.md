@@ -144,7 +144,7 @@ From the command line of your choice, run this command from the InSpec profile d
 $ inspec exec . -t azure://[your-azure-subscription-id-here]
 ```
 
-If you break that command down, it just means that you're executing the InSpec profile (inspec exec) at the currently directory (.), and you're targeting (-t) your Azure subscription.
+If you break that command down, it just means that you're executing the InSpec profile (inspec exec) at the current directory (.), and you're targeting (-t) your Azure subscription.
 
 This InSpec run should fail, but it _should_ be able to connect to Azure. Your failure should look similar to this:
 
@@ -209,7 +209,7 @@ If it doesn't, then you'll need to try some troubleshooting. You can start with 
 - your service principal being logged into Azure from the command line properly ([PowerShell](https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps?view=azps-1.0.0#sign-in-with-a-service-principal) or [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest#sign-in-using-the-service-principal))
 - are you in the right directory :)
 
-If you did successfully run your InSpec profile against your Azure subscription and get the expected failures as noted above, then GREAT! Now commit that bad boy to git, and let's move on to the next step! Let's remediate those failures by adding some resources to your subscription so that those tests pass.
+If you did successfully run your InSpec profile against your Azure subscription and get the expected failures as noted above, then GREAT! Now *commit that bad boy to git*, and let's move on to the next step! Let's remediate those failures by adding some resources to your subscription so that those tests pass.
 
 # GREEN (make the tests pass with Terraform)
 
@@ -255,6 +255,8 @@ $ terraform plan
 ```
 
 When you run this command, Terraform is comparing what is in the tfstate file, .tf files, and the Azure subscription to see what needs to be created or changed. If this succeeds, then you can run this to provision the resources:
+
+NOTE: This is creating resources in your Azure subscription.
 
 ```
 $ terraform apply

@@ -7,7 +7,7 @@ tags: azure, terraform, winrm, kerberos, ntlm, dns, ca cert, group policy, activ
 image: /assets/article_images/2019-04-11-terraform-and-winrm/terraform-and-winrm.jpg
 image2: /assets/article_images/2019-04-11-terraform-and-winrm/terraform-and-winrm-mobile.jpg
 ---
-Walk with me for a moment if you will. Let's say you need to spin up a Windows 2016 node in Terraform that has to join the Azure Active Directory domain. And then you need to be able to WinRM into that node during your Terraform run, because let's say you need to add a remote_exec provisioner that does something that you can only do as a domain account user on the domain, and it has to happen within Terraform for whatever reason. Let's also say that your Group Policy is super strict, and there's no changing it.
+Walk with me for a moment if you will. Let's say you need to spin up a Windows 2016 node in Terraform that has to join the Active Directory domain. And then you need to be able to WinRM into that node during your Terraform run, because let's say you need to add a remote_exec provisioner that does something that you can only do as a domain account user on the domain, and it has to happen within Terraform for whatever reason. Let's also say that your Group Policy is super strict, and there's no changing it.
 
 *Acceptance Criteria:*
 Be able to WinRM into a Windows Server 2016 with Terraform from a Shared Image Gallery image

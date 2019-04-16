@@ -180,4 +180,4 @@ You can't configure WinRM over HTTPS this way, so it's less secure. It _is_ an o
 
 ## Concluding Thoughts
 
-Terraform doesn't want to replace a pipeline tool (Jenkins) or a configuration management tool (Chef), and we shouldn't try to make it. When we try to make tools do things they weren't made to do, things get frustrating quick. That said, use with caution and use your best judgment.
+Terraform doesn't want to replace a pipeline tool (Jenkins) or a configuration management tool (Chef), and we shouldn't try to make it. When we try to make tools do things they weren't made to do, we get frustrated pretty quickly. That said, use with caution and use your best judgment.

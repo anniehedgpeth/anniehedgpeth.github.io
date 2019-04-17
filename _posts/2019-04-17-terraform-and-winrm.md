@@ -59,9 +59,6 @@ There is a parameter in that script called `$script` which is the script that yo
 
 Your Terraform block will look something like this:
 
-<details><summary>Extension (click to expand)</summary>
-<p>
-
 ```go
 
 resource "azurerm_virtual_machine_extension" "custom-script" {
@@ -78,15 +75,9 @@ resource "azurerm_virtual_machine_extension" "custom-script" {
 }
 ```
 
-</p>
-</details>
-
 See above that your `commandToExecute` has `setupWinRm.ps1` as the `$script` parameter and that you're grabbing TWO files from blob or wherever to put onto the node, your altered `elevated_shell.ps1` and your `setupWinRm.ps1`.
 
 Your `setupWinRm.ps1` will look different depending upon your needs, but first you'll request the cert like [this](https://github.com/J0F3/PowerShell/blob/master/Request-Certificate.ps1) or [this](https://4sysops.com/archives/create-a-certificate-request-with-powershell) or this.
-
-<details><summary>Request Certificate (click to expand)</summary>
-<p>
 
 ```powershell
 $hostname = "$ComputerName.$domain"
@@ -139,12 +130,7 @@ Finally {
 }
 ```
 
-</p>
-</details>
-
 And then to configure WinRM, you'll grab your certificate's thumbprint and go from there. It might look like this.
-<details><summary>Configure WinRM (click to expand)</summary>
-<p>
 
 ```powershell
 Write-Host "Obtaining the Thumbprint of the CA Certificate"
@@ -163,9 +149,6 @@ net start winrm
 Write-Host "Open Firewall Ports"
 netsh advfirewall firewall add rule name="Windows Remote Management (HTTPS-In)" dir=in action=allow protocol=TCP localport=5986
 ```
-
-</p>
-</details>
 
 After that custom script extension passes, then you can remote into that machine via HTTPS with a remote_exec provisioner or whatever you need.
 

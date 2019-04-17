@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Terraform + Azure + WinRM"
-date:   2019-04-20 12:00:00
+date:   2019-04-17 12:00:00
 categories: azure, terraform, winrm, kerberos, ntlm, dns, ca cert, group policy, active directory
 tags: azure, terraform, winrm, kerberos, ntlm, dns, ca cert, group policy, active directory
-image: /assets/article_images/2019-04-11-terraform-and-winrm/terraform-and-winrm.jpg
-image2: /assets/article_images/2019-04-11-terraform-and-winrm/terraform-and-winrm-mobile.jpg
+image: /assets/article_images/2019-04-17-terraform-and-winrm/terraform-and-winrm.jpg
+image2: /assets/article_images/2019-04-17-terraform-and-winrm/terraform-and-winrm-mobile.jpg
 ---
 Walk with me for a moment if you will. Let's say you need to spin up a Windows 2016 node in Terraform that has to join the Active Directory domain. And then you need to be able to WinRM into that node during your Terraform run, because let's say you need to add a remote_exec provisioner that does something that you can only do as a domain account user on the domain, and it has to happen within Terraform for whatever reason. Let's also say that your Group Policy is super strict, and there's no changing it.
 
@@ -177,6 +177,8 @@ Tombuildsstuff created an [excellent example](https://github.com/terraform-provi
 
 _Why wouldn't I just use the stock gallery image that has WinRM configured already?_
 You can't configure WinRM over HTTPS this way, so it's less secure. It _is_ an option, just not very attractive. It also doesn't follow most people's standards of using images, like the Shared Image Gallery in Azure with Packer-built images.
+
+<img src='/assets/article_images/2019-04-17-terraform-and-winrm/winrm.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 ## Concluding Thoughts
 

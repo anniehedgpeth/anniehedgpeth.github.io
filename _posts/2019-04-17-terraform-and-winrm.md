@@ -152,6 +152,8 @@ netsh advfirewall firewall add rule name="Windows Remote Management (HTTPS-In)" 
 
 After that custom script extension passes, then you can remote into that machine via HTTPS with a remote_exec provisioner or whatever you need.
 
+<img src='/assets/article_images/2019-04-17-terraform-and-winrm/winrm.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
+
 _Great, so problem solved, right?_
 Almost. Your DNS entry may not become available on the DNS servers for a while, making authentication with your DNS name not possible until the entry is set. It's possible that replication from the DNS server to others takes about 15 minutes and from the office to Azure is another 15 minutes. You could try resolving the DNS name of the new VM by running a Powershell command to do a force lookup of the DNS by using your internal DNS servers directly. Those servers should basically give you a result immediately. If that doesn't work, as a last resort, you can simply add some functionality to our remote_exec script that adds the DNS entry to the provisioner's hosts file (and clean it up afteward).
 
@@ -160,8 +162,6 @@ Tombuildsstuff created an [excellent example](https://github.com/terraform-provi
 
 _Why wouldn't I just use the stock gallery image that has WinRM configured already?_
 You can't configure WinRM over HTTPS this way, so it's less secure. It _is_ an option, just not very attractive. It also doesn't follow most people's standards of using images, like the Shared Image Gallery in Azure with Packer-built images.
-
-<img src='/assets/article_images/2019-04-17-terraform-and-winrm/winrm.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 
 ## Concluding Thoughts
 

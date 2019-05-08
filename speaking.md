@@ -7,7 +7,9 @@ permalink: /speaking/
 <iframe width="200" height="113" src="https://www.youtube.com/embed/AeXiFdlPta0" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>
-### [The New Stack Makers](https://www.youtube.com/watch?v=PotvNcL6voc) - ft. Dominik Richter & Annie Hedgpeth at ChefConf 2018
+
+### The New Stack Makers - ft. Dominik Richter & Annie Hedgpeth at ChefConf 2018
+<iframe width="200" height="113" src="https://www.youtube.com/embed/PotvNcL6voc" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>
 

@@ -3,6 +3,11 @@ layout: page
 title: Speaking
 permalink: /speaking/
 ---
+### ChefConf 2018 - "Chef and InSpec Builds with Jenkins"
+
+<iframe width="200" height="113" src="https://www.youtube.com/watch?v=AeXiFdlPta0&t=4s" frameborder="0" allowfullscreen></iframe>
+<br/>
+<br/>
 ### [The New Stack Makers](https://www.youtube.com/watch?v=PotvNcL6voc) - ft. Dominik Richter & Annie Hedgpeth at ChefConf 2018
 <br/>
 <br/>

@@ -3,7 +3,7 @@ layout: page
 title: Speaking
 permalink: /speaking/
 ---
-### ChefConf 2018 - "Chef and InSpec Builds with Jenkins"
+### ChefConf 2018 / Co-presenter: [Nick Hudacin](https://nickhudacin.wordpress.com/) - "Chef and InSpec Builds with Jenkins"
 <iframe width="200" height="113" src="https://www.youtube.com/embed/AeXiFdlPta0" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>

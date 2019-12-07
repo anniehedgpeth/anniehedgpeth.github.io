@@ -8,7 +8,7 @@ Then how do you break the cycle? How do you bring a bit of humanity into the res
 
 The following _are not_ interview questions. They're simply questions to train you in to open your eyes to ways in which people’s different backgrounds could very well be an asset to your team. Think about these things as you meet people and begin to see how a person’s background can help and not hurt. Listen for clues of strength, character, hard work, and problem-solving in the stories that people tell you in your day to day life. You will likely relate to the humanness of these stories, but you are likely not used to equating those things to busines outcomes.
 
-## What do your gap years say about you?
+## What do someone's gap years say about them?
 
 _Most people think of gap years as something reserved for women taking off to raise kids, but let me tell you about a different scenario._
 
@@ -18,7 +18,7 @@ My husband [Michael](http://hedge-ops.com/), a software engineering director at 
 
 While some may have read that these 7 years were a sort of sabbatical, my husband Michael knew differently. His company at the time was in need of strong product managers and that Chris was looking for a break. He took a chance on him first as a technical writer, and soon after Chris flew through the ranks into product management on an important new product within their portfolio. He is leading a successful career today in Georgia in product management thanks in large part to the skills he built as an assistant pastor.
 
-## What does your education say about you?
+## What does one's education say about them?
 
 Personally, I have gone back and forth with whether or not to lament the fact that I got a film degree. If I had to do it all over again, would I? I don’t know, but let me tell you what it says about me in hopes that it sparks your curiosity about what other people's non-technical degrees say about them.
 
@@ -26,7 +26,7 @@ First of all, neither of my parents went to college. My dad has an 8th grade edu
 
 Today I can walk through a museum or go to the theatre and appreciate it and connect with it in a way that I don’t know would be possible without those years of study. Creativity is not a mathematical equation but a human pursuit. And because of that human pursuit, I’m a really well-rounded person who connects with people and sees deeper meaning and connections in things, largely in part because I hold artists like Caravaggio, Rembrandt, Jackson Pollock, Tom Stoppard, Baz Luhrmann, Ant Farm, and so many more in my heart and mind all the time! When I travel to see my client in Chicago, we have jubilant well-attended happy hours in honor of my travels because I genuinely care about people and humanity, and that draws people into connection with me that rarely exists in tech. I’m not just saying that to blow smoke, but it’s truly just what people have observed. I like that I'm able to bring something special like that to the table. It's fun for all involved. And don’t you want someone that thinks outside of the tech box and brings somehting unique?
 
-## What does your reaction to change say about you?
+## What does one's reaction to change say about them?
 
 When I was a kid and my dad drank away all of our rent and we had to skip town in the middle of the night, I experienced big changes frequently. We moved 13 times between the time of my birth and when I turned 11. Change was a part of my normal life, and there were several formative events that shaped me because of the things I determined in those moments. For example, one time in the mid-nineties we were driving down the highway in my dad’s 1972 Buick Skylark. It was primer gray with one gold fender on the driver's side. He saw his friend pull up beside us, so naturally he decided to race his buddy down the highway. My sisters and I, teenagers at the time, were in the backseat with no seatbelts because it was an old car and they didn’t work. Our clover-leaf exit was approaching, so my dad hit the brakes and we went spinning onto the elevated clover-leaf. I honestly thought we were about to die spinning off of the bridge. When we finally came to a stop and I attempted to scold my dad for his irresponsible and unreasonable behavior, he laughed it off and told me I was over-exaggerating. In that moment, I determined to put my future kids’ well-being and sense of safety above my own - always. I dealt daily with challenges that were largely beyond my control. I hated not having control, so I developed a strong enough sense of myself by understanding what I _could_ change. I resolved to have the better life that I desired and deserved. The challenges that I resented so much really helped me develop resilience, strength, and determination.
 
@@ -36,7 +36,7 @@ When I grew up and had kids of my own, staying home with my kids was one of thos
 
 And today, in _everything_ I do, technology included, my reaction to change is to learn more about my own potential and pursue it with abandon. I don’t seek to take the easy route but the one that will get me to the end that I want. Life is hard, but I can do hard things! I've proven it to myself over and over again. If a person came into my interview room with an attitude toward life like this, then I know that they will be successful at anything they do. Anything.
 
-## How do you deal with fear and struggle in your life?
+## What are ways in which people deal with fear and struggle in their lives?
 
 A byproduct of my upbringing was an overwhelming sense of shyness. I feared people to an unhealthy degree. Some of this fear was warranted as I was around some pretty questionable people growing up. Other times, it was simply my lifestyle that invited criticism. I remember one time in the sixth grade in the passing period a popular boy in my class passed by and said, "Hey, nice jeans." I felt pretty good because they were my favorite Lee jeans that my Granny had bought for me the year prior for my birthday for $35! Then to my horror after a long pause he threw in, “High waters,” with a sly chuckle. It turns out I had held onto those jeans for a bit too long, without money to replace them, which led to being called out in front of everyone. The constant embarrassment over my situation at the time led me to being overly shy, a trait that actually wasn't natural to me, but I wouldn't realize that until much later.
 

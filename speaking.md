@@ -78,6 +78,7 @@ SysAdvent yearly holiday blog:
 <br/>
 [Running InSpec as a Push Job](http://sysadvent.blogspot.com/2017/12/day-7-running-inspec-as-push-job.html)
 <br/>
+[When To Take A Chance On Someone](https://sysadvent.blogspot.com/2019/12/day-11-when-to-take-chance-on-someone.html)
 <br/>
 10th Magnitude blog: 
 <br/>
@@ -88,5 +89,3 @@ SysAdvent yearly holiday blog:
 # AWARDS
 
 [Awesome Community Chefs – 2017 Award Winner](https://blog.chef.io/2017/06/08/awesome-community-chefs-2017-award-winners/)
-<br/>
-![Awesome Community Chef Award](https://22jr213zpp00e1zym36icrs1-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/awesome-chefs-all-768x446.jpg)

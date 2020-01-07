@@ -80,7 +80,7 @@ SysAdvent yearly holiday blog:
 <br/>
 [When To Take A Chance On Someone](https://sysadvent.blogspot.com/2019/12/day-11-when-to-take-chance-on-someone.html)
 <br/>
-10th Magnitude blog: 
+10th Magnitude blog:
 <br/>
 [DevOpsDays Dallas: Q&A with Trevor Hess and Annie Hedgpeth](http://www.10thmagnitude.com/tech-blog/devopsdays-dallas/)
 <br/>

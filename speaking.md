@@ -23,6 +23,12 @@ permalink: /speaking/
 
 ## Speaking
 
+### HashiTalks 2020: "Shifting Security and Sanity Left by Testing Terraform with InSpec"
+
+<iframe width="200" height="113" src="https://youtu.be/7utJcAnVoqk?t=8794" frameborder="0" allowfullscreen></iframe>
+<br/>
+<br/>
+
 ### ChefConf 2018 / Co-presenter: [Nick Hudacin](https://nickhudacin.wordpress.com/) - "Chef and InSpec Builds with Jenkins"
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/AeXiFdlPta0" frameborder="0" allowfullscreen></iframe>

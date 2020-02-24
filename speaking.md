@@ -25,7 +25,7 @@ permalink: /speaking/
 
 ### HashiTalks 2020: "Shifting Security and Sanity Left by Testing Terraform with InSpec"
 
-<iframe width="200" height="113" src="https://youtu.be/7utJcAnVoqk?t=8794" frameborder="0" allowfullscreen></iframe>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/7utJcAnVoqk?start=8795" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>
 

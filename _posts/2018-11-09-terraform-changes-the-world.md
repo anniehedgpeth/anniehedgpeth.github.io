@@ -42,4 +42,4 @@ They found they could be very agile in their approach to developing their IaC st
 They found that they could scale and move quickly because of the simplicity and agility that Terraform provided for them. Their company, [ActBlue](https://secure.actblue.com/), is empowering underrepresented candidates and taking super-PAC's money out of the equation by leveling the playing field and allowing money to flow to the people's candidates, like Beto O'Rourke. And sure, he didn't win, but no one can argue the impact on this election that he had and how we will likely see more of him, largely in part to the role that ActBlue played in his candidacy.
 
 # Decision and Concluding Thoughts
-*Never underestimate simplicity.* Great designs that can change the world are build upon simple, strong foundations.
+*Never underestimate simplicity.* Great designs that can change the world are built upon simple, strong foundations.

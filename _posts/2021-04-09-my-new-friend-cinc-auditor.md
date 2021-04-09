@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My New Friend, Cinc Auditor"
+title:  "My New Friend, Cinc-Auditor"
 date:   2021-04-09 12:00:00
 categories: inspec, cinc-auditor, integration testing, chef, cicd, packer, image, pipeline, bundler, package cloud, rubygems
 tags: inspec, cinc-auditor, integration testing, chef, cicd, packer, image, pipeline, bundler, package cloud, rubygems

@@ -23,6 +23,12 @@ permalink: /speaking/
 
 ## Speaking
 
+### We Hack Purple Podcast
+
+<iframe width="200" height="113" src="https://www.youtube.com/embed/DglcW9s1sfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+<br/>
+
 ### ChefConf 2020: "Shifting Security and Sanity Left by Testing Terraform with InSpec"
 
 [video](https://eviacms.evia.events/embed/insights?mid=ce6de89e-c37f-4530-8222-40fdb67a2b2c&startTime=0&endTime=2250) | [slides](https://eviacloudlivestore.blob.core.windows.net/unsecure/Event_1353/AnnieHedgpeth_A2.mp4/Resource/CHEFInSpecTerraformDemo.pptx)

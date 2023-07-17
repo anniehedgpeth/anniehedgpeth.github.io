@@ -6,6 +6,7 @@ categories: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
 tags: devops training, Jenkinsfile, jenkins, ci/cd, pipeline
 image: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile.jpg
 image2: /assets/article_images/2017-01-05-jenkinsfile/jenkinsfile-mobile.jpg
+redirect_to: https://hedge-ops.com/jenkinsfile
 ---
 
 # TLDR:

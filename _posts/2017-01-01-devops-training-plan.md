@@ -6,6 +6,7 @@ categories: devops training
 tags: devops training
 image: /assets/article_images/2017-01-01-devops-training-plan/plan.jpg
 image2: /assets/article_images/2017-01-01-devops-training-plan/plan-mobile.png
+redirect_to: https://hedge-ops.com/devops-training-plan
 ---
 Happy New Year, my friends! 
 

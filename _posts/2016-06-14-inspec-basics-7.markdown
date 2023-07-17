@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security, inspec tutorial, profile, k
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, profile, kitchen, cookbook, profile inheritance
 image: /assets/article_images/2016-06-14-inspec-basics-7/inspec-basics-7.jpg
 image2: /assets/article_images/2016-06-14-inspec-basics-7/inspec-basics-7-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-7
 ---
 I'm back again today with yet another InSpec tutorial. As always, if you haven't dipped your toe into the [InSpec](https://github.com/chef/inspec) pool yet, now you can:
 

@@ -6,6 +6,7 @@ categories: ruby
 tags: ruby
 image: /assets/article_images/2016-06-24-learning-ruby/learning-ruby.jpg
 image2: /assets/article_images/2016-06-24-learning-ruby/learning-ruby-mobile.jpg
+redirect_to: https://hedge-ops.com/learning-ruby
 ---
 I've had my head in the books lately, and guess what I learned? I learned that I cannot learn [Ruby](https://www.ruby-lang.org/en/) and the fundamentals of programming in a week. I had high hopes of learning *enough* to be able to write a custom resource for [InSpec](https://github.com/chef/inspec), but, as you probably know, that was silly.
 

@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+redirect_to: https://hedge-ops.com/about
 ---
 I am currently a Senior Engineer on the Terraform Enterprise team at HashiCorp. In this role, I'm a bit of a Jane of all trades, including Go development for Terraform Enterprise services, creating workflows in GitHub Actions, building and deploying Docker images, and using the heck of Terraform core, Terraform Cloud, and Terraform Enterprise. My goal in whatever I do is to make the right thing to do the easy thing to do, whether that's creating an extensible Go package or creating a workflow that others can easily use from the UI. Empathy for both the end user and the developers that come after me is always top of mind.
 

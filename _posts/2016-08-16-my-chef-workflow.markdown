@@ -6,6 +6,7 @@ categories: chef, chef workflow, devops
 tags: chef, chef workflow, devops
 image: /assets/article_images/2016-08-17-my-chef-workflow/my-chef-workflow.png
 image2: /assets/article_images/2016-08-17-my-chef-workflow/my-chef-workflow-mobile.png
+redirect_to: https://hedge-ops.com/my-chef-workflow
 ---
 Ever since I started [learning to remediate](http://www.anniehedgie.com/red-green-refactor) my InSpec test failures, I started learning bits and pieces of Chef. I started out in the [Test Kitchen](http://kitchen.ci/), quite appropriately, and since then I've been learning how to zoom out little by little so as to see the forest for the trees. 
 

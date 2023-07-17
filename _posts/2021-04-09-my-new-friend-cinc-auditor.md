@@ -6,6 +6,7 @@ categories: inspec, cinc-auditor, integration testing, chef, cicd, packer, image
 tags: inspec, cinc-auditor, integration testing, chef, cicd, packer, image, pipeline, bundler, package cloud, rubygems
 image: /assets/article_images/2021-04-09-my-new-friend-cinc-auditor/cinc.jpg
 image2: /assets/article_images/2021-04-09-my-new-friend-cinc-auditor/cinc-mobile.jpg
+redirect_to: https://hedge-ops.com/my-new-friend-cinc-auditor
 ---
 So I'm making a CI/CD pipeline to create a simple base image to use (the image is not relevant to the story, just so you know), and I want to validate the configuration scripts before I build the image, right? I mean, y'all know I love some [test driven development that I turn into integration tests](http://www.anniehedgie.com/red-green-refactor). And y'all know I love seeing passing green checkmarks. It's like my favorite thing.
 

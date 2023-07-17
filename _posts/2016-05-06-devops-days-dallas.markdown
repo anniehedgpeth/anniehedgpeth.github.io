@@ -6,6 +6,7 @@ categories: devops, devops days
 tags: devops, devops days
 image: /assets/article_images/2016-05-06-devops-days-dallas/devops-days-dallas.jpg
 image2: /assets/article_images/2016-05-06-devops-days-dallas/devops-days-dallas-mobile.jpg
+redirect_to: https://hedge-ops.com/devops-days-dallas
 ---
 
 If you've read [The Phoenix Project](http://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592) (you know, the DevOps novel), then you'll know what I mean when I say that I'm a bit of a Patty type - [art background but having something to contribute to the IT world](http://www.anniehedgie.com/introduction), just trying to figure out how. So I think the best thing to do is network as much as I can and keep doing projects to find my niche. So far so good - I'm liking it more than I thought I would, honestly. The more small, manageable experiences that I have in the IT world, the less scary and ethereal it seems to me.  

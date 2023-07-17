@@ -6,6 +6,7 @@ categories: chef, devsecops, devsecops, devops
 tags: chef, devsecops, devsecops, devops
 image: /assets/article_images/2016-07-15-chefconf/chefconf.jpg
 image2: /assets/article_images/2016-07-15-chefconf/chefconf-mobile.jpg
+redirect_to: https://hedge-ops.com/chefconf
 ---
 I was so thrilled this week to be able to attend [ChefConf 2016](https://chefconf.chef.io/)! There were so many cool things about the week that got me super excited about the coming year. But also, there were things that made me excited about the future of the industry and how I can be a meaningful part of it. 
  

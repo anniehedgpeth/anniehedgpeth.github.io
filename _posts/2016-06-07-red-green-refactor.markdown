@@ -6,6 +6,7 @@ categories: red green refactor, devops, unit testing, airbnb
 tags: testing
 image: /assets/article_images/2016-06-07-red-green-refactor/red-green-refactor.jpg
 image2: /assets/article_images/2016-06-07-red-green-refactor/red-green-refactor-mobile.jpg
+redirect_to: https://hedge-ops.com/red-green-refactor
 ---
 <img src='/assets/article_images/2016-06-07-red-green-refactor/red-green-refactor.png' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 

@@ -6,6 +6,7 @@ categories: elasticsearch, network hosts, cookbooks, chef
 tags: elasticsearch, network hosts, cookbooks, chef
 image: /assets/article_images/2016-09-05-elasticsearch-network-hosts/elasticsearch.jpg
 image2: /assets/article_images/2016-09-05-elasticsearch-network-hosts/elasticsearch-mobile.jpg
+redirect_to: https://hedge-ops.com/elasticsearch-network-hosts
 ---
 Hello, friends! I've missed you. I've been a busy bee. I got hired onto a contract-to-hire position at a consultancy for whom I'm working on a Chef project. I'm having a great time because I'm learning so much. To say that I'm drinking from a fire-hose is an understatement.
 

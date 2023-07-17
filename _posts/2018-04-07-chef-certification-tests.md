@@ -6,6 +6,7 @@ categories: chef, certification, badges
 tags: chef, certification, badges
 image: /assets/article_images/2018-04-07-certified-chef-developer/certified-chef-developer.jpg
 image2: /assets/article_images/2018-04-07-certified-chef-developer/certified-chef-developer-mobile.jpg
+redirect_to: https://hedge-ops.com/certified-chef-developer
 ---
 Last week I finished the last of the three required tests to become a _Certified Chef Developer_ (and passed - woohoo!). I took it kind of slowly, and just made it a quarterly objective to either study for or take a test over the past six months. It was a great experience, and I know that the tests are a bit mysterious, so I wanted to try and demystify it for you. (Their [FAQs](https://training.chef.io/certification-faq) are also helpful.)
 

@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security
 tags: chef, chef compliance, inspec, security, tutorial
 image: /assets/article_images/2016-05-13-inspec-basics-1/inspec-basics-1.jpg
 image2: /assets/article_images/2016-05-13-inspec-basics-1/inspec-basics-1-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-1
 ---
 I've been sharing what I've learned about [Chef Compliance](http://www.anniehedgie.com/setting-up-compliance), and because it uses the [InSpec framework](https://www.chef.io/compliance/), I want to start a little series on [InSpec](https://www.chef.io/inspec/) to gain a fuller understanding, appreciation for, and greater flexibility with [Compliance](https://www.chef.io/compliance/). 
 

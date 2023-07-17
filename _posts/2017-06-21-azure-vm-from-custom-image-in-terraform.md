@@ -6,6 +6,7 @@ categories: provisioning, terraform, azure, cloud, infrastructure as code, custo
 tags: provisioning, terraform, azure, cloud, infrastructure as code, custom image, golden image
 image: /assets/article_images/2017-06-21-azure-vm-from-custom-image-in-terraform/azure-vm-from-custom-image-in-terraform.jpg
 image2: /assets/article_images/2017-06-21-azure-vm-from-custom-image-in-terraform/azure-vm-from-custom-image-in-terraform-mobile.jpg
+redirect_to: https://hedge-ops.com/azure-vm-from-custom-image-in-terraform
 ---
 On Monday, I gave you some basic tips about working with [Terraform in Azure](http://www.anniehedgie.com/terraform-and-azure), and today I want to show you what I've learned about creating virtual machines from custom images. 
 

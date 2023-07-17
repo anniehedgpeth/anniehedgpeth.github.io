@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security, inspec tutorial, profile
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, profile
 image: /assets/article_images/2016-05-25-inspec-basics-5/inspec-basics-5.jpg
 image2: /assets/article_images/2016-05-25-inspec-basics-5/inspec-basics-5-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-5
 ---
 So in the last four posts we learned how to write InSpec controls. It was supposed to get you started, and then you could continue as far into the workshop as you wished.  
   

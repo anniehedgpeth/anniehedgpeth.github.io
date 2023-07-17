@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security, inspec tutorial, devsecops,
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, regex, regular expressions, rubular
 image: /assets/article_images/2016-08-01-inspec-basics-8/inspec-basics-8.jpg
 image2: /assets/article_images/2016-08-01-inspec-basics-8/inspec-basics-8-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-8
 ---
 So you know how when you're learning stuff and something comes across your radar that you don't get at all so you make a mental note to study it later? Well, I have many of those, but the one I'm going to talk about today concerns writing a test to search for regular expressions.
 

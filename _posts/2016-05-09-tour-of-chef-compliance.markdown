@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security
 tags: chef, chef compliance, inspec, security
 image: /assets/article_images/2016-05-09-tour-of-chef-compliance/tour-of-chef-compliance.jpg
 image2: /assets/article_images/2016-05-09-tour-of-chef-compliance/tour-of-chef-compliance-mobile.jpg
+redirect_to: https://hedge-ops.com/tour-of-chef-compliance
 ---
 Last week I showed you [how to get set up](http://www.anniehedgie.com/setting-up-compliance) to use [Chef Compliance](https://www.chef.io/compliance/), so now that you're ready, let's take a look at just what this tool can do for us.
 

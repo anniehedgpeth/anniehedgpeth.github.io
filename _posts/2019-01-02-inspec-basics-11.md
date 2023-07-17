@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, 
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, azure, inspec-azure, terraform
 image: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11.jpg
 image2: /assets/article_images/2019-01-02-inspec-basics-11/inspec-basics-11-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-11
 ---
 Up until InSpec 2.0, you could only use InSpec to scan actual infrastructure. When resources became available in InSpec to scan cloud subscriptions, I was thrilled. There are a million and one reasons you'd want to take stock of your Azure resources. Whether you're trying to validate that your ARM template or Terraform script did what it said it was going to do, or you have compliance standards that you have to audit, or you just want to make sure that you don't write over anything before a deployment, the [`inspec-azure`](https://github.com/inspec/inspec-azure) resource pack is a great tool for this.
 

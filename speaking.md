@@ -2,6 +2,7 @@
 layout: page
 title: Speaking and Writing
 permalink: /speaking/
+redirect_to: https://hedge-ops.com/speaking
 ---
 
 ## AWARDS

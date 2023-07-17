@@ -6,6 +6,7 @@ categories: chef, test kitchen, devops, azure, managed service identity, service
 tags: chef, test kitchen, devops, azure, managed service identity, service principal
 image: /assets/article_images/2019-04-12-managed-identities/managed-identities.jpg
 image2: /assets/article_images/2019-04-12-managed-identities/managed-identities-mobile.jpg
+redirect_to: https://hedge-ops.com/managed-identities
 ---
 I'm a big fan of Test Kitchen for testing Chef, and I really like the `kitchen-azurerm` driver. I started my client with it two years ago, and they're using it for all of their cookbook CI/CD now. It's fantastic. However, we've had a little nagging problem ever since we started using it: what to do with that darn client secret of the service principal. We had been saving it as an environment variable both on our workstations and on Jenkins, but you can see why that's not desirable - too easy to let it lose out into the wild.
 

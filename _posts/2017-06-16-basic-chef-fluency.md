@@ -6,6 +6,7 @@ categories: learning, studying, chef
 tags: basic chef fluency badge exam, chef certification, study guide
 image: /assets/article_images/2017-06-16-basic-chef-fluency-badge/basic-chef-fluency-badge.jpg
 image2: /assets/article_images/2017-06-16-basic-chef-fluency-badge/basic-chef-fluency-badge-mobile.jpg
+redirect_to: https://hedge-ops.com/basic-chef-fluency-badge
 ---
 I took the Basic Chef Fluency test (the first one toward Chef certification) a few months ago now, so I wanted to share what I thought about it and a study guide which lot of people have asked about. 
 

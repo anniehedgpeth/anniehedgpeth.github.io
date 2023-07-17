@@ -6,6 +6,7 @@ categories: azure, terraform, ssh, test kitchen, kitchen terraform, winrm, terra
 tags: azure, terraform, ssh, test kitchen, kitchen terraform, winrm, terratest
 image: /assets/article_images/2019-10-17-kitchen-terraform/kitchen-terraform.jpg
 image2: /assets/article_images/2019-10-17-kitchen-terraform/kitchen-terraform-mobile.jpg
+redirect_to: https://hedge-ops.com/kitchen-terraform
 ---
 **Disclaimer:** I like for my blog posts to be pretty basic so that you can pick up a new skill without knowing a ton of background, but this post assumes that you know about [InSpec](http://www.anniehedgie.com/inspec-basics-11), [Terraform](http://www.anniehedgie.com/terraform-and-azure), and [Test Kitchen](http://www.anniehedgie.com/red-green-refactor). It also assumes that you know how to [call a Terraform module from another module](https://www.terraform.io/docs/configuration/modules.html) and that you have knowledge of the [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform) gem.
 

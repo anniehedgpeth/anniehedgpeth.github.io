@@ -6,6 +6,7 @@ categories: devops
 tags: devops
 image: /assets/article_images/2018-07-19-bike-accident/bike.jpg
 image2: /assets/article_images/2018-07-19-bike-accident/bike-mobile.jpg
+redirect_to: https://hedge-ops.com/bike-accident
 ---
 I love to over-metaphorize things, and I've been wanting to do that in regard to my bike accident for some time now. I was in a bicycle accident back in April, and I've been thinking about its correlation to DevOps and/or IT in general ever since. A friend of mine who was a champion mountain biker advised me not to tell anyone about my accident here in Boulder, that it was really too embarrassing. Aside from this post, I'm going to heed her advice.
 

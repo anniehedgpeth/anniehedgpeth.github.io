@@ -82,7 +82,7 @@ If your company requires strict adherance to regulatory requirements, then you d
 
 Also imagine that you have run all your configuration scripts, and instead of hoping for the best, you actually created an InSpec profile that validates all of your configuration. InSpec will be your safety net before deploying! 
 
-[<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/shouldbeinspec.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://www.anniehedgie.com/inspec)
+[<img src='https://github.com/anniehedgpeth/anniehedgpeth.github.io/blob/master/assets/images/shouldbechefinspec.png?raw=true' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />](http://www.anniehedgie.com/inspec)
 
 # Is your interest piqued yet?
 Here are some things you can do to start leveraging InSpec.

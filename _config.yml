@@ -56,3 +56,8 @@ social:
 google_analytics: UA-77245607-1
 
 excerpt_separator: <!--more-->
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

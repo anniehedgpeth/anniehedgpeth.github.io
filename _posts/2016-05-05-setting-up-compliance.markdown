@@ -6,6 +6,7 @@ categories: tutorial, chef, compliance, azure, security
 tags: tutorial, chef, compliance, azure, security
 image: /assets/article_images/2016-05-05-setting-up-compliance/chef-compliance.jpg
 image2: /assets/article_images/2016-05-05-setting-up-compliance/chef-compliance-mobile.jpg
+redirect_to: https://hedge-ops.com/setting-up-compliance
 ---
 This tutorial for setting up [Chef Compliance](https://www.chef.io/compliance/) is for pretty much anyone to use. I break it into extremely simple steps, so that there is no mystery.
 

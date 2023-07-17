@@ -6,6 +6,7 @@ categories: chef, chef compliance, inspec, security, inspec tutorial, profile, k
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, profile, kitchen, cookbook
 image: /assets/article_images/2016-06-09-inspec-basics-6/inspec-basics-6.jpg
 image2: /assets/article_images/2016-06-09-inspec-basics-6/inspec-basics-6-mobile.jpg
+redirect_to: https://hedge-ops.com/inspec-basics-6
 ---
 Hello my friends. I hope you're back for some [InSpec](https://github.com/chef/inspec) goodness. I've missed [talking about InSpec](http://www.anniehedgie.com/inspec-basics-1)! Check out all we've covered so far:
 

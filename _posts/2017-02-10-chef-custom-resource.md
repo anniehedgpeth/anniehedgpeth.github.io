@@ -6,6 +6,7 @@ categories: devops training, chef, custom resource, cookbooks, recipe, Learning,
 tags: devops training, chef, custom resource, cookbooks, recipe, Learning, kata
 image: /assets/article_images/2017-02-10-chef-custom-resource/chef-custom-resource.JPG
 image2: /assets/article_images/2017-02-10-chef-custom-resource/chef-custom-resource-mobile.jpg
+redirect_to: https://hedge-ops.com/chef-custom-resource
 ---
 I have been working toward my Chef certification here lately, and my husband came up with this really cool [kata](https://github.com/mhedgpeth/chef-by-example) that I've been working on lately to study up for my first exam. A kata is something that you do over and over for training and for the purpose of bringing the broken parts of the process to light. It's origins are in karate, and I'm sure you've heard of how it was implemented at Toyota with their famous Toyota-kata. 
 

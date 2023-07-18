@@ -125,6 +125,6 @@ And there you go! That's a simple guide to attributes!
 # Concluding Thoughts
 I love this feature. It gives a lot of flexibility and control, and you can use it in a lot of different ways. The trick is to hard-code the attributes first to make sure it's working. 
 
-So just a little job update - I'm loving it over here at 10th Magnitude. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. {{Feeling grateful}}
+So just a little job update - I'm loving it over here at 10th Magnitude. I'm learning so much. Sure, I ask some dumb questions from time to time, and I feel really dumb about them later, but I am in the perfect position to learn a ton. _Feeling grateful._
 
 Go to Day 10: [Attributes with Environment Variables](http://www.anniehedgie.com/inspec-basics-10)

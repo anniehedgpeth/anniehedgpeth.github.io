@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "MomOps"
 date:   2016-05-29 05:00:00
 categories: women in technology, working moms, reentering the workforce
 tags: women in technology, working moms, reentering the workforce
 image: /assets/article_images/2016-05-29-momops/momops.jpg
 image2: /assets/article_images/2016-05-29-momops/momops-mobile.jpg
-redirect_to: https://hedge-ops.com/momops
+redirect: https://hedge-ops.com/momops
 ---
 I'm taking a short detour from [InSpec-land](http://www.anniehedgie.com/inspec-basics-1) today, but don't fret; I'll be back soon. Whenever I hit a road block in my InSpec studies, I've realized that it's because I've covered a fair amount of ground in InSpec, but I haven't spent enough time learning Linux. So I'm going to get a better foundation with Linux basics so that I can come back to InSpec with greater flexibility and understanding.
 

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "Leaning In"
 date:   2016-09-14 12:00:00
 categories: women in technology, working moms, reentering the workforce, 10th magnitude
 tags: women in technology, working moms, reentering the workforce, 10th magnitude
 image: /assets/article_images/2016-09-14-leaning-in/leaning-in.jpg
 image2: /assets/article_images/2016-09-14-leaning-in/leaning-in-mobile.jpg
-redirect_to: https://hedge-ops.com/leaning-in
+redirect: https://hedge-ops.com/leaning-in
 ---
 I knew when I finished "reading" (thank you, [Audible](http://www.audible.com/)) Sheryl Sandberg's heartening exhortations in [Lean In](http://leanin.org/book/) that my life was about to change. I was thinking that I should go back to grad school for the changes that I wanted in my life to materialize, and so I studied for 6 weeks and took the GMAT. After all of those long hours of studying, however, I realized that that wasn't the life that I wanted for the next 2 years. I didn't want to have to wait in the wings for 2 more years while I could be starting a career now! And so I got frustrated and antsy.
 

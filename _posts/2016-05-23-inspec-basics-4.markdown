@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "InSpec Tutorial: Day 4 - Custom Matchers"
 date:   2016-05-23 05:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial
 image: /assets/article_images/2016-05-23-inspec-basics-4/inspec-basics-4.jpg
 image2: /assets/article_images/2016-05-23-inspec-basics-4/inspec-basics-4-mobile.jpg
-redirect_to: https://hedge-ops.com/inspec-basics-4
+redirect: https://hedge-ops.com/inspec-basics-4
 ---
 Before you start today's [InSpec](https://github.com/chef/inspec) basics tutorial, be sure to get up to date with the first three days! 
   

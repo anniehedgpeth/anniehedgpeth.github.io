@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "I'm Annie, and I have an art degree."
 date:   2016-05-02 18:00:00
 categories: about
 tags: introduction
 image: /assets/article_images/2016-05-02-introduction/introduction.jpg
 image2: /assets/article_images/2016-05-02-introduction/introduction-mobile.jpg
-redirect_to: https://hedge-ops.com/introduction
+redirect: https://hedge-ops.com/introduction
 ---
 <img src='/assets/article_images/2016-05-02-introduction/AnnieHedgpeth.jpg' style='display: block; margin-left: auto; margin-right: auto; padding-top: 40px' />
 

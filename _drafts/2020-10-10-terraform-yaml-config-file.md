@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "Terraform Yaml Config File"
 date:   2020-10-10 12:00:00
 categories: terraform, yaml, config, variables, iac

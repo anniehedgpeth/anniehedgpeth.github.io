@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "VM from Custom Image with Terraform and Azure"
 date:   2017-06-23 09:00:00
 categories: provisioning, terraform, azure, cloud, infrastructure as code

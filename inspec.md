@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: redirect
 # title: InSpec Basics
 permalink: /inspec/
-redirect_to: https://hedge-ops.com/inspec
+redirect: https://hedge-ops.com/inspec
 ---
 [<img src='/assets/images/InSpecLogo.png' style='display: block; margin-left: auto; margin-right: auto' />](http://inspec.io/)
 

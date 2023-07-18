@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "InSpec Tutorial: Day 2 - Command Resource"
 date:   2016-05-17 08:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial
 image: /assets/article_images/2016-05-17-inspec-basics-2/inspec-basics-2.jpg
 image2: /assets/article_images/2016-05-17-inspec-basics-2/inspec-basics-2-mobile.jpg
-redirect_to: https://hedge-ops.com/inspec-basics-2
+redirect: https://hedge-ops.com/inspec-basics-2
 ---
 Last week we walked through a really basic [Hello World](http://www.anniehedgie.com/inspec-basics-1) InSpec tutorial, just to get our feet wet, and today in our [InSpec](https://www.chef.io/inspec/) workshop, we'll be diving a little deeper and creating this:
 

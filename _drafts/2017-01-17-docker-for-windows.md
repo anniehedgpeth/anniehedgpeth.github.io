@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: redirect
 title:  "Docker For Windows"
 date:   2017-01-17 12:00:00
 categories: devops training, Docker, windows, jenkins, ci/cd, pipeline, Learning

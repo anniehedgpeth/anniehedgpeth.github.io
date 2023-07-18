@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: redirect
 title: Speaking and Writing
 permalink: /speaking/
-redirect_to: https://hedge-ops.com/speaking
+redirect: https://hedge-ops.com/speaking
 ---
 
 ## AWARDS

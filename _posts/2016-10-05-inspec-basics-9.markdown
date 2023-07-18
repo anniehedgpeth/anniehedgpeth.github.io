@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "InSpec Basics: Day 9 - Attributes"
 date:   2016-10-27 12:00:00
 categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables
 image: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9.jpg
 image2: /assets/article_images/2016-10-05-inspec-basics-9/inspec-basics-9-mobile.jpg
-redirect_to: https://hedge-ops.com/inspec-basics-9
+redirect: https://hedge-ops.com/inspec-basics-9
 ---
 Y'all, I was in [InSpec](http://inspec.io/) heaven a couple of weeks ago. I was on a [project](https://www.10thmagnitude.com/) where I was supposed to create an InSpec profile that tests the build and application configuration of a set of servers within a pipeline in [TeamCity](https://www.jetbrains.com/teamcity/) - smoke-tests. I had to translate a bunch of ServerSpec into InSpec and run the InSpec profile independently of the cookbook. Seems easy enough, but the challenge is testing all of the different environments and using different tests for each node spun up. The client also wanted it to be in one step for all the nodes, not a different step for each one.
 

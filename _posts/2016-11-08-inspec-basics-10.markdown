@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "InSpec Basics: Day 10 - Attributes with Environment Variables"
 date:   2016-11-08 12:00:00
 categories: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables, rake, rakefile
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial, devsecops, devsecops, devops, attributes, envrionment variables, rake, rakefile
 image: /assets/article_images/2016-11-08-inspec-basics-10/inspec-basics-10.jpg
 image2: /assets/article_images/2016-11-08-inspec-basics-10/inspec-basics-10-mobile.jpg
-redirect_to: https://hedge-ops.com/inspec-basics-10
+redirect: https://hedge-ops.com/inspec-basics-10
 ---
 My last post about attributes was really born out of this issue I had had creating an InSpec profile that tests the build configuration of a machine within a pipeline in TeamCity and testing all of the different environments, making sure the correct Mysql passwords were entered in for each environment. In my last post, I had given you a crash course in how to use attributes,so now I'm going to show you how I used attributes to create the passwords that I needed using environment variables. 
 

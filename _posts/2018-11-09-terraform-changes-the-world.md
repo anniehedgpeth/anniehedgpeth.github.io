@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "Terraform Changes The World"
 date:   2018-11-09 09:00:00
 categories: devops, terraform, iac, hashiconf, hashicorp, actblue, how terraform will impact the 2018 us elections
 tags: devops, terraform, iac, hashiconf, hashicorp, actblue, how terraform will impact the 2018 us elections
 image: /assets/article_images/2018-11-09-terraform-changes-the-world/2018-11-09-terraform-changes-the-world.jpg
 image2: /assets/article_images/2018-11-09-terraform-changes-the-world/2018-11-09-terraform-changes-the-world-mobile.jpg
-redirect_to: https://hedge-ops.com/terraform-changes-the-world
+redirect: https://hedge-ops.com/terraform-changes-the-world
 ---
 We've all been subject to the scare-mongering around how technology will "take-over" and AI robots are going to kill us all and whatever. Really, though, we all know that technology is neutral, not inherently good or evil. So I really love a good story about how someone harnessed technology for positive change for humanity. Regardless of your political stance, I think you can appreciate how the story I'll relay to you impacts the world.
 

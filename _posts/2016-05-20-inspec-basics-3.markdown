@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "InSpec Tutorial: Day 3 - File Resource"
 date:   2016-05-20 08:00:00
 categories: chef, chef compliance, inspec, security, inspec tutorial
 tags: chef, chef compliance, inspec, security, tutorial, inspec tutorial
 image: /assets/article_images/2016-05-20-inspec-basics-3/inspec-basics-3.jpg
 image2: /assets/article_images/2016-05-20-inspec-basics-3/inspec-basics-3-mobile.jpg
-redirect_to: https://hedge-ops.com/inspec-basics-3
+redirect: https://hedge-ops.com/inspec-basics-3
 ---
 Welcome back! If you're just now joining me, then you'll want to take a look at the first two days in this little Inspec journey.
   

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "Packer and Azure Managed Images"
 date:   2018-09-23 09:00:00
 categories: devops, azure, packer, managed images
 tags: devops, azure, packer, managed images
 image: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images.jpg
 image2: /assets/article_images/2018-09-23-managed-images/2018-09-23-managed-images-mobile.jpg
-redirect_to: https://hedge-ops.com/managed-images
+redirect: https://hedge-ops.com/managed-images
 ---
 I ran across an interesting question at work the other day for which I had to do a little digging, so I thought I'd share it with you to maybe save you some of the digging of your own.
 

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: redirect
 title:  "End of the First Chapter"
 date:   2020-10-01 12:00:00
 categories: azure, career, life
 tags: azure, career, life
 image: /assets/article_images/2020-10-01-end-of-first-chapter/mountains.jpg
 image2: /assets/article_images/2020-10-01-end-of-first-chapter/mountains-mobile.jpg
-redirect_to: https://hedge-ops.com/end-of-first-chapter
+redirect: https://hedge-ops.com/end-of-first-chapter
 ---
 I have been very fortunate to work in my current job as a Cloud Automation Engineer for a leading Azure consultancy and to experience the accelerated growth that only comes from working at such a pace. [10th Magnitude](https://www.10thmagnitude.com/) (we say "10M" internally) is now almost 150 employees, and I was hired when we were still in the 30-40 person range. I have been there for 4 years and have seen immense growth both in my own career, as a company, and as a person. I am so proud of what we built together and that I grew a strong technical foundation there.
 
